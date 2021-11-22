@@ -6,6 +6,10 @@ class Admin extends BaseController
 {
     public function index()
     {
-        return view('welcome_message');
+        $data = [
+            'title' => 'Dashboard Admin | SKYX'
+        ];
+
+        return view('admin/index', $data);
     }
 }
