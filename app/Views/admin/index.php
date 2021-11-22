@@ -377,13 +377,6 @@
 								<p>Dashboard</p>
 							</a>
 						</li>
-						<!-- Components -->
-						<li class="nav-section">
-							<span class="sidebar-mini-icon">
-								<i class="fa fa-ellipsis-h"></i>
-							</span>
-							<h4 class="text-section">Components</h4>
-						</li>
 						<!-- Base -->
 						<li class="nav-item">
 							<a data-toggle="collapse" href="#base">
@@ -627,13 +620,6 @@
 								<span class="badge badge-success">4</span>
 							</a>
 						</li>
-						<!-- Snippets -->
-						<li class="nav-section">
-							<span class="sidebar-mini-icon">
-								<i class="fa fa-ellipsis-h"></i>
-							</span>
-							<h4 class="text-section">Snippets</h4>
-						</li>
 						<!-- Emails -->
 						<li class="nav-item">
 							<a data-toggle="collapse" href="#email-nav">
@@ -683,7 +669,7 @@
 								</ul>
 							</div>
 						</li>
-						<!-- Projects -->
+						<!-- Projects (Keep)-->
 						<li class="nav-item">
 							<a href="projects.html">
 								<i class="fas fa-file-signature"></i>
@@ -715,7 +701,7 @@
 								<span class="badge badge-count">6</span>
 							</a>
 						</li>
-						<!-- Faqs -->
+						<!-- Faqs (Keep)-->
 						<li class="nav-item">
 							<a href="faqs.html">
 								<i class="far fa-question-circle"></i>
