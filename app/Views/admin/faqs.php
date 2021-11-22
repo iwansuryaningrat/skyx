@@ -2,16 +2,16 @@
 <html lang="en">
 <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<title>Atlantis Bootstrap 4 Admin Dashboard</title>
+	<title><?= $title; ?></title>
 	<meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
-	<link rel="icon" href="../assets/img/icon.ico" type="image/x-icon"/>
+	<link rel="icon" href="/admin/assets/img/icon.ico" type="image/x-icon"/>
 	
 	<!-- Fonts and icons -->
-	<script src="../assets/js/plugin/webfont/webfont.min.js"></script>
+	<script src="/admin/assets/js/plugin/webfont/webfont.min.js"></script>
 	<script>
 		WebFont.load({
 			google: {"families":["Lato:300,400,700,900"]},
-			custom: {"families":["Flaticon", "Font Awesome 5 Solid", "Font Awesome 5 Regular", "Font Awesome 5 Brands", "simple-line-icons"], urls: ['../assets/css/fonts.min.css']},
+			custom: {"families":["Flaticon", "Font Awesome 5 Solid", "Font Awesome 5 Regular", "Font Awesome 5 Brands", "simple-line-icons"], urls: ['/admin/assets/css/fonts.min.css']},
 			active: function() {
 				sessionStorage.fonts = true;
 			}
@@ -19,10 +19,10 @@
 	</script>
 
 	<!-- CSS Files -->
-	<link rel="stylesheet" href="../assets/css/bootstrap.min.css">
-	<link rel="stylesheet" href="../assets/css/atlantis.css">
+	<link rel="stylesheet" href="/admin/assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/admin/assets/css/atlantis.css">
 	<!-- CSS Just for demo purpose, don't include it in your project -->
-	<link rel="stylesheet" href="../assets/css/demo.css">
+	<link rel="stylesheet" href="/admin/assets/css/demo.css">
 </head>
 <body>
 	<div class="wrapper">
@@ -31,7 +31,7 @@
 			<div class="logo-header" data-background-color="blue">
 				
 				<a href="index.html" class="logo">
-					<img src="../assets/img/logo.svg" alt="navbar brand" class="navbar-brand">
+					<img src="/admin/assets/img/logo.svg" alt="navbar brand" class="navbar-brand">
 				</a>
 				<button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse" data-target="collapse" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon">
@@ -85,7 +85,7 @@
 										<div class="notif-center">
 											<a href="#">
 												<div class="notif-img"> 
-													<img src="../assets/img/jm_denis.jpg" alt="Img Profile">
+													<img src="/admin/assets/img/jm_denis.jpg" alt="Img Profile">
 												</div>
 												<div class="notif-content">
 													<span class="subject">Jimmy Denis</span>
@@ -97,7 +97,7 @@
 											</a>
 											<a href="#">
 												<div class="notif-img"> 
-													<img src="../assets/img/chadengle.jpg" alt="Img Profile">
+													<img src="/admin/assets/img/chadengle.jpg" alt="Img Profile">
 												</div>
 												<div class="notif-content">
 													<span class="subject">Chad</span>
@@ -109,7 +109,7 @@
 											</a>
 											<a href="#">
 												<div class="notif-img"> 
-													<img src="../assets/img/mlane.jpg" alt="Img Profile">
+													<img src="/admin/assets/img/mlane.jpg" alt="Img Profile">
 												</div>
 												<div class="notif-content">
 													<span class="subject">Jhon Doe</span>
@@ -121,7 +121,7 @@
 											</a>
 											<a href="#">
 												<div class="notif-img"> 
-													<img src="../assets/img/talha.jpg" alt="Img Profile">
+													<img src="/admin/assets/img/talha.jpg" alt="Img Profile">
 												</div>
 												<div class="notif-content">
 													<span class="subject">Talha</span>
@@ -170,7 +170,7 @@
 										</a>
 										<a href="#">
 											<div class="notif-img"> 
-												<img src="../assets/img/profile2.jpg" alt="Img Profile">
+												<img src="/admin/assets/img/profile2.jpg" alt="Img Profile">
 											</div>
 											<div class="notif-content">
 												<span class="block">
@@ -268,14 +268,14 @@
 						<li class="nav-item dropdown hidden-caret">
 							<a class="dropdown-toggle profile-pic" data-toggle="dropdown" href="#" aria-expanded="false">
 								<div class="avatar-sm">
-									<img src="../assets/img/profile.jpg" alt="..." class="avatar-img rounded-circle">
+									<img src="/admin/assets/img/profile.jpg" alt="..." class="avatar-img rounded-circle">
 								</div>
 							</a>
 							<ul class="dropdown-menu dropdown-user animated fadeIn">
 								<div class="dropdown-user-scroll scrollbar-outer">
 									<li>
 										<div class="user-box">
-											<div class="avatar-lg"><img src="../assets/img/profile.jpg" alt="image profile" class="avatar-img rounded"></div>
+											<div class="avatar-lg"><img src="/admin/assets/img/profile.jpg" alt="image profile" class="avatar-img rounded"></div>
 											<div class="u-text">
 												<h4>Hizrian</h4>
 												<p class="text-muted">hello@example.com</p><a href="profile.html" class="btn btn-xs btn-secondary btn-sm">View Profile</a>
@@ -307,7 +307,7 @@
 				<div class="sidebar-content">
 					<div class="user">
 						<div class="avatar-sm float-left mr-2">
-							<img src="../assets/img/profile.jpg" alt="..." class="avatar-img rounded-circle">
+							<img src="/admin/assets/img/profile.jpg" alt="..." class="avatar-img rounded-circle">
 						</div>
 						<div class="info">
 							<a data-toggle="collapse" href="#collapseExample" aria-expanded="true">
@@ -350,47 +350,47 @@
 							<div class="collapse" id="dashboard">
 								<ul class="nav nav-collapse">
 									<li>
-										<a href="../demo1/index.html">
+										<a href="/admin/demo1/index.html">
 											<span class="sub-item">Dashboard 1</span>
 										</a>
 									</li>
 									<li>
-										<a href="../demo2/index.html">
+										<a href="/admin/demo2/index.html">
 											<span class="sub-item">Dashboard 2</span>
 										</a>
 									</li>
 									<li>
-										<a href="../demo3/index.html">
+										<a href="/admin/demo3/index.html">
 											<span class="sub-item">Dashboard 3</span>
 										</a>
 									</li>
 									<li>
-										<a href="../demo4/index.html">
+										<a href="/admin/demo4/index.html">
 											<span class="sub-item">Dashboard 4</span>
 										</a>
 									</li>
 									<li>
-										<a href="../demo5/index.html">
+										<a href="/admin/demo5/index.html">
 											<span class="sub-item">Dashboard 5</span>
 										</a>
 									</li>
 									<li>
-										<a href="../demo6/index.html">
+										<a href="/admin/demo6/index.html">
 											<span class="sub-item">Dashboard 6</span>
 										</a>
 									</li>
 									<li>
-										<a href="../demo7/index.html">
+										<a href="/admin/demo7/index.html">
 											<span class="sub-item">Dashboard 7</span>
 										</a>
 									</li>
 									<li>
-										<a href="../demo8/index.html">
+										<a href="/admin/demo8/index.html">
 											<span class="sub-item">Dashboard 8</span>
 										</a>
 									</li>
 									<li>
-										<a href="../demo9/index.html">
+										<a href="/admin/demo9/index.html">
 											<span class="sub-item">Dashboard 9</span>
 										</a>
 									</li>
@@ -990,16 +990,16 @@
 										<span class="category-title mt-0">Contacts</span>
 										<div class="avatar-group">
 											<div class="avatar">
-												<img src="../assets/img/jm_denis.jpg" alt="..." class="avatar-img rounded-circle border border-white">
+												<img src="/admin/assets/img/jm_denis.jpg" alt="..." class="avatar-img rounded-circle border border-white">
 											</div>
 											<div class="avatar">
-												<img src="../assets/img/chadengle.jpg" alt="..." class="avatar-img rounded-circle border border-white">
+												<img src="/admin/assets/img/chadengle.jpg" alt="..." class="avatar-img rounded-circle border border-white">
 											</div>
 											<div class="avatar">
-												<img src="../assets/img/mlane.jpg" alt="..." class="avatar-img rounded-circle border border-white">
+												<img src="/admin/assets/img/mlane.jpg" alt="..." class="avatar-img rounded-circle border border-white">
 											</div>
 											<div class="avatar">
-												<img src="../assets/img/talha.jpg" alt="..." class="avatar-img rounded-circle border border-white">
+												<img src="/admin/assets/img/talha.jpg" alt="..." class="avatar-img rounded-circle border border-white">
 											</div>
 											<div class="avatar">
 												<span class="avatar-title rounded-circle border border-white">+</span>
@@ -1010,7 +1010,7 @@
 											<div class="user">
 												<a href="#">
 													<div class="avatar avatar-online">
-														<img src="../assets/img/jm_denis.jpg" alt="..." class="avatar-img rounded-circle border border-white">
+														<img src="/admin/assets/img/jm_denis.jpg" alt="..." class="avatar-img rounded-circle border border-white">
 													</div>
 													<div class="user-data">
 														<span class="name">Jimmy Denis</span>
@@ -1021,7 +1021,7 @@
 											<div class="user">
 												<a href="#">
 													<div class="avatar avatar-offline">
-														<img src="../assets/img/chadengle.jpg" alt="..." class="avatar-img rounded-circle border border-white">
+														<img src="/admin/assets/img/chadengle.jpg" alt="..." class="avatar-img rounded-circle border border-white">
 													</div>
 													<div class="user-data">
 														<span class="name">Chad</span>
@@ -1032,7 +1032,7 @@
 											<div class="user">
 												<a href="#">
 													<div class="avatar avatar-offline">
-														<img src="../assets/img/mlane.jpg" alt="..." class="avatar-img rounded-circle border border-white">
+														<img src="/admin/assets/img/mlane.jpg" alt="..." class="avatar-img rounded-circle border border-white">
 													</div>
 													<div class="user-data">
 														<span class="name">John Doe</span>
@@ -1046,7 +1046,7 @@
 											<div class="user">
 												<a href="#">
 													<div class="avatar avatar-online">
-														<img src="../assets/img/jm_denis.jpg" alt="..." class="avatar-img rounded-circle border border-white">
+														<img src="/admin/assets/img/jm_denis.jpg" alt="..." class="avatar-img rounded-circle border border-white">
 													</div>
 													<div class="user-data2">
 														<span class="name">Jimmy Denis</span>
@@ -1057,7 +1057,7 @@
 											<div class="user">
 												<a href="#">
 													<div class="avatar avatar-offline">
-														<img src="../assets/img/chadengle.jpg" alt="..." class="avatar-img rounded-circle border border-white">
+														<img src="/admin/assets/img/chadengle.jpg" alt="..." class="avatar-img rounded-circle border border-white">
 													</div>
 													<div class="user-data2">
 														<span class="name">Chad</span>
@@ -1068,7 +1068,7 @@
 											<div class="user">
 												<a href="#">
 													<div class="avatar avatar-away">
-														<img src="../assets/img/talha.jpg" alt="..." class="avatar-img rounded-circle border border-white">
+														<img src="/admin/assets/img/talha.jpg" alt="..." class="avatar-img rounded-circle border border-white">
 													</div>
 													<div class="user-data2">
 														<span class="name">Talha</span>
@@ -1085,7 +1085,7 @@
 							<div class="messages-title">
 								<div class="user">
 									<div class="avatar avatar-offline float-right ml-2">
-										<img src="../assets/img/chadengle.jpg" alt="..." class="avatar-img rounded-circle border border-white">
+										<img src="/admin/assets/img/chadengle.jpg" alt="..." class="avatar-img rounded-circle border border-white">
 									</div>
 									<span class="name">Chad</span>
 									<span class="last-active">Active 2h ago</span>
@@ -1098,7 +1098,7 @@
 								<div class="message-content-wrapper">
 									<div class="message message-in">
 										<div class="avatar avatar-sm">
-											<img src="../assets/img/chadengle.jpg" alt="..." class="avatar-img rounded-circle border border-white">
+											<img src="/admin/assets/img/chadengle.jpg" alt="..." class="avatar-img rounded-circle border border-white">
 										</div>
 										<div class="message-body">
 											<div class="message-content">
@@ -1129,7 +1129,7 @@
 								<div class="message-content-wrapper">
 									<div class="message message-in">
 										<div class="avatar avatar-sm">
-											<img src="../assets/img/chadengle.jpg" alt="..." class="avatar-img rounded-circle border border-white">
+											<img src="/admin/assets/img/chadengle.jpg" alt="..." class="avatar-img rounded-circle border border-white">
 										</div>
 										<div class="message-body">
 											<div class="message-content">
@@ -1162,7 +1162,7 @@
 								<div class="message-content-wrapper">
 									<div class="message message-in">
 										<div class="avatar avatar-sm">
-											<img src="../assets/img/chadengle.jpg" alt="..." class="avatar-img rounded-circle border border-white">
+											<img src="/admin/assets/img/chadengle.jpg" alt="..." class="avatar-img rounded-circle border border-white">
 										</div>
 										<div class="message-body">
 											<div class="message-content">
@@ -1437,19 +1437,19 @@
 		</div>
 	</div>
 	<!--   Core JS Files   -->
-	<script src="../assets/js/core/jquery.3.2.1.min.js"></script>
-	<script src="../assets/js/core/popper.min.js"></script>
-	<script src="../assets/js/core/bootstrap.min.js"></script>
+	<script src="/admin/assets/js/core/jquery.3.2.1.min.js"></script>
+	<script src="/admin/assets/js/core/popper.min.js"></script>
+	<script src="/admin/assets/js/core/bootstrap.min.js"></script>
 	<!-- jQuery UI -->
-	<script src="../assets/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
-	<script src="../assets/js/plugin/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
+	<script src="/admin/assets/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+	<script src="/admin/assets/js/plugin/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
 	<!-- Bootstrap Toggle -->
-	<script src="../assets/js/plugin/bootstrap-toggle/bootstrap-toggle.min.js"></script>
+	<script src="/admin/assets/js/plugin/bootstrap-toggle/bootstrap-toggle.min.js"></script>
 	<!-- jQuery Scrollbar -->
-	<script src="../assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+	<script src="/admin/assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
 	<!-- Atlantis JS -->
-	<script src="../assets/js/atlantis.min.js"></script>
+	<script src="/admin/assets/js/atlantis.min.js"></script>
 	<!-- Atlantis DEMO methods, don't include it in your project! -->
-	<script src="../assets/js/setting-demo.js"></script>
+	<script src="/admin/assets/js/setting-demo.js"></script>
 </body>
 </html>
