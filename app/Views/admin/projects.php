@@ -30,11 +30,11 @@
 		<div class="main-header">
 			<!-- Logo Header -->
 			<div class="logo-header" data-background-color="blue">
-				
-				<a href="index.html" class="logo">
-					<img src="/admin/assets/img/logo.svg" alt="navbar brand" class="navbar-brand">
+				<a href="/admin/index" class="logo">
+					<img src="/admin/assets/img/skyx-logo.svg" alt="navbar brand" class="navbar-brand">
 				</a>
-				<button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse" data-target="collapse" aria-expanded="false" aria-label="Toggle navigation">
+				<button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse"
+					data-target="collapse" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon">
 						<i class="icon-menu"></i>
 					</span>
@@ -50,8 +50,8 @@
 
 			<!-- Navbar Header -->
 			<nav class="navbar navbar-header navbar-expand-lg" data-background-color="blue2">
-				
 				<div class="container-fluid">
+					<!-- Search -->
 					<div class="collapse" id="search-nav">
 						<form class="navbar-left navbar-form nav-search mr-md-3">
 							<div class="input-group">
@@ -66,18 +66,22 @@
 					</div>
 					<ul class="navbar-nav topbar-nav ml-md-auto align-items-center">
 						<li class="nav-item toggle-nav-search hidden-caret">
-							<a class="nav-link" data-toggle="collapse" href="#search-nav" role="button" aria-expanded="false" aria-controls="search-nav">
+							<a class="nav-link" data-toggle="collapse" href="#search-nav" role="button"
+								aria-expanded="false" aria-controls="search-nav">
 								<i class="fa fa-search"></i>
 							</a>
 						</li>
+						<!-- Messages -->
 						<li class="nav-item dropdown hidden-caret">
-							<a class="nav-link dropdown-toggle" href="#" id="messageDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<a class="nav-link dropdown-toggle" href="#" id="messageDropdown" role="button"
+								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 								<i class="fa fa-envelope"></i>
 							</a>
-							<ul class="dropdown-menu messages-notif-box animated fadeIn" aria-labelledby="messageDropdown">
+							<ul class="dropdown-menu messages-notif-box animated fadeIn"
+								aria-labelledby="messageDropdown">
 								<li>
 									<div class="dropdown-title d-flex justify-content-between align-items-center">
-										Messages 									
+										Messages
 										<a href="#" class="small">Mark all as read</a>
 									</div>
 								</li>
@@ -85,7 +89,7 @@
 									<div class="message-notif-scroll scrollbar-outer">
 										<div class="notif-center">
 											<a href="#">
-												<div class="notif-img"> 
+												<div class="notif-img">
 													<img src="/admin/assets/img/jm_denis.jpg" alt="Img Profile">
 												</div>
 												<div class="notif-content">
@@ -93,11 +97,11 @@
 													<span class="block">
 														How are you ?
 													</span>
-													<span class="time">5 minutes ago</span> 
+													<span class="time">5 minutes ago</span>
 												</div>
 											</a>
 											<a href="#">
-												<div class="notif-img"> 
+												<div class="notif-img">
 													<img src="/admin/assets/img/chadengle.jpg" alt="Img Profile">
 												</div>
 												<div class="notif-content">
@@ -105,11 +109,11 @@
 													<span class="block">
 														Ok, Thanks !
 													</span>
-													<span class="time">12 minutes ago</span> 
+													<span class="time">12 minutes ago</span>
 												</div>
 											</a>
 											<a href="#">
-												<div class="notif-img"> 
+												<div class="notif-img">
 													<img src="/admin/assets/img/mlane.jpg" alt="Img Profile">
 												</div>
 												<div class="notif-content">
@@ -117,11 +121,11 @@
 													<span class="block">
 														Ready for the meeting today...
 													</span>
-													<span class="time">12 minutes ago</span> 
+													<span class="time">12 minutes ago</span>
 												</div>
 											</a>
 											<a href="#">
-												<div class="notif-img"> 
+												<div class="notif-img">
 													<img src="/admin/assets/img/talha.jpg" alt="Img Profile">
 												</div>
 												<div class="notif-content">
@@ -129,19 +133,22 @@
 													<span class="block">
 														Hi, Apa Kabar ?
 													</span>
-													<span class="time">17 minutes ago</span> 
+													<span class="time">17 minutes ago</span>
 												</div>
 											</a>
 										</div>
 									</div>
 								</li>
 								<li>
-									<a class="see-all" href="javascript:void(0);">See all messages<i class="fa fa-angle-right"></i> </a>
+									<a class="see-all" href="javascript:void(0);">See all messages<i
+											class="fa fa-angle-right"></i> </a>
 								</li>
 							</ul>
 						</li>
+						<!-- Notifications -->
 						<li class="nav-item dropdown hidden-caret">
-							<a class="nav-link dropdown-toggle" href="#" id="notifDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<a class="nav-link dropdown-toggle" href="#" id="notifDropdown" role="button"
+								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 								<i class="fa fa-bell"></i>
 								<span class="notification">4</span>
 							</a>
@@ -150,52 +157,58 @@
 									<div class="dropdown-title">You have 4 new notification</div>
 								</li>
 								<li>
-									<div class="notif-center">
-										<a href="#">
-											<div class="notif-icon notif-primary"> <i class="fa fa-user-plus"></i> </div>
-											<div class="notif-content">
-												<span class="block">
-													New user registered
-												</span>
-												<span class="time">5 minutes ago</span> 
-											</div>
-										</a>
-										<a href="#">
-											<div class="notif-icon notif-success"> <i class="fa fa-comment"></i> </div>
-											<div class="notif-content">
-												<span class="block">
-													Rahmad commented on Admin
-												</span>
-												<span class="time">12 minutes ago</span> 
-											</div>
-										</a>
-										<a href="#">
-											<div class="notif-img"> 
-												<img src="/admin/assets/img/profile2.jpg" alt="Img Profile">
-											</div>
-											<div class="notif-content">
-												<span class="block">
-													Reza send messages to you
-												</span>
-												<span class="time">12 minutes ago</span> 
-											</div>
-										</a>
-										<a href="#">
-											<div class="notif-icon notif-danger"> <i class="fa fa-heart"></i> </div>
-											<div class="notif-content">
-												<span class="block">
-													Farrah liked Admin
-												</span>
-												<span class="time">17 minutes ago</span> 
-											</div>
-										</a>
+									<div class="notif-scroll scrollbar-outer">
+										<div class="notif-center">
+											<a href="#">
+												<div class="notif-icon notif-primary"> <i class="fa fa-user-plus"></i>
+												</div>
+												<div class="notif-content">
+													<span class="block">
+														New user registered
+													</span>
+													<span class="time">5 minutes ago</span>
+												</div>
+											</a>
+											<a href="#">
+												<div class="notif-icon notif-success"> <i class="fa fa-comment"></i>
+												</div>
+												<div class="notif-content">
+													<span class="block">
+														Rahmad commented on Admin
+													</span>
+													<span class="time">12 minutes ago</span>
+												</div>
+											</a>
+											<a href="#">
+												<div class="notif-img">
+													<img src="/admin/assets/img/profile2.jpg" alt="Img Profile">
+												</div>
+												<div class="notif-content">
+													<span class="block">
+														Reza send messages to you
+													</span>
+													<span class="time">12 minutes ago</span>
+												</div>
+											</a>
+											<a href="#">
+												<div class="notif-icon notif-danger"> <i class="fa fa-heart"></i> </div>
+												<div class="notif-content">
+													<span class="block">
+														Farrah liked Admin
+													</span>
+													<span class="time">17 minutes ago</span>
+												</div>
+											</a>
+										</div>
 									</div>
 								</li>
 								<li>
-									<a class="see-all" href="javascript:void(0);">See all notifications<i class="fa fa-angle-right"></i> </a>
+									<a class="see-all" href="javascript:void(0);">See all notifications<i
+											class="fa fa-angle-right"></i> </a>
 								</li>
 							</ul>
 						</li>
+						<!-- Quick Menu -->
 						<li class="nav-item dropdown hidden-caret">
 							<a class="nav-link" data-toggle="dropdown" href="#" aria-expanded="false">
 								<i class="fas fa-layer-group"></i>
@@ -266,20 +279,25 @@
 								<i class="fa fa-th"></i>
 							</a>
 						</li>
+						<!-- Profile -->
 						<li class="nav-item dropdown hidden-caret">
-							<a class="dropdown-toggle profile-pic" data-toggle="dropdown" href="#" aria-expanded="false">
+							<a class="dropdown-toggle profile-pic" data-toggle="dropdown" href="#"
+								aria-expanded="false">
 								<div class="avatar-sm">
-									<img src="/admin/assets/img/profile.jpg" alt="..." class="avatar-img rounded-circle">
+									<img src="/admin/assets/img/profile.jpg" alt="..."
+										class="avatar-img rounded-circle">
 								</div>
 							</a>
 							<ul class="dropdown-menu dropdown-user animated fadeIn">
 								<div class="dropdown-user-scroll scrollbar-outer">
 									<li>
 										<div class="user-box">
-											<div class="avatar-lg"><img src="/admin/assets/img/profile.jpg" alt="image profile" class="avatar-img rounded"></div>
+											<div class="avatar-lg"><img src="/admin/assets/img/profile.jpg"
+													alt="image profile" class="avatar-img rounded"></div>
 											<div class="u-text">
 												<h4>Hizrian</h4>
-												<p class="text-muted">hello@example.com</p><a href="profile.html" class="btn btn-xs btn-secondary btn-sm">View Profile</a>
+												<p class="text-muted">hello@example.com</p><a href="profile.html"
+													class="btn btn-xs btn-secondary btn-sm">View Profile</a>
 											</div>
 										</div>
 									</li>
@@ -303,9 +321,10 @@
 		</div>
 
 		<!-- Sidebar -->
-		<div class="sidebar sidebar-style-2">			
+		<div class="sidebar sidebar-style-2">
 			<div class="sidebar-wrapper scrollbar scrollbar-inner">
 				<div class="sidebar-content">
+					<!-- User -->
 					<div class="user">
 						<div class="avatar-sm float-left mr-2">
 							<img src="/admin/assets/img/profile.jpg" alt="..." class="avatar-img rounded-circle">
@@ -342,68 +361,14 @@
 						</div>
 					</div>
 					<ul class="nav nav-primary">
-						<li class="nav-item">
-							<a data-toggle="collapse" href="#dashboard" class="collapsed" aria-expanded="false">
+						<!-- Dashboard -->
+						<li class="nav-item active">
+							<a href="/admin/index">
 								<i class="fas fa-home"></i>
 								<p>Dashboard</p>
-								<span class="caret"></span>
 							</a>
-							<div class="collapse" id="dashboard">
-								<ul class="nav nav-collapse">
-									<li>
-										<a href="/admin/demo1/index.html">
-											<span class="sub-item">Dashboard 1</span>
-										</a>
-									</li>
-									<li>
-										<a href="/admin/demo2/index.html">
-											<span class="sub-item">Dashboard 2</span>
-										</a>
-									</li>
-									<li>
-										<a href="/admin/demo3/index.html">
-											<span class="sub-item">Dashboard 3</span>
-										</a>
-									</li>
-									<li>
-										<a href="/admin/demo4/index.html">
-											<span class="sub-item">Dashboard 4</span>
-										</a>
-									</li>
-									<li>
-										<a href="/admin/demo5/index.html">
-											<span class="sub-item">Dashboard 5</span>
-										</a>
-									</li>
-									<li>
-										<a href="/admin/demo6/index.html">
-											<span class="sub-item">Dashboard 6</span>
-										</a>
-									</li>
-									<li>
-										<a href="/admin/demo7/index.html">
-											<span class="sub-item">Dashboard 7</span>
-										</a>
-									</li>
-									<li>
-										<a href="/admin/demo8/index.html">
-											<span class="sub-item">Dashboard 8</span>
-										</a>
-									</li>
-									<li>
-										<a href="/admin/demo9/index.html">
-											<span class="sub-item">Dashboard 9</span>
-										</a>
-									</li>
-								</ul>
-							</div>
 						</li>
-						<li class="nav-section">
-							<span class="sidebar-mini-icon">
-								<i class="fa fa-ellipsis-h"></i>
-							</span>
-							<h4 class="text-section">Components</h4>
-						</li>
+						<!-- Base -->
 						<li class="nav-item">
 							<a data-toggle="collapse" href="#base">
 								<i class="fas fa-layer-group"></i>
@@ -480,6 +445,7 @@
 								</ul>
 							</div>
 						</li>
+						<!-- Sidebar Layouts -->
 						<li class="nav-item">
 							<a data-toggle="collapse" href="#sidebarLayouts">
 								<i class="fas fa-th-list"></i>
@@ -516,6 +482,7 @@
 								</ul>
 							</div>
 						</li>
+						<!-- Forms -->
 						<li class="nav-item">
 							<a data-toggle="collapse" href="#forms">
 								<i class="fas fa-pen-square"></i>
@@ -557,6 +524,7 @@
 								</ul>
 							</div>
 						</li>
+						<!-- Tables -->
 						<li class="nav-item">
 							<a data-toggle="collapse" href="#tables">
 								<i class="fas fa-table"></i>
@@ -578,6 +546,7 @@
 								</ul>
 							</div>
 						</li>
+						<!-- Maps -->
 						<li class="nav-item">
 							<a data-toggle="collapse" href="#maps">
 								<i class="fas fa-map-marker-alt"></i>
@@ -604,6 +573,7 @@
 								</ul>
 							</div>
 						</li>
+						<!-- Chart -->
 						<li class="nav-item">
 							<a data-toggle="collapse" href="#charts">
 								<i class="far fa-chart-bar"></i>
@@ -625,6 +595,7 @@
 								</ul>
 							</div>
 						</li>
+						<!-- Calendar -->
 						<li class="nav-item">
 							<a href="calendar.html">
 								<i class="far fa-calendar-alt"></i>
@@ -632,6 +603,7 @@
 								<span class="badge badge-info">1</span>
 							</a>
 						</li>
+						<!-- Widgets -->
 						<li class="nav-item">
 							<a href="widgets.html">
 								<i class="fas fa-desktop"></i>
@@ -639,12 +611,7 @@
 								<span class="badge badge-success">4</span>
 							</a>
 						</li>
-						<li class="nav-section">
-							<span class="sidebar-mini-icon">
-								<i class="fa fa-ellipsis-h"></i>
-							</span>
-							<h4 class="text-section">Snippets</h4>
-						</li>
+						<!-- Emails -->
 						<li class="nav-item">
 							<a data-toggle="collapse" href="#email-nav">
 								<i class="far fa-envelope"></i>
@@ -671,6 +638,7 @@
 								</ul>
 							</div>
 						</li>
+						<!-- Messages App -->
 						<li class="nav-item">
 							<a data-toggle="collapse" href="#messages-app-nav">
 								<i class="far fa-paper-plane"></i>
@@ -692,13 +660,15 @@
 								</ul>
 							</div>
 						</li>
-						<li class="nav-item active">
-							<a href="projects.html">
+						<!-- Projects (Keep)-->
+						<li class="nav-item">
+							<a href="/admin/projects">
 								<i class="fas fa-file-signature"></i>
 								<p>Projects</p>
-								<span class="badge badge-count">5</span>
+								<!-- <span class="badge badge-count">5</span> -->
 							</a>
 						</li>
+						<!-- Boards -->
 						<li class="nav-item">
 							<a href="boards.html">
 								<i class="fas fa-th-list"></i>
@@ -706,6 +676,7 @@
 								<span class="badge badge-count">4</span>
 							</a>
 						</li>
+						<!-- Invoices -->
 						<li class="nav-item">
 							<a href="invoice.html">
 								<i class="fas fa-file-invoice-dollar"></i>
@@ -713,6 +684,7 @@
 								<span class="badge badge-count">6</span>
 							</a>
 						</li>
+						<!-- Pricing -->
 						<li class="nav-item">
 							<a href="pricing.html">
 								<i class="fas fa-tag"></i>
@@ -720,13 +692,15 @@
 								<span class="badge badge-count">6</span>
 							</a>
 						</li>
+						<!-- Faqs (Keep)-->
 						<li class="nav-item">
-							<a href="faqs.html">
+							<a href="/admin/faqs">
 								<i class="far fa-question-circle"></i>
 								<p>Faqs</p>
 								<span class="badge badge-count">6</span>
 							</a>
 						</li>
+						<!-- Custom Pages -->
 						<li class="nav-item">
 							<a data-toggle="collapse" href="#custompages">
 								<i class="fas fa-paint-roller"></i>
@@ -763,6 +737,7 @@
 								</ul>
 							</div>
 						</li>
+						<!-- Menu Levels -->
 						<li class="nav-item">
 							<a data-toggle="collapse" href="#submenu">
 								<i class="fas fa-bars"></i>
@@ -818,8 +793,8 @@
 				</div>
 			</div>
 		</div>
-		<!-- End Sidebar -->
 
+		<!-- MAin Panel -->
 		<div class="main-panel">
 			<div class="container container-full">
 				<div class="page-navs bg-white">

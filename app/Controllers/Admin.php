@@ -8,8 +8,7 @@ class Admin extends BaseController
     {
         $data = [
             'title' => 'Dashboard Admin | SKYX',
-            'text' => 4,
-            'value' => 4
+            'tab' => 'dashboard'
         ];
 
         return view('admin/index', $data);
@@ -18,7 +17,8 @@ class Admin extends BaseController
     public function projects()
     {
         $data = [
-            'title' => 'Projects | SKYX'
+            'title' => 'Projects | SKYX',
+            'tab' => 'projects'
         ];
 
         return view('admin/projects', $data);
@@ -27,7 +27,8 @@ class Admin extends BaseController
     public function faqs()
     {
         $data = [
-            'title' => 'FAQs | SKYX'
+            'title' => 'FAQs | SKYX',
+            'tab' => 'faqs'
         ];
 
         return view('admin/faqs', $data);

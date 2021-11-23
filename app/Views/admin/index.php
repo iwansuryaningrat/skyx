@@ -32,6 +32,21 @@
 
 	<!-- CSS Just for demo purpose, don't include it in your project -->
 	<link rel="stylesheet" href="/admin/assets/css/demo.css">
+
+	<style>
+		.logo-header a {
+			width: 100%;
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.logo-header a img {
+			/* width: 100%; */
+			height: 48px;
+			/* margin: auto; */
+		}
+	</style>
 </head>
 
 <body>
@@ -674,7 +689,7 @@
 							<a href="/admin/projects">
 								<i class="fas fa-file-signature"></i>
 								<p>Projects</p>
-								<span class="badge badge-count">5</span>
+								<!-- <span class="badge badge-count">5</span> -->
 							</a>
 						</li>
 						<!-- Boards -->
@@ -804,6 +819,7 @@
 		</div>
 		<!-- End Sidebar -->
 
+		<!-- Main Panels -->
 		<div class="main-panel">
 			<div class="container">
 				<div class="panel-header bg-primary-gradient">
@@ -848,20 +864,6 @@
 								<div class="card-header">
 									<div class="card-head-row">
 										<div class="card-title">User Statistics</div>
-										<div class="card-tools">
-											<a href="#" class="btn btn-info btn-border btn-round btn-sm mr-2">
-												<span class="btn-label">
-													<i class="fa fa-pencil"></i>
-												</span>
-												Export
-											</a>
-											<a href="#" class="btn btn-info btn-border btn-round btn-sm">
-												<span class="btn-label">
-													<i class="fa fa-print"></i>
-												</span>
-												Print
-											</a>
-										</div>
 									</div>
 								</div>
 								<div class="card-body">
@@ -890,7 +892,8 @@
 										</div>
 									</div>
 									<p class="card-category">
-										Map of the distribution of users around the world</p>
+										Map of the distribution of users around the world
+									</p>
 								</div>
 								<div class="card-body">
 									<div class="row">
@@ -1557,10 +1560,10 @@
 		Circles.create({
 			id: 'circles-2',
 			radius: 45,
-			value: <?= $value; ?>,
+			value: 10,
 			maxValue: 100,
 			width: 7,
-			text: <?= $text; ?>,
+			text: 10,
 			colors: ['#f1f1f1', '#2BB930'],
 			duration: 400,
 			wrpClass: 'circles-wrp',
