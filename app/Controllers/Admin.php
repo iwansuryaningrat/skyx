@@ -33,4 +33,14 @@ class Admin extends BaseController
 
         return view('admin/faqs', $data);
     }
+
+    public function users()
+    {
+        $data = [
+            'title' => 'Users Data | SKYX',
+            'tab' => 'users'
+        ];
+
+        return view('admin/datausers', $data);
+    }
 }
