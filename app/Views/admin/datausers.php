@@ -18,6 +18,21 @@
 		});
 	</script>
 
+    <style>
+		.logo-header a {
+			width: 100%;
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.logo-header a img {
+			/* width: 100%; */
+			height: 48px;
+			/* margin: auto; */
+		}
+	</style>
+
 	<!-- CSS Files -->
 	<link rel="stylesheet" href="/admin/assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="/admin/assets/css/atlantis.css">
