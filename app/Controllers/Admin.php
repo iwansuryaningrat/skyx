@@ -37,7 +37,7 @@ class Admin extends BaseController
     public function users()
     {
         $data = [
-            'title' => 'Users Data | SKYX',
+            'title' => 'Data Users | SKYX',
             'tab' => 'users'
         ];
 
