@@ -389,6 +389,13 @@
 								<p>Users</p>
 							</a>
 						</li>
+						<!-- Teams -->
+						<li class="nav-item <?php if ($tab == "teams") echo "active"; ?>">
+							<a href="/admin/teams">
+								<i class="fas fa-id-card"></i>
+								<p>Teams</p>
+							</a>
+						</li>
 						<!-- Projects (Keep)-->
 						<li class="nav-item <?php if ($tab == "projects") echo "active"; ?>">
 							<a href="/admin/projects">
