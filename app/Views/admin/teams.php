@@ -530,9 +530,16 @@
 													<td>Tiger Nixon</td>
 													<td>System Architect</td>
 													<td>System Architect</td>
-													<td>Edinburgh</td>
 													<td>
 														<!-- Sosmed Icon -->
+														<div class="form-button-action">
+															<button type="button" data-toggle="tooltip" title="" class="btn btn-link btn-primary btn-lg" data-original-title="Instagram">
+																<i class="fab fa-instagram"></i>
+															</button>
+															<button type="button" data-toggle="tooltip" title="" class="btn btn-link btn-primary btn-lg" data-original-title="Linkedin">
+																<i class="fab fa-linkedin"></i>
+															</button>
+														</div>
 													</td>
 													<td>
 														<div class="form-button-action">
@@ -549,9 +556,16 @@
 													<td>Garrett Winters</td>
 													<td>Garrett Winters</td>
 													<td>Accountant</td>
-													<td>Tokyo</td>
 													<td>
 														<!-- Sosmed Icon -->
+														<div class="form-button-action">
+															<button type="button" data-toggle="tooltip" title="" class="btn btn-link btn-primary btn-lg" data-original-title="Instagram">
+																<i class="fa fa-instagram"></i>
+															</button>
+															<button type="button" data-toggle="tooltip" title="" class="btn btn-link btn-primary btn-lg" data-original-title="Linkedin">
+																<i class="fa fa-linkedin"></i>
+															</button>
+														</div>
 													</td>
 													<td>
 														<div class="form-button-action">
