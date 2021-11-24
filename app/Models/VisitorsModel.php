@@ -102,7 +102,7 @@ class VisitorsModel extends Model
         $datavisitors = $result;
 
         $databulan = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
-        $databulankumilatif = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+        $databulankumulatif = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 
         foreach($datavisitors as $visitors) 
         {
@@ -149,11 +149,11 @@ class VisitorsModel extends Model
 
         for ($i=0; $i < 12; $i++) { 
             for ($j=0; $j <= $i; $j++) { 
-                $databulankumilatif[$i] += $databulan[$j]; 
+                $databulankumulatif[$i] += $databulan[$j]; 
             }
         }
 
-        return $databulankumilatif;
+        return $databulankumulatif;
     }
 
 }
