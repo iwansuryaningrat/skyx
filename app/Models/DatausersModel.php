@@ -27,40 +27,40 @@ class DatausersModel extends Model
             $month = $time->getMonth();
             if ($month == '1')
             {
-                $databulan[2]++;
+                $databulan[2] += 1;
             } else if ($month == '2')
             {
-                $databulan[3]++;
+                $databulan[3] += 1;
             } else if ($month == '3')
             {
-                $databulan[4]++;
+                $databulan[4] += 1;
             } else if ($month == '4')
             {
-                $databulan[5]++;                
+                $databulan[5] += 1;                
             } else if ($month == '5')
             {
-                $databulan[6]++;
+                $databulan[6] += 1;
             } else if ($month == '6')
             {
-                $databulan[7]++;
+                $databulan[7] += 1;
             } else if ($month == '7')
             {
-                $databulan[8]++;
+                $databulan[8] += 1;
             } else if ($month == '8')
             {
-                $databulan[9]++;
+                $databulan[9] += 1;
             } else if ($month == '9')
             {
-                $databulan[10]++;
+                $databulan[10] += 1;
             } else if ($month == '10')
             {
-                $databulan[11]++;
+                $databulan[11] += 1;
             } else if ($month == '11')
             {
                 $databulan[0] += 1;
             } else if ($month == '12')
             {
-                $databulan[1]++;
+                $databulan[1] += 1;
             } 
         }
 
@@ -94,40 +94,40 @@ class DatausersModel extends Model
             $month = $time->getMonth();
             if ($month == '1')
             {
-                $databulan[2]++;
+                $databulan[2] += 1;
             } else if ($month == '2')
             {
-                $databulan[3]++;
+                $databulan[3] += 1;
             } else if ($month == '3')
             {
-                $databulan[4]++;
+                $databulan[4] += 1;
             } else if ($month == '4')
             {
-                $databulan[5]++;                
+                $databulan[5] += 1;                
             } else if ($month == '5')
             {
-                $databulan[6]++;
+                $databulan[6] += 1;
             } else if ($month == '6')
             {
-                $databulan[7]++;
+                $databulan[7] += 1;
             } else if ($month == '7')
             {
-                $databulan[8]++;
+                $databulan[8] += 1;
             } else if ($month == '8')
             {
-                $databulan[9]++;
+                $databulan[9] += 1;
             } else if ($month == '9')
             {
-                $databulan[10]++;
+                $databulan[10] += 1;
             } else if ($month == '10')
             {
-                $databulan[11]++;
+                $databulan[11] += 1;
             } else if ($month == '11')
             {
                 $databulan[0] += 1;
             } else if ($month == '12')
             {
-                $databulan[1]++;
+                $databulan[1] += 1;
             } 
         }
 
@@ -158,7 +158,7 @@ class DatausersModel extends Model
             $month = $time->getMonth();
             if ($month == $thisMonth)
             {
-                $data++;
+                $data += 1;
             }
         }
 

@@ -35,17 +35,27 @@ class Admin extends BaseController
 
         // Mengambil data new subscribers (subscribers bulan ini)
         $newSubscribers = $this->dataModel->getNewSubscribers();
-        
+
+        // Mengambil jumlah visitors hari ini
+        $visitors = $this->visitorsModel->getTodayVisitors();
+
+        // Mengambil data visitors bulanan
+        $visitorsMonthly = $this->visitorsModel->getBulanan();
+
+        // Mengambil data visitors bulanan
+        $visitorsKumulatif = $this->visitorsModel->getBulananKumulatif();
+                
         $data = [
             'title' => 'Dashboard Admin | SKYX',
             'tab' => 'dashboard',
             'databulan' => $databulan,
             'jumlah' => $jumlah,
             'kumulatif' => $databulanankumilatif,
-            'newSubscribers' => $newSubscribers
+            'newSubscribers' => $newSubscribers,
+            'visitors' => $visitors,
+            'visitorsMonthly' => $visitorsMonthly,
+            'visitorsKumulatif' => $visitorsKumulatif
         ];
-
-        // echo $databulan;
 
         return view('admin/index', $data);
     }

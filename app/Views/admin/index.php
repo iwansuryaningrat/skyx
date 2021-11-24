@@ -739,7 +739,7 @@
 			id: 'new-subscribers',
 			radius: 45,
 			value: <?= $newSubscribers; ?>,
-			maxValue: 100,
+			maxValue: 10000,
 			width: 7,
 			text: <?= $newSubscribers; ?>,
 			colors: ['#f1f1f1', '#FF9E27'],
@@ -753,10 +753,10 @@
 		Circles.create({
 			id: 'today-visitors',
 			radius: 45,
-			value: 10,
-			maxValue: 100,
+			value: <?= $visitors; ?>,
+			maxValue: 10000,
 			width: 7,
-			text: 10,
+			text: <?= $visitors; ?>,
 			colors: ['#f1f1f1', '#2BB930'],
 			duration: 400,
 			wrpClass: 'circles-wrp',
@@ -769,7 +769,7 @@
 			id: 'total-subscribers',
 			radius: 45,
 			value: <?= $jumlah; ?>,
-			maxValue: 100,
+			maxValue: 10000,
 			width: 7,
 			text: <?= $jumlah; ?>,
 			colors: ['#f1f1f1', '#F25961'],
@@ -810,7 +810,7 @@
 					legendColor: '#fdaf4b',
 					fill: true,
 					borderWidth: 2,
-					data: [256, 230, 245, 287, 240, 250, 230, 295, 331, 431, 456, 521]
+					data: [<?php for ($i = 0; $i < 12; $i++) {echo $visitorsMonthly[$i].',';}?>]
 				}, {
 					label: "Total Subscribers",
 					borderColor: '#177dff',
@@ -821,6 +821,16 @@
 					fill: true,
 					borderWidth: 2,
 					data: [<?php for ($i = 0; $i < 12; $i++) {echo $kumulatif[$i].',';}?>]
+				}, {
+					label: "Total Visitors",
+					borderColor: '#00FFFF',
+					pointBackgroundColor: 'rgba(0, 255, 255, 0.6)',
+					pointRadius: 0,
+					backgroundColor: 'rgba(0, 255, 255, 0.4)',
+					legendColor: '#00FFFF',
+					fill: true,
+					borderWidth: 2,
+					data: [<?php for ($i = 0; $i < 12; $i++) {echo $visitorsKumulatif[$i].',';}?>]
 				}]
 			},
 			options: {
