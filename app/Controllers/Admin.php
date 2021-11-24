@@ -52,7 +52,7 @@ class Admin extends BaseController
     public function users()
     {
         $datausers = $this->dataModel->findAll();
-        dd($datausers);
+        
         $data = [
             'title' => 'Data Users | SKYX',
             'tab' => 'users',
