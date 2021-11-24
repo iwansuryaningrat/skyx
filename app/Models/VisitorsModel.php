@@ -156,4 +156,24 @@ class VisitorsModel extends Model
         return $databulankumulatif;
     }
 
+    public function getDataIP($ip, $date)
+    {
+        $db = \Config\Database::connect();
+        $builder = $db->table('visitors');
+        $query   = $builder->getWhere(['ip' => $ip, 'date' => $date], null, null, false);
+        $result  = $query->getResultArray();
+
+        return $result;
+    }
+
+    public function insertDataIP($data)
+    {
+
+    }
+
+    public function updateDataIP($data)
+    {
+        
+    }
+
 }
