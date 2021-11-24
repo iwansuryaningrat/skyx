@@ -406,14 +406,21 @@
 								<p>Teams</p>
 							</a>
 						</li>
-						<!-- Projects (Keep)-->
+						<!-- Projects -->
 						<li class="nav-item <?php if ($tab == "projects") echo "active"; ?>">
 							<a href="/admin/projects">
 								<i class="fas fa-file-signature"></i>
 								<p>Projects</p>
 							</a>
 						</li>
-						<!-- Faqs (Keep)-->
+						<!-- Articles -->
+						<li class="nav-item <?php if ($tab == "artikel") echo "active"; ?>">
+							<a href="/admin/artikel">
+								<i class="fas fa-newspaper"></i>
+								<p>Artikel</p>
+							</a>
+						</li>
+						<!-- Faqs -->
 						<li class="nav-item <?php if ($tab == "faqs") echo "active"; ?>">
 							<a href="/admin/faqs">
 								<i class="far fa-question-circle"></i>
