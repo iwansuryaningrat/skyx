@@ -2,8 +2,23 @@
 
 namespace App\Controllers;
 
+use App\Models\DatausersModel;
+use App\Models\TeamsModel;
+use App\Models\VisitorsModel;
+
 class Admin extends BaseController
 {
+    protected $dataModel;
+    protected $teamsModel;
+    protected $visitorsModel;
+
+    public function __construct()
+    {
+        $this->dataModel = new DatausersModel();
+        $this->teamsModel = new TeamsModel();
+        $this->visitorsModel = new VisitorsModel();
+    }
+
     public function index()
     {
         $data = [
@@ -36,9 +51,12 @@ class Admin extends BaseController
 
     public function users()
     {
+        $datausers = $this->dataModel->findAll();
+        dd($datausers);
         $data = [
             'title' => 'Data Users | SKYX',
-            'tab' => 'users'
+            'tab' => 'users',
+            'users' => $datausers
         ];
 
         return view('admin/datausers', $data);
