@@ -447,6 +447,8 @@
 					</div>
 				</div>
 				<div class="page-inner mt--5">
+
+					<!-- Overall statistics -->
 					<div class="row mt--2">
 						<div class="col-md-2"></div>
 						<div class="col-md-8">
@@ -456,22 +458,27 @@
 									<div class="card-category">Daily information about statistics in system</div>
 									<div class="d-flex flex-wrap justify-content-around pb-2 pt-4">
 										<div class="px-2 pb-2 pb-md-0 text-center">
-											<div id="circles-1"></div>
-											<h6 class="fw-bold mt-3 mb-0">New Users</h6>
+											<div id="new-subscribers"></div>
+											<!-- Todays Subscribers -->
+											<h6 class="fw-bold mt-3 mb-0">New Subscribers</h6>
 										</div>
 										<div class="px-2 pb-2 pb-md-0 text-center">
-											<div id="circles-2"></div>
-											<h6 class="fw-bold mt-3 mb-0">Online Users</h6>
+											<div id="today-visitors"></div>
+											<!-- Todays Visitors -->
+											<h6 class="fw-bold mt-3 mb-0">Today Visitors</h6>
 										</div>
 										<div class="px-2 pb-2 pb-md-0 text-center">
-											<div id="circles-3"></div>
-											<h6 class="fw-bold mt-3 mb-0">Subscribers</h6>
+											<div id="total-subscribers"></div>
+											<!-- Total Subscribers -->
+											<h6 class="fw-bold mt-3 mb-0">Total Subscribers</h6>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
+
+					<!-- User Statistics -->
 					<div class="row">
 						<div class="col-md-12">
 							<div class="card">
@@ -489,6 +496,8 @@
 							</div>
 						</div>
 					</div>
+
+					<!-- Users Geolocation -->
 					<div class="row row-card-no-pd">
 						<div class="col-md-12">
 							<div class="card">
@@ -727,12 +736,12 @@
 	<script src="/admin/assets/js/demo.js"></script>
 	<script>
 		Circles.create({
-			id: 'circles-1',
+			id: 'new-subscribers',
 			radius: 45,
-			value: 60,
+			value: <?= $newSubscribers; ?>,
 			maxValue: 100,
 			width: 7,
-			text: 5,
+			text: <?= $newSubscribers; ?>,
 			colors: ['#f1f1f1', '#FF9E27'],
 			duration: 400,
 			wrpClass: 'circles-wrp',
@@ -742,7 +751,7 @@
 		})
 
 		Circles.create({
-			id: 'circles-2',
+			id: 'today-visitors',
 			radius: 45,
 			value: 10,
 			maxValue: 100,
@@ -757,12 +766,12 @@
 		})
 
 		Circles.create({
-			id: 'circles-3',
+			id: 'total-subscribers',
 			radius: 45,
-			value: 40,
+			value: <?= $jumlah; ?>,
 			maxValue: 100,
 			width: 7,
-			text: 12,
+			text: <?= $jumlah; ?>,
 			colors: ['#f1f1f1', '#F25961'],
 			duration: 400,
 			wrpClass: 'circles-wrp',
@@ -770,6 +779,122 @@
 			styleWrapper: true,
 			styleText: true
 		})
+	</script>
+
+	<!-- myChartLegend Script -->
+	<script>
+		//Chart
+
+		var ctx = document.getElementById('statisticsChart').getContext('2d');
+
+		var statisticsChart = new Chart(ctx, {
+			type: 'line',
+			data: {
+				labels: ["Nov", "Dec", "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct"],
+				datasets: [{
+					label: "New Subscribers",
+					borderColor: '#f3545d',
+					pointBackgroundColor: 'rgba(243, 84, 93, 0.6)',
+					pointRadius: 0,
+					backgroundColor: 'rgba(243, 84, 93, 0.4)',
+					legendColor: '#f3545d',
+					fill: true,
+					borderWidth: 2,
+					data: [<?php for ($i = 0; $i < 12; $i++) {echo $databulan[$i].',';}?>]
+				}, {
+					label: "Visitors",
+					borderColor: '#fdaf4b',
+					pointBackgroundColor: 'rgba(253, 175, 75, 0.6)',
+					pointRadius: 0,
+					backgroundColor: 'rgba(253, 175, 75, 0.4)',
+					legendColor: '#fdaf4b',
+					fill: true,
+					borderWidth: 2,
+					data: [256, 230, 245, 287, 240, 250, 230, 295, 331, 431, 456, 521]
+				}, {
+					label: "Total Subscribers",
+					borderColor: '#177dff',
+					pointBackgroundColor: 'rgba(23, 125, 255, 0.6)',
+					pointRadius: 0,
+					backgroundColor: 'rgba(23, 125, 255, 0.4)',
+					legendColor: '#177dff',
+					fill: true,
+					borderWidth: 2,
+					data: [<?php for ($i = 0; $i < 12; $i++) {echo $kumulatif[$i].',';}?>]
+				}]
+			},
+			options: {
+				responsive: true,
+				maintainAspectRatio: false,
+				legend: {
+					display: false
+				},
+				tooltips: {
+					bodySpacing: 4,
+					mode: "nearest",
+					intersect: 0,
+					position: "nearest",
+					xPadding: 10,
+					yPadding: 10,
+					caretPadding: 10
+				},
+				layout: {
+					padding: {
+						left: 5,
+						right: 5,
+						top: 15,
+						bottom: 15
+					}
+				},
+				scales: {
+					yAxes: [{
+						ticks: {
+							fontStyle: "500",
+							beginAtZero: false,
+							maxTicksLimit: 5,
+							padding: 10
+						},
+						gridLines: {
+							drawTicks: false,
+							display: false
+						}
+					}],
+					xAxes: [{
+						gridLines: {
+							zeroLineColor: "transparent"
+						},
+						ticks: {
+							padding: 10,
+							fontStyle: "500"
+						}
+					}]
+				},
+				legendCallback: function (chart) {
+					var text = [];
+					text.push('<ul class="' + chart.id + '-legend html-legend">');
+					for (var i = 0; i < chart.data.datasets.length; i++) {
+						text.push('<li><span style="background-color:' + chart.data.datasets[i].legendColor + '"></span>');
+						if (chart.data.datasets[i].label) {
+							text.push(chart.data.datasets[i].label);
+						}
+						text.push('</li>');
+					}
+					text.push('</ul>');
+					return text.join('');
+				}
+			}
+		});
+
+		var myLegendContainer = document.getElementById("myChartLegend");
+
+		// generate HTML legend
+		myLegendContainer.innerHTML = statisticsChart.generateLegend();
+
+		// bind onClick event to all LI-tags of the legend
+		var legendItems = myLegendContainer.getElementsByTagName('li');
+		for (var i = 0; i < legendItems.length; i += 1) {
+			legendItems[i].addEventListener("click", legendClickCallback, false);
+		}
 	</script>
 </body>
 

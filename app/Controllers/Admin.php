@@ -6,6 +6,8 @@ use App\Models\DatausersModel;
 use App\Models\TeamsModel;
 use App\Models\VisitorsModel;
 
+use CodeIgniter\I18n\Time;
+
 class Admin extends BaseController
 {
     protected $dataModel;
@@ -21,10 +23,29 @@ class Admin extends BaseController
 
     public function index()
     {
+        // Mengambil data bulanan
+        $databulan = $this->dataModel->getBulanan();
+        // dd($databulan);
+
+        // Mengambil jumlah subscribers
+        $jumlah = $this->dataModel->getSum();
+
+        // Mengambil Kumulatif Bulanan
+        $databulanankumilatif = $this->dataModel->getBulananKumulatif();
+
+        // Mengambil data new subscribers (subscribers bulan ini)
+        $newSubscribers = $this->dataModel->getNewSubscribers();
+        
         $data = [
             'title' => 'Dashboard Admin | SKYX',
-            'tab' => 'dashboard'
+            'tab' => 'dashboard',
+            'databulan' => $databulan,
+            'jumlah' => $jumlah,
+            'kumulatif' => $databulanankumilatif,
+            'newSubscribers' => $newSubscribers
         ];
+
+        // echo $databulan;
 
         return view('admin/index', $data);
     }
