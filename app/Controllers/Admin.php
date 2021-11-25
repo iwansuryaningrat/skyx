@@ -95,9 +95,11 @@ class Admin extends BaseController
     
     public function teams()
     {
+        $teams = $this->teamsModel->findAll();
         $data = [
             'title' => 'Data Teams | SKYX',
-            'tab' => 'teams'
+            'tab' => 'teams',
+            'data' => $teams
         ];
 
         return view('admin/teams', $data);

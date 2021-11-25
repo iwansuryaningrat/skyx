@@ -1,24 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<title><?= $title; ?></title>
 	<meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
-	<link rel="icon" href="/admin/assets/img/icon.ico" type="image/x-icon"/>
-	
+	<link rel="icon" href="/admin/assets/img/icon.ico" type="image/x-icon" />
+
 	<!-- Fonts and icons -->
 	<script src="/admin/assets/js/plugin/webfont/webfont.min.js"></script>
 	<script>
 		WebFont.load({
-			google: {"families":["Lato:300,400,700,900"]},
-			custom: {"families":["Flaticon", "Font Awesome 5 Solid", "Font Awesome 5 Regular", "Font Awesome 5 Brands", "simple-line-icons"], urls: ['/admin/assets/css/fonts.min.css']},
+			google: {
+				"families": ["Lato:300,400,700,900"]
+			},
+			custom: {
+				"families": ["Flaticon", "Font Awesome 5 Solid", "Font Awesome 5 Regular", "Font Awesome 5 Brands", "simple-line-icons"],
+				urls: ['/admin/assets/css/fonts.min.css']
+			},
 			active: function() {
 				sessionStorage.fonts = true;
 			}
 		});
 	</script>
 
-    <style>
+	<style>
 		.logo-header a {
 			width: 100%;
 			height: 100%;
@@ -26,6 +32,7 @@
 			justify-content: center;
 			align-items: center;
 		}
+
 		.logo-header a img {
 			/* width: 100%; */
 			height: 48px;
@@ -39,6 +46,7 @@
 	<!-- CSS Just for demo purpose, don't include it in your project -->
 	<link rel="stylesheet" href="/admin/assets/css/demo.css">
 </head>
+
 <body>
 	<div class="wrapper">
 		<div class="main-header">
@@ -47,8 +55,7 @@
 				<a href="/admin/index" class="logo">
 					<img src="/admin/assets/img/skyx-logo.svg" alt="navbar brand" class="navbar-brand">
 				</a>
-				<button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse"
-					data-target="collapse" aria-expanded="false" aria-label="Toggle navigation">
+				<button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse" data-target="collapse" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon">
 						<i class="icon-menu"></i>
 					</span>
@@ -80,8 +87,7 @@
 					</div>
 					<ul class="navbar-nav topbar-nav ml-md-auto align-items-center">
 						<li class="nav-item toggle-nav-search hidden-caret">
-							<a class="nav-link" data-toggle="collapse" href="#search-nav" role="button"
-								aria-expanded="false" aria-controls="search-nav">
+							<a class="nav-link" data-toggle="collapse" href="#search-nav" role="button" aria-expanded="false" aria-controls="search-nav">
 								<i class="fa fa-search"></i>
 							</a>
 						</li>
@@ -153,23 +159,19 @@
 						</li>
 						<!-- Profile -->
 						<li class="nav-item dropdown hidden-caret">
-							<a class="dropdown-toggle profile-pic" data-toggle="dropdown" href="#"
-								aria-expanded="false">
+							<a class="dropdown-toggle profile-pic" data-toggle="dropdown" href="#" aria-expanded="false">
 								<div class="avatar-sm">
-									<img src="/admin/assets/img/profile.jpg" alt="..."
-										class="avatar-img rounded-circle">
+									<img src="/admin/assets/img/profile.jpg" alt="..." class="avatar-img rounded-circle">
 								</div>
 							</a>
 							<ul class="dropdown-menu dropdown-user animated fadeIn">
 								<div class="dropdown-user-scroll scrollbar-outer">
 									<li>
 										<div class="user-box">
-											<div class="avatar-lg"><img src="/admin/assets/img/profile.jpg"
-													alt="image profile" class="avatar-img rounded"></div>
+											<div class="avatar-lg"><img src="/admin/assets/img/profile.jpg" alt="image profile" class="avatar-img rounded"></div>
 											<div class="u-text">
 												<h4>Hizrian</h4>
-												<p class="text-muted">hello@example.com</p><a href="profile.html"
-													class="btn btn-xs btn-secondary btn-sm">View Profile</a>
+												<p class="text-muted">hello@example.com</p><a href="profile.html" class="btn btn-xs btn-secondary btn-sm">View Profile</a>
 											</div>
 										</div>
 									</li>
@@ -281,7 +283,7 @@
 		</div>
 		<!-- End Sidebar -->
 
-        <!-- Main Panel -->
+		<!-- Main Panel -->
 		<div class="main-panel">
 			<div class="container">
 				<div class="page-inner">
@@ -313,65 +315,18 @@
 							<div class="card">
 								<div class="card-header">
 									<div class="d-flex align-items-center">
-										<h4 class="card-title">Add Data</h4>
-										<button class="btn btn-primary btn-round ml-auto" data-toggle="modal" data-target="#addRowModal">
-											<i class="fa fa-plus"></i>
-											Add Data
-										</button>
+										<h4 class="card-title">Add Team Data</h4>
+										<a class="d-block ml-auto" href="/add/addteamform">
+											<button class="btn btn-primary btn-round d-flex align-items-center">
+												<i class="la flaticon-add d-block mr-2"></i>
+												<span class="d-block">Add Team</span>
+											</button>
+										</a>
 									</div>
 								</div>
 								<div class="card-body">
-									<!-- Modal -->
-									<div class="modal fade" id="addRowModal" tabindex="-1" role="dialog" aria-hidden="true">
-										<div class="modal-dialog" role="document">
-											<div class="modal-content">
-												<div class="modal-header border-0">
-													<h5 class="modal-title">
-														<span class="fw-mediumbold">
-														New</span> 
-														<span class="fw-light">
-															Row
-														</span>
-													</h5>
-													<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-														<span aria-hidden="true">&times;</span>
-													</button>
-												</div>
-												<div class="modal-body">
-													<p class="small">Create a new row using this form, make sure you fill them all</p>
-													<form>
-														<div class="row">
-															<div class="col-sm-12">
-																<div class="form-group form-group-default">
-																	<label>Name</label>
-																	<input id="addName" type="text" class="form-control" placeholder="fill name">
-																</div>
-															</div>
-															<div class="col-md-6 pr-0">
-																<div class="form-group form-group-default">
-																	<label>Position</label>
-																	<input id="addPosition" type="text" class="form-control" placeholder="fill position">
-																</div>
-															</div>
-															<div class="col-md-6">
-																<div class="form-group form-group-default">
-																	<label>Office</label>
-																	<input id="addOffice" type="text" class="form-control" placeholder="fill office">
-																</div>
-															</div>
-														</div>
-													</form>
-												</div>
-												<div class="modal-footer border-0">
-													<button type="button" id="addRowButton" class="btn btn-primary">Add</button>
-													<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-												</div>
-											</div>
-										</div>
-									</div>
-
 									<div class="table-responsive">
-										<table id="add-row" class="display table table-striped table-hover" >
+										<table id="add-row" class="display table table-striped table-hover">
 											<thead>
 												<tr>
 													<th>Nama</th>
@@ -391,58 +346,42 @@
 												</tr>
 											</tfoot>
 											<tbody>
-												<tr>
-													<td>Tiger Nixon</td>
-													<td>System Architect</td>
-													<td>System Architect</td>
-													<td>
-														<!-- Sosmed Icon -->
-														<div class="form-button-action">
-															<button type="button" data-toggle="tooltip" title="" class="btn btn-link btn-primary btn-lg" data-original-title="Instagram">
-																<i class="fab fa-instagram"></i>
-															</button>
-															<button type="button" data-toggle="tooltip" title="" class="btn btn-link btn-primary btn-lg" data-original-title="Linkedin">
-																<i class="fab fa-linkedin"></i>
-															</button>
-														</div>
-													</td>
-													<td>
-														<div class="form-button-action">
-															<button type="button" data-toggle="tooltip" title="" class="btn btn-link btn-primary btn-lg" data-original-title="Edit Task">
-																<i class="fa fa-edit"></i>
-															</button>
-															<button type="button" data-toggle="tooltip" title="" class="btn btn-link btn-danger" data-original-title="Remove">
-																<i class="fa fa-times"></i>
-															</button>
-														</div>
-													</td>
-												</tr>
-												<tr>
-													<td>Garrett Winters</td>
-													<td>Garrett Winters</td>
-													<td>Accountant</td>
-													<td>
-														<!-- Sosmed Icon -->
-														<div class="form-button-action">
-															<button type="button" data-toggle="tooltip" title="" class="btn btn-link btn-primary btn-lg" data-original-title="Instagram">
-																<i class="fa fa-instagram"></i>
-															</button>
-															<button type="button" data-toggle="tooltip" title="" class="btn btn-link btn-primary btn-lg" data-original-title="Linkedin">
-																<i class="fa fa-linkedin"></i>
-															</button>
-														</div>
-													</td>
-													<td>
-														<div class="form-button-action">
-															<button type="button" data-toggle="tooltip" title="" class="btn btn-link btn-primary btn-lg" data-original-title="Edit Task">
-																<i class="fa fa-edit"></i>
-															</button>
-															<button type="button" data-toggle="tooltip" title="" class="btn btn-link btn-danger" data-original-title="Remove">
-																<i class="fa fa-times"></i>
-															</button>
-														</div>
-													</td>
-												</tr>
+												<?php foreach ($data as $row) : ?>
+													<tr>
+														<td><?= $row['nama']; ?></td>
+														<td><?= $row['jabatan']; ?></td>
+														<td><?= $row['deskripsi']; ?></td>
+														<td>
+															<!-- Sosmed Icon -->
+															<div class="form-button-action">
+																<a href="<?= $row['ig']; ?>">
+																	<button type="button" data-toggle="tooltip" title="" class="btn btn-link btn-primary btn-lg" data-original-title="Instagram">
+																		<i class="fab fa-instagram"></i>
+																	</button>
+																</a>
+																<a href="<?= $row['linkedin']; ?>">
+																	<button type="button" data-toggle="tooltip" title="" class="btn btn-link btn-primary btn-lg" data-original-title="Linkedin">
+																		<i class="fab fa-linkedin"></i>
+																	</button>
+																</a>
+															</div>
+														</td>
+														<td>
+															<div class="form-button-action">
+																<a href="#Edit">
+																	<button type="button" data-toggle="tooltip" title="" class="btn btn-link btn-primary btn-lg" data-original-title="Edit">
+																		<i class="fa fa-edit"></i>
+																	</button>
+																</a>
+																<a href="#detele">
+																	<button type="button" data-toggle="tooltip" title="" class="btn btn-link btn-danger" data-original-title="Remove">
+																		<i class="fa fa-times"></i>
+																	</button>
+																</a>
+															</div>
+														</td>
+													</tr>
+												<?php endforeach; ?>
 											</tbody>
 										</table>
 									</div>
@@ -457,13 +396,13 @@
 					<nav class="pull-left">
 						<ul class="nav">
 							<li class="nav-item">
-								
+
 							</li>
 							<li class="nav-item">
-								
+
 							</li>
 							<li class="nav-item">
-								
+
 							</li>
 						</ul>
 					</nav>
@@ -474,7 +413,7 @@
 			</footer>
 		</div>
 	</div>
-		
+
 	<!--   Core JS Files   -->
 	<script src="/admin/assets/js/core/jquery.3.2.1.min.js"></script>
 	<script src="/admin/assets/js/core/popper.min.js"></script>
@@ -492,25 +431,15 @@
 	<script src="/admin/assets/js/atlantis.min.js"></script>
 	<!-- Atlantis DEMO methods, don't include it in your project! -->
 	<script src="/admin/assets/js/setting-demo2.js"></script>
-	<script >
+	<script>
 		$(document).ready(function() {
 			$('#add-row').DataTable({
 				"pageLength": 5,
 			});
 
 			var action = '<td> <div class="form-button-action"> <button type="button" data-toggle="tooltip" title="" class="btn btn-link btn-primary btn-lg" data-original-title="Edit Task"> <i class="fa fa-edit"></i> </button> <button type="button" data-toggle="tooltip" title="" class="btn btn-link btn-danger" data-original-title="Remove"> <i class="fa fa-times"></i> </button> </div> </td>';
-
-			$('#addRowButton').click(function() {
-				$('#add-row').dataTable().fnAddData([
-					$("#addName").val(),
-					$("#addPosition").val(),
-					$("#addOffice").val(),
-					action
-					]);
-				$('#addRowModal').modal('hide');
-
-			});
 		});
 	</script>
 </body>
+
 </html>
