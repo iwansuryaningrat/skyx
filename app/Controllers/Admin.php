@@ -23,26 +23,6 @@ class Admin extends BaseController
 
     public function index()
     {
-        // $ip    = $this->request->getIPAddress(); // Mendapatkan IP user
-        $date  = date("Y-m-d"); // Mendapatkan tanggal sekarang
-        $waktu = time(); //
-        $timeinsert = date("Y-m-d H:i:s");
-        
-        // Cek berdasarkan IP, apakah user sudah pernah mengakses hari ini
-        $ip = '255.255.255.255';
-        $s = $this->visitorsModel->getDataIP($ip, $date);
-        $ss = isset($s)?($s):0;
-        
-        // Kalau belum ada, simpan data user tersebut ke database
-        if($ss == 0){
-            // $this->db->query("INSERT INTO visitor(ip, date, hits, online, time) VALUES('".$ip."','".$date."','1','".$waktu."','".$timeinsert."')");
-        }
-        
-        // Jika sudah ada, update
-        else{
-            // $this->db->query("UPDATE visitor SET hits=hits+1, online='".$waktu."' WHERE ip='".$ip."' AND date='".$date."'");
-        }
-
         // Mengambil data bulanan
         $databulan = $this->dataModel->getBulanan();
         // dd($databulan);

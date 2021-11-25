@@ -9,7 +9,7 @@ class VisitorsModel extends Model
 {
     protected $table = 'visitors';
     protected $primarykey = 'id';
-    protected $useTimestamps = true;
+    // protected $useTimestamps = true;
     protected $allowedFields = ['ip', 'date', 'hits', 'online', 'time'];
 
     public function getTodayVisitors()
@@ -165,15 +165,4 @@ class VisitorsModel extends Model
 
         return $result;
     }
-
-    public function insertDataIP($data)
-    {
-
-    }
-
-    public function updateDataIP($data)
-    {
-        
-    }
-
 }
