@@ -20,8 +20,8 @@ Circles.create({
 //Notify
 $.notify({
 	icon: 'flaticon-alarm-1',
-	title: 'Atlantis',
-	message: 'Premium Bootstrap 4 Admin Dashboard',
+	title: 'Wellcome Back!!',
+	message: 'Wellcome back to Skyx Admin Dashboard',
 }, {
 	type: 'secondary',
 	placement: {

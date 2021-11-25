@@ -151,11 +151,6 @@
 								</div>
 							</div>
 						</li>
-						<li class="nav-item">
-							<a href="#" class="nav-link quick-sidebar-toggler">
-								<i class="fa fa-th"></i>
-							</a>
-						</li>
 						<!-- Profile -->
 						<li class="nav-item dropdown hidden-caret">
 							<a class="dropdown-toggle profile-pic" data-toggle="dropdown" href="#"

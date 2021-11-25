@@ -36,6 +36,7 @@
 	<!-- CSS Files -->
 	<link rel="stylesheet" href="/admin/assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="/admin/assets/css/atlantis.css">
+
 	<!-- CSS Just for demo purpose, don't include it in your project -->
 	<link rel="stylesheet" href="/admin/assets/css/demo.css">
 </head>
@@ -150,11 +151,6 @@
 									</div>
 								</div>
 							</div>
-						</li>
-						<li class="nav-item">
-							<a href="#" class="nav-link quick-sidebar-toggler">
-								<i class="fa fa-th"></i>
-							</a>
 						</li>
 						<!-- Profile -->
 						<li class="nav-item dropdown hidden-caret">
@@ -388,17 +384,26 @@
 	<script src="/admin/assets/js/core/jquery.3.2.1.min.js"></script>
 	<script src="/admin/assets/js/core/popper.min.js"></script>
 	<script src="/admin/assets/js/core/bootstrap.min.js"></script>
+
 	<!-- jQuery UI -->
 	<script src="/admin/assets/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
 	<script src="/admin/assets/js/plugin/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
+
 	<!-- Bootstrap Toggle -->
 	<script src="/admin/assets/js/plugin/bootstrap-toggle/bootstrap-toggle.min.js"></script>
+
+	<!-- Bootstrap Notify -->
+	<script src="/admin/assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
+
 	<!-- jQuery Scrollbar -->
 	<script src="/admin/assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+
 	<!-- Datatables -->
 	<script src="/admin/assets/js/plugin/datatables/datatables.min.js"></script>
+
 	<!-- Atlantis JS -->
 	<script src="/admin/assets/js/atlantis.min.js"></script>
+	
 	<!-- Atlantis DEMO methods, don't include it in your project! -->
 	<script src="/admin/assets/js/setting-demo2.js"></script>
 	<script >

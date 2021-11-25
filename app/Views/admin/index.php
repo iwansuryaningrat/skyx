@@ -161,11 +161,6 @@
 								</div>
 							</div>
 						</li>
-						<li class="nav-item">
-							<a href="#" class="nav-link quick-sidebar-toggler">
-								<i class="fa fa-th"></i>
-							</a>
-						</li>
 						<!-- Profile -->
 						<li class="nav-item dropdown hidden-caret">
 							<a class="dropdown-toggle profile-pic" data-toggle="dropdown" href="#"
@@ -361,7 +356,7 @@
 					</div>
 
 					<!-- Users Geolocation -->
-					<div class="row row-card-no-pd">
+					<!-- <div class="row row-card-no-pd">
 						<div class="col-md-12">
 							<div class="card">
 								<div class="card-header">
@@ -490,7 +485,7 @@
 								</div>
 							</div>
 						</div>
-					</div>
+					</div> -->
 				</div>
 			</div>
 			<footer class="footer">
@@ -593,10 +588,8 @@
 
 	<!-- Atlantis JS -->
 	<script src="/admin/assets/js/atlantis.min.js"></script>
-
-	<!-- Atlantis DEMO methods, don't include it in your project! -->
-	<script src="/admin/assets/js/setting-demo.js"></script>
-	<script src="/admin/assets/js/demo.js"></script>
+	
+	<!-- Circle Chart Script -->
 	<script>
 		Circles.create({
 			id: 'new-subscribers',
@@ -768,6 +761,23 @@
 		for (var i = 0; i < legendItems.length; i += 1) {
 			legendItems[i].addEventListener("click", legendClickCallback, false);
 		}
+	</script>
+
+	<!-- Notify Script -->
+	<script>
+		//Notify
+		$.notify({
+			icon: 'flaticon-alarm-1',
+			title: 'Wellcome Back!!',
+			message: 'Wellcome back to Skyx Admin Dashboard',
+		}, {
+			type: 'secondary',
+			placement: {
+				from: "bottom",
+				align: "right"
+			},
+			time: 1000,
+		});
 	</script>
 </body>
 
