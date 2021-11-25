@@ -25,13 +25,14 @@ class Home extends BaseController
     {
         
         // Akan dipindah ke Home controller
-        // $ip    = $this->request->getIPAddress(); // Mendapatkan IP user
+        $ip    = $this->request->getIPAddress(); // Mendapatkan IP user
         $date  = date("Y-m-d"); // Mendapatkan tanggal sekarang
         $waktu = time(); //
         $timeinsert = date("Y-m-d H:i:s");
+        dd($ip);
         
         // Cek berdasarkan IP, apakah user sudah pernah mengakses hari ini
-        $ip = '255.255.255.252';
+        // $ip = '255.255.255.252';
         $s = $this->visitorsModel->getDataIP($ip, $date);
         $ss = isset($s)?($s):0;
         // d($s);
