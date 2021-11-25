@@ -31,7 +31,7 @@ class Home extends BaseController
         $timeinsert = date("Y-m-d H:i:s");
         
         // Cek berdasarkan IP, apakah user sudah pernah mengakses hari ini
-        $ip = '255.255.255.254';
+        $ip = '255.255.255.252';
         $s = $this->visitorsModel->getDataIP($ip, $date);
         $ss = isset($s)?($s):0;
         // d($s);
