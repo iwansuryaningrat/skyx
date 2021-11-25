@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 namespace App\Models;
 
@@ -11,4 +11,8 @@ class TeamsModel extends Model
     protected $useTimestamps = true;
     protected $allowedFields = ['nama', 'jabatan', 'deskripsi', 'foto', 'ig', 'linkedin', 'created_at', 'updated_at'];
 
+    public function getTeamData($id)
+    {
+        return $this->where(['id_team' => $id])->first();
+    }
 }

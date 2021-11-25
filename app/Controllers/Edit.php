@@ -18,5 +18,17 @@ class Edit extends BaseController
         $this->teamsModel = new TeamsModel();
         $this->visitorsModel = new VisitorsModel();
     }
-    
+
+    public function editTeamForm($id)
+    {
+        $dataTeam = $this->teamsModel->getTeamData($id);
+
+        $data = [
+            'title' => 'Edit Team Data | SKYX',
+            'tab' => 'teams',
+            'datateam' => $dataTeam
+        ];
+
+        return view('admin/formeditteam', $data);
+    }
 }
