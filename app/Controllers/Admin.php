@@ -102,4 +102,14 @@ class Admin extends BaseController
 
         return view('admin/teams', $data);
     }
+
+    public function artikel()
+    {
+        $data = [
+            'title' => 'Artikel | SKYX',
+            'tab' => 'artikel'
+        ];
+
+        return view('admin/artikel', $data);
+    }
 }
