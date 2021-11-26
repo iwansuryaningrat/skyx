@@ -35,8 +35,8 @@ class Add extends BaseController
         if ($image->getError() == 4) {
             $namaImage = 'default.jpg';
         } else {
-            $namaImage = $image->getName();
-            $image->move('foto/');
+            $namaImage = $image->getRandomName();
+            $image->move('foto/', $namaImage);
         }
 
         $this->teamsModel->insert([

@@ -355,7 +355,7 @@
                                             <label class="col-lg-3 col-md-3 col-sm-4 mt-sm-2 text-right">Upload Image <span class="required-label">*</span></label>
                                             <div class="col-lg-4 col-md-9 col-sm-8">
                                                 <div class="input-file input-file-image">
-                                                    <img class="img-upload-preview img-circle" width="100" height="100" src="http://placehold.it/100x100" alt="preview">
+                                                    <img class="img-upload-preview img-circle" width="100" height="100" src="/foto/" alt="preview">
                                                     <input type="file" class="form-control form-control-file" id="foto" name="foto" accept="image/*" required>
                                                     <label for="foto" class="btn btn-primary btn-round btn-lg"><i class="fa fa-file-image"></i> Upload a Image</label>
                                                 </div>
