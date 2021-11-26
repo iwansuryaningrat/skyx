@@ -5,6 +5,7 @@ namespace App\Controllers;
 use App\Models\DatausersModel;
 use App\Models\TeamsModel;
 use App\Models\VisitorsModel;
+use App\Models\ArtikelModel;
 
 use CodeIgniter\I18n\Time;
 
@@ -13,12 +14,14 @@ class Admin extends BaseController
     protected $dataModel;
     protected $teamsModel;
     protected $visitorsModel;
+    protected $artikelModel;
 
     public function __construct()
     {
         $this->dataModel = new DatausersModel();
         $this->teamsModel = new TeamsModel();
         $this->visitorsModel = new VisitorsModel();
+        $this->artikelModel = new ArtikelModel();
     }
 
     public function index()
@@ -44,7 +47,7 @@ class Admin extends BaseController
 
         // Mengambil data visitors bulanan
         $visitorsKumulatif = $this->visitorsModel->getBulananKumulatif();
-                
+
         $data = [
             'title' => 'Dashboard Admin | SKYX',
             'tab' => 'dashboard',
@@ -83,7 +86,7 @@ class Admin extends BaseController
     public function users()
     {
         $datausers = $this->dataModel->findAll();
-        
+
         $data = [
             'title' => 'Data Users | SKYX',
             'tab' => 'users',
@@ -92,7 +95,7 @@ class Admin extends BaseController
 
         return view('admin/datausers', $data);
     }
-    
+
     public function teams()
     {
         $teams = $this->teamsModel->findAll();
@@ -107,9 +110,11 @@ class Admin extends BaseController
 
     public function artikel()
     {
+        $artikel = $this->artikelModel->findAll();
         $data = [
             'title' => 'Artikel | SKYX',
-            'tab' => 'artikel'
+            'tab' => 'artikel',
+            'artikel' => $artikel
         ];
 
         return view('admin/artikel', $data);
