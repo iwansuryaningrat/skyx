@@ -5,6 +5,7 @@ namespace App\Controllers;
 use App\Models\DatausersModel;
 use App\Models\TeamsModel;
 use App\Models\VisitorsModel;
+use App\Models\ArtikelModel;
 
 use CodeIgniter\I18n\Time;
 
@@ -13,12 +14,14 @@ class Home extends BaseController
     protected $dataModel;
     protected $teamsModel;
     protected $visitorsModel;
+    protected $artikelModel;
 
     public function __construct()
     {
         $this->dataModel = new DatausersModel();
         $this->teamsModel = new TeamsModel();
         $this->visitorsModel = new VisitorsModel();
+        $this->artikelModel = new ArtikelModel();
     }
 
     public function index()
@@ -71,9 +74,12 @@ class Home extends BaseController
 
     public function home()
     {
+        $artikel = $this->artikelModel->findAll();
+
         $data = [
             'title' => 'Skyx - One Stop Solutions For Blockchain Projects Investments',
-            'tab' => 'home'
+            'tab' => 'home',
+            'artikel' => $artikel
         ];
 
         return view('mainpage/home', $data);

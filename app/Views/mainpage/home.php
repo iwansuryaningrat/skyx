@@ -155,49 +155,18 @@
 				<div class="col-lg-6 col-12">
 					<div class="info__r">
 						<div id="info" class="owl-carousel owl-theme">
-							<!-- info 1 -->
-							<div class="pe-3">
-								<div class="card__info">
-									<h2 class="title__info">Cryptocurrency ICO</h2>
-									<p class="txt__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id sagittis a neque blandit neque bibendum id neque aenean. Commodo aenean velit molestie sit laoreet nulla in faucibus sed. Hendrerit amet odio dolor morbi id orci eu cursus.</p>
-									<div class="btn__lm">
-										<a href="#" class="d-flex align-items-center"><span class="d-flex">Learn more</span><i class="bi bi-arrow-right-short d-flex align-items-center"></i></a>
+							<?php foreach ($artikel as $data) : ?>
+								<div class="pe-3">
+									<div class="card__info">
+										<h2 class="title__info"><?= $data['judul']; ?></h2>
+										<p class="txt__desc"><?= $data['preview']; ?></p>
+										<div class="btn__lm">
+											<a href="#" class="d-flex align-items-center"><span class="d-flex">Learn more</span><i class="bi bi-arrow-right-short d-flex align-items-center"></i></a>
+										</div>
 									</div>
 								</div>
-							</div>
+							<?php endforeach; ?>
 
-							<!-- info 2 -->
-							<div class="pe-3">
-								<div class="card__info">
-									<h2 class="title__info">How to invest in bitcoin</h2>
-									<p class="txt__desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam odio deleniti sit! Ratione commodi debitis incidunt temporibus vel fugit doloremque porro eligendi, dolorem veritatis optio unde dignissimos assumenda tempora molestias!</p>
-									<div class="btn__lm">
-										<a href="#" class="d-flex align-items-center"><span class="d-flex">Learn more</span><i class="bi bi-arrow-right-short d-flex align-items-center"></i></a>
-									</div>
-								</div>
-							</div>
-
-							<!-- info 3 -->
-							<div class="pe-3">
-								<div class="card__info">
-									<h2 class="title__info">Comfort with SKX holder</h2>
-									<p class="txt__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id sagittis a neque blandit neque bibendum id neque aenean, commodo.</p>
-									<div class="btn__lm">
-										<a href="#" class="d-flex align-items-center"><span class="d-flex">Learn more</span><i class="bi bi-arrow-right-short d-flex align-items-center"></i></a>
-									</div>
-								</div>
-							</div>
-
-							<!-- info 4 -->
-							<div class="pe-3">
-								<div class="card__info">
-									<h2 class="title__info">October Codefest is here!</h2>
-									<p class="txt__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id sagittis a neque blandit neque bibendum id neque aenean. Commodo aenean velit molestie sit laoreet nulla in faucibus sed.</p>
-									<div class="btn__lm">
-										<a href="#" class="d-flex align-items-center"><span class="d-flex">Learn more</span><i class="bi bi-arrow-right-short d-flex align-items-center"></i></a>
-									</div>
-								</div>
-							</div>
 						</div> <!-- end info owl carousel -->
 					</div> <!-- end info 4 -->
 				</div> <!-- end col -->
@@ -270,6 +239,32 @@
 	<script src="/mainpage/js/owl.carousel.min.js"></script> <!-- owl carousel min scripts -->
 
 	<script src="/mainpage/js/scripts.js"></script> <!-- skyx scripts -->
+
+	<!-- carousel-info-home -->
+	<script>
+		$(document).ready(function() {
+			$('.owl-carousel#info').owlCarousel({
+				loop: true,
+				margin: 16,
+				nav: false,
+				dots: true,
+				autoplay: true,
+				autoplayTimeout: 6000,
+				smartSpeed: 1000,
+				responsive: {
+					0: {
+						items: 1
+					},
+					600: {
+						items: 1
+					},
+					1000: {
+						items: 1
+					}
+				}
+			});
+		});
+	</script>
 </body>
 
 </html>
