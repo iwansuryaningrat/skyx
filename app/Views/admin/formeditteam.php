@@ -288,7 +288,7 @@
             <div class="container">
                 <div class="page-inner">
                     <div class="page-header">
-                        <h4 class="page-title">Form Add Team</h4>
+                        <h4 class="page-title">Form Edit Team</h4>
                         <ul class="breadcrumbs">
                             <li class="nav-home">
                                 <a href="/admin-page">
@@ -305,7 +305,7 @@
                                 <i class="flaticon-right-arrow"></i>
                             </li>
                             <li class="nav-item">
-                                <a href="/add/formaddteam">Form Add Team</a>
+                                <a href="/edit/editteamform/<?= $datateam['id'] ?>">Form Edit Team</a>
                             </li>
                         </ul>
                     </div>
@@ -314,49 +314,49 @@
                             <div class="card">
                                 <div class="card-header">
                                     <div class="d-flex align-items-center">
-                                        <h4 class="card-title">Add Team Data</h4>
+                                        <h4 class="card-title">Edit Team Data</h4>
                                     </div>
                                 </div>
-                                <form id="exampleValidation" action="/add/addteam" method="POST" enctype="multipart/form-data">
+                                <form id="exampleValidation" action="/edit/editteam/<?= $datateam['id'] ?>" method="POST" enctype="multipart/form-data">
                                     <?= csrf_field(); ?>
                                     <div class="card-body">
                                         <div class="form-group form-show-validation row">
                                             <label for="name" class="col-lg-3 col-md-3 col-sm-4 mt-sm-2 text-right">Nama <span class="required-label">*</span></label>
                                             <div class="col-lg-4 col-md-9 col-sm-8">
-                                                <input type="text" class="form-control" id="name" name="name" placeholder="Masukkan Nama Team" required>
+                                                <input type="text" class="form-control" id="name" name="name" value="<?= $datateam['nama']; ?>" placeholder="Masukkan Nama Team" required>
                                             </div>
                                         </div>
                                         <div class="form-group form-show-validation row">
                                             <label for="jabatan" class="col-lg-3 col-md-3 col-sm-4 mt-sm-2 text-right">Jabatan <span class="required-label">*</span></label>
                                             <div class="col-lg-4 col-md-9 col-sm-8">
-                                                <input type="text" class="form-control" placeholder="Jabatan" aria-label="jabatan" aria-describedby="jabatan-addon" id="jabatan" name="jabatan" required>
+                                                <input type="text" class="form-control" placeholder="Jabatan" aria-label="jabatan" aria-describedby="jabatan-addon" id="jabatan" name="jabatan" value="<?= $datateam['jabatan']; ?>" required>
                                             </div>
                                         </div>
                                         <div class="form-group form-show-validation row">
-                                            <label for="deskripsi" class="col-lg-3 col-md-3 col-sm-4 mt-sm-2 text-right">Deskripsi <span class="required-label">*</span></label>
+                                            <label for="deskripsi" class="col-lg-3 col-md-3 col-sm-4 mt-sm-2 text-right">Deskripsi </label>
                                             <div class="col-lg-4 col-md-9 col-sm-8">
-                                                <textarea class="form-control" id="deskripsi" rows="5" placeholder="Tambahkan Deskripsi" aria-label="deskripsi" aria-describedby="deskripsi-addon" name="deskripsi" required></textarea>
+                                                <textarea class="form-control" id="deskripsi" rows="5" placeholder="Tambahkan Deskripsi" aria-label="deskripsi" aria-describedby="deskripsi-addon" name="deskripsi"></textarea>
                                             </div>
                                         </div>
                                         <div class="form-group form-show-validation row">
                                             <label for="instagram" class="col-lg-3 col-md-3 col-sm-4 mt-sm-2 text-right">Instagram <span class="required-label">*</span></label>
                                             <div class="col-lg-4 col-md-9 col-sm-8">
-                                                <input type="text" class="form-control" placeholder="Masukkan Link Instagram" aria-label="instagram" aria-describedby="instagram-addon" id="instagram" name="instagram" required>
+                                                <input type="text" class="form-control" placeholder="Masukkan Link Instagram" aria-label="instagram" aria-describedby="instagram-addon" id="instagram" name="instagram" value="<?= $datateam['ig']; ?>" required>
                                             </div>
                                         </div>
                                         <div class="form-group form-show-validation row">
                                             <label for="linkedin" class="col-lg-3 col-md-3 col-sm-4 mt-sm-2 text-right">Linkedin <span class="required-label">*</span></label>
                                             <div class="col-lg-4 col-md-9 col-sm-8">
-                                                <input type="text" class="form-control" placeholder="Masukkan Link Linkedin" aria-label="linkedin" aria-describedby="linkedin-addon" id="linkedin" name="linkedin" required>
+                                                <input type="text" class="form-control" placeholder="Masukkan Link Linkedin" aria-label="linkedin" aria-describedby="linkedin-addon" id="linkedin" name="linkedin" value="<?= $datateam['linkedin']; ?>" required>
                                             </div>
                                         </div>
                                         <div class="separator-solid"></div>
                                         <div class="form-group form-show-validation row">
-                                            <label class="col-lg-3 col-md-3 col-sm-4 mt-sm-2 text-right">Upload Image <span class="required-label">*</span></label>
+                                            <label class="col-lg-3 col-md-3 col-sm-4 mt-sm-2 text-right">Upload Image </label>
                                             <div class="col-lg-4 col-md-9 col-sm-8">
                                                 <div class="input-file input-file-image">
-                                                    <img class="img-upload-preview img-circle" width="100" height="100" src="/foto/" alt="preview">
-                                                    <input type="file" class="form-control form-control-file" id="foto" name="foto" accept="image/*" required>
+                                                    <img class="img-upload-preview img-circle" width="100" height="100" src="/foto/<?= $datateam['foto']; ?>" alt="preview">
+                                                    <input type="file" class="form-control form-control-file" id="foto" name="foto" accept="image/*" value="<?= $datateam['foto']; ?>">
                                                     <label for="foto" class="btn btn-primary btn-round btn-lg"><i class="fa fa-file-image"></i> Upload a Image</label>
                                                 </div>
                                             </div>
@@ -368,7 +368,7 @@
                                                 <a href="/admin/teams" class="btn btn-danger" style="border-radius: 100px;">
                                                     Batal
                                                 </a>
-                                                <input class="btn btn-primary ml-4" type="submit" value="Submit" style="border-radius: 100px;">
+                                                <input class="btn btn-primary ml-4" type="submit" value="Edit" style="border-radius: 100px;">
                                             </div>
                                         </div>
                                     </div>

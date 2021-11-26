@@ -315,7 +315,7 @@
 							<div class="card">
 								<div class="card-header">
 									<div class="d-flex align-items-center">
-										<h4 class="card-title">Add Team Data</h4>
+										<h4 class="card-title">Data Teams</h4>
 										<a class="d-block ml-auto" href="/add/addteamform">
 											<button class="btn btn-primary btn-round d-flex align-items-center">
 												<i class="la flaticon-add d-block mr-2"></i>
@@ -368,12 +368,12 @@
 														</td>
 														<td>
 															<div class="form-button-action">
-																<a href="#Edit">
+																<a href="/edit/editteamform/<?= $row['id']; ?>">
 																	<button type="button" data-toggle="tooltip" title="" class="btn btn-link btn-primary btn-lg" data-original-title="Edit">
 																		<i class="fa fa-edit"></i>
 																	</button>
 																</a>
-																<a href="#detele">
+																<a href="/edit/deleteteam/<?= $row['id']; ?>">
 																	<button type="button" data-toggle="tooltip" title="" class="btn btn-link btn-danger" data-original-title="Remove">
 																		<i class="fa fa-times"></i>
 																	</button>
