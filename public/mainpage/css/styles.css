@@ -1,0 +1,952 @@
+/************************************************/
+/*               TABLE OF CONTENT               */
+/************************************************/
+/*
+    1. Import Font
+    2. Variable
+    3. General styles
+    4. Index Page
+    5. About Page
+    6. Project Page
+    7. Contact Page
+    8. FAQ Page
+    99. Responsive / Media queries
+*/
+
+/*******************************************/
+/*               IMPORT FONT               */
+/*******************************************/
+@import url(../vendor/font/fonts.css);
+
+/****************************************/
+/*               VARIABLE               */
+/****************************************/
+:root {
+    /* font and typography */
+    --ff-head: "Mollen Personal Use";
+    --ff-body: "Mollen Personal Use";
+    --fz-2: 1.5rem;
+    --fz-1: 1.25rem;
+
+    /* color */
+    --white: rgba(255, 255, 255, 1);
+    --second: rgba(157, 157, 157, 1);
+
+    /* utility space */
+    --m-sec: 9rem;
+    --p-sec: 9rem;
+}
+
+/***************************************/
+/*               GENERAL               */
+/***************************************/
+body {
+    font-family: var(--ff-body);
+    font-weight: 400;
+    /* background-color: rgba(19, 22, 29, 1); */
+    /* background: linear-gradient(153.54deg, #1A1625 -6.12%, #25215C 27.77%, #023155 72.55%, #0D0D2B 104.97%); */
+    background: linear-gradient(
+        143.38deg,
+        #1a1625 -5.55%,
+        #25215c 22.68%,
+        #023155 59.98%,
+        #0d0d2b 86.99%
+    );
+}
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--white);
+}
+
+p {
+    font-size: var(--fz-2);
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+/* ========== class ========== */
+/* section */
+.sec__x {
+    max-width: 72rem;
+    margin: auto;
+}
+
+.sec__y {
+    padding-top: var(--p-sec);
+    padding-bottom: var(--p-sec);
+}
+
+.sec__t {
+    padding-top: var(--p-sec);
+}
+
+.sec__b {
+    padding-bottom: var(--p-sec);
+}
+
+/* font and typography */
+.txt__second {
+    color: var(--second);
+}
+
+.txt__desc {
+    font-size: var(--fz-1);
+
+    color: var(--second);
+}
+
+/* navbar */
+.navbar__skyx {
+    padding: 1.125rem 0;
+
+    background-color: rgba(2, 49, 85, .1);
+
+    backdrop-filter: blur(2rem);
+}
+
+.m__nav {
+    padding: 0 5.25rem 0;
+}
+
+.nav__img {
+    height: 3rem;
+}
+
+.nav__link {
+    font-size: 1rem;
+    font-weight: 700;
+
+    margin-left: 3.75rem;
+
+    transition: all .3s ease-in-out;
+
+    color: var(--second) !important;
+}
+
+.nav__link:hover,
+.nav__link.active {
+    color: var(--white) !important;
+    text-shadow: 0 0 1.25rem rgba(255, 255, 255, 1);
+}
+
+/* button nav mobile */
+.mobile__menu {
+    display: none;
+
+    width: 2.25rem;
+    height: 100%;
+}
+
+.menu__icon {
+    padding: .25rem;
+}
+
+.menu {
+    width: 100%;
+    height: 1px;
+
+    background-color: var(--white);
+}
+
+/* navbar mini */
+.navbar__mini {
+    position: absolute;
+    top: 0;
+
+    width: 100%;
+
+    transition: transform .6s ease-in-out;
+    transform: translateY(-100%);
+}
+
+.nav__mini {
+    width: 90%;
+    margin: auto;
+    padding: 2.25rem 2.25rem 1.125rem;
+
+    border-radius: .75rem;
+    background-color: rgb(23, 27, 36);
+}
+
+.navbarmini__head {
+    display: flex;
+
+    padding-bottom: 1.5rem;
+
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbarmini__head img {
+    height: 2.25rem;
+}
+
+.navbarmini__head i {
+    font-size: 1.25rem;
+}
+
+.navmini__link {
+    font-weight: 700;
+
+    display: block;
+
+    margin: 1.875rem 0;
+
+    transition: all .3s ease-in-out;
+
+    color: var(--white);
+    color: var(--second);
+}
+
+.navmini__close i {
+    color: var(--second);
+}
+
+.navmini__link:hover,
+.navmini__link.active {
+    color: var(--white) !important;
+    text-shadow: 0 0 1.25rem rgba(255, 255, 255, 1);
+}
+
+.navbar__mini.show {
+    transform: translateY(0%);
+}
+
+/* scroll up */
+.scroll__up {
+    font-size: 2rem;
+
+    position: fixed;
+    right: 3rem;
+    bottom: 3rem;
+
+    display: flex;
+
+    padding: 9px;
+
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    pointer-events: none;
+
+    opacity: 0;
+    color: rgba(255, 255, 255, .2);
+    border-radius: .75rem;
+    background-color: rgba(255, 255, 255, .06);
+
+    backdrop-filter: blur(1.5rem);
+    align-items: center;
+}
+
+i.scroll__up:hover {
+    color: var(--white);
+    background-color: rgba(255, 255, 255, .15);
+    text-shadow: 0 0 1.25rem rgba(255, 255, 255, 1);
+}
+
+/* footer */
+footer {
+    background-color: rgba(19, 22, 29, 1);
+}
+
+footer.sec__y {
+    padding-bottom: 3rem;
+}
+
+footer p {
+    font-size: 1.125rem;
+
+    color: var(--second);
+}
+
+.foot__l {
+    padding-bottom: 6rem;
+}
+
+.foot__desc,
+.foot__contact {
+    margin-bottom: 2rem;
+}
+
+.foot__desc img {
+    height: 4rem;
+}
+
+.foot__desc p {
+    margin-top: 1.5rem;
+}
+
+.foot__icon {
+    display: flex;
+
+    align-items: center;
+}
+
+.foot__icon a {
+    display: block;
+
+    margin-right: 1.5rem;
+}
+
+.foot__icon i {
+    font-size: 1.25rem;
+
+    transition: all .3s ease-in-out;
+
+    color: var(--second);
+}
+
+.foot__list {
+    margin-left: 4rem;
+}
+
+.foot__link {
+    font-size: 1.125rem;
+
+    margin-bottom: 1.25rem;
+
+    color: var(--white);
+}
+
+.foot__link a {
+    transition: all .3s ease-in-out;
+}
+
+.foot__link i {
+    font-size: 1rem;
+
+    transition: all .3s ease-in-out;
+}
+
+.foot__link a:hover,
+.foot__icon a:hover i {
+    color: var(--white);
+    text-shadow: 0 0 1rem rgba(255, 255, 255, 1);
+}
+
+.foot__link a:hover i {
+    transform: translate(4px, -4px);
+
+    color: var(--white);
+    text-shadow: 0 0 1rem rgba(255, 255, 255, 1);
+}
+
+.foot__link a {
+    color: var(--second);
+}
+
+.foot hr {
+    width: 100%;
+    margin-right: 1.875rem;
+
+    opacity: 1;
+    color: var(--second);
+}
+
+.foot .txt__second {
+    white-space: nowrap;
+}
+
+/* header other */
+.head__other {
+    height: 33rem;
+    width: 100%;
+}
+
+.header__main {
+    text-align: center;
+    width: 100%;
+}
+
+.header__main p {
+    margin-top: 30px;
+    width: 72%;
+    margin: 30px auto auto;
+}
+
+/******************************************/
+/*               INDEX PAGE               */
+/******************************************/
+/* jumbotron */
+.jumbotron {
+    height: 45rem;
+}
+
+.jumbotron .row h1 {
+    margin-top: 7.75rem;
+}
+
+.jumbotron .row p {
+    margin-top: 1.875rem;
+}
+
+.skyx__btn__gs {
+    display: flex;
+}
+
+.btn__gs {
+    font-size: var(--fz-1);
+
+    margin-top: 1.75rem;
+    padding: 1.25rem 2.25rem;
+
+    color: var(--white);
+    border-radius: .875rem;
+    background: linear-gradient(90deg, #425ca9 0%, #1e3c72 35.42%, #282a6d 100%);
+}
+
+.btn__gs i {
+    font-size: 1.25rem;
+
+    margin-left: .75rem;
+
+    transition: transform .3s ease-in-out;
+}
+
+.btn__gs:hover {
+    color: var(--white);
+}
+
+.btn__gs:hover i {
+    transform: translateX(4px);
+}
+
+.relative__img {
+    position: relative;
+    z-index: -1;
+    top: 24%;
+
+    width: 540%;
+}
+
+.hero__img {
+    position: absolute;
+    left: -40%;
+
+    width: 100%;
+}
+
+.absolute__img {
+    width: 100%;
+    height: auto;
+}
+
+/* info */
+.img__info {
+    width: 100%;
+}
+
+.info__r {
+    margin: 2.25rem 0;
+    padding-left: 2.5rem;
+}
+
+.info__l {
+    padding-right: 2.5rem;
+}
+
+.card__info {
+    margin-bottom: 3.75rem;
+}
+
+.title__info {
+    margin-bottom: 1.875rem;
+}
+
+.btn__lm {
+    display: flex;
+
+    margin-top: 4rem;
+    margin-bottom: 1.25rem;
+}
+
+.btn__lm span {
+    font-size: var(--fz-1);
+    font-weight: 700;
+
+    color: rgba(255, 255, 255, .6);
+}
+
+.btn__lm i {
+    font-size: 29px;
+
+    position: relative;
+    top: -1px;
+
+    margin-left: .5rem;
+
+    transition: transform .3s ease-in-out;
+
+    color: rgba(255, 255, 255, .6);
+}
+
+.btn__lm a:hover i {
+    transform: translateX(.25rem);
+}
+
+.owl-dots {
+    display: flex;
+
+    justify-content: start;
+    align-items: center;
+}
+
+/******************************************/
+/*               ABOUT PAGE               */
+/******************************************/
+
+/********************************************/
+/*               PROJECT PAGE               */
+/********************************************/
+
+/********************************************/
+/*               CONTACT PAGE               */
+/********************************************/
+
+/****************************************/
+/*               FAQ PAGE               */
+/****************************************/
+/* faq section */
+.qbox {
+    padding: 30px 60px;
+    border-radius: 20px;
+    border: 1px solid rgba(157, 157, 157, 1);
+    margin-bottom: 54px;
+}
+
+.qbox__link span,
+.qbox__link i {
+    color: var(--white);
+    font-size: 24px;
+}
+
+.qbox__collapse {
+    margin-top: 42px;
+}
+
+.qbox__collapse .txt__desc {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+/******************************************/
+/*               RESPONSIVE               */
+/******************************************/
+
+
+@media (min-width: 1441px) {
+    /***************************************/
+    /*               GENERAL               */
+    /***************************************/
+    /* navbar */
+    .m__nav {
+        max-width: 1440px;
+        margin: auto;
+    }
+
+    /******************************************/
+    /*               ABOUT PAGE               */
+    /******************************************/
+
+    /********************************************/
+    /*               PROJECT PAGE               */
+    /********************************************/
+
+    /********************************************/
+    /*               CONTACT PAGE               */
+    /********************************************/
+
+    /****************************************/
+    /*               FAQ PAGE               */
+    /****************************************/
+}
+
+/*=============== tablet view ===============*/
+@media screen and (max-width: 991px) {
+    /****************************************/
+    /*               VARIABLE               */
+    /****************************************/
+    :root {
+        /* font and typography */
+        --fz-2: 1.125rem;
+        --fz-1: 1.125rem;
+
+        /* utility space */
+        --m-sec: 6.25rem;
+        --p-sec: 6.25rem;
+    }
+
+    /***************************************/
+    /*               GENERAL               */
+    /***************************************/
+    h1 {
+        font-size: 3.25rem;
+    }
+
+    h2 {
+        font-size: 2.25rem;
+    }
+
+    /* ========== class ========== */
+    .head__other {
+        height: 400px;
+    }
+
+    /* navbar */
+    .navbar__skyx {
+        padding: 1rem 0;
+    }
+
+    .m__nav {
+        padding: 0 2.25rem 0;
+    }
+
+    .nav__img {
+        height: 2.5rem;
+    }
+
+    /* button nav mobile */
+    .mobile__menu {
+        display: block;
+    }
+
+    /* scroll up */
+    .scroll__up {
+        font-size: 1.875rem;
+
+        right: 42px;
+        bottom: 5rem;
+
+        padding: 7px;
+
+        border-radius: 10px;
+    }
+
+    /* footer */
+    footer.sec__y {
+        padding-bottom: 2.25rem;
+    }
+
+    footer p {
+        font-size: 1rem;
+    }
+
+    .foot__desc img {
+        height: 3rem;
+    }
+
+    .foot__desc,
+    .foot__contact {
+        margin-bottom: 1.5rem;
+    }
+
+    .foot__desc p {
+        margin-top: 1rem;
+    }
+
+    .foot__list {
+        margin-left: 1.5rem;
+    }
+
+    .foot__link {
+        font-size: 1rem;
+
+        margin-bottom: 1rem;
+    }
+
+    .foot__link i {
+        font-size: .875rem;
+    }
+
+    .foot .txt__second {
+        font-size: .875rem;
+    }
+
+    /* head other */
+    .header__main p {
+        margin: 24px auto auto;
+    }
+
+    /******************************************/
+    /*               INDEX PAGE               */
+    /******************************************/
+    /* jumbotron */
+    .jumbotron {
+        height: 64rem;
+    }
+
+    .jumbotron.sec__x {
+        padding: 0 4rem 0;
+    }
+
+    .jumbotron .row h1 {
+        text-align: center;
+    }
+
+    .jumbotron .row p {
+        padding: 0 3rem 0;
+
+        text-align: center;
+    }
+
+    .skyx__btn__gs {
+        justify-content: center;
+    }
+
+    .jumbotron .container .row .left {
+        margin-bottom: 5rem;
+    }
+
+    .btn__gs {
+        margin-top: 1.25rem;
+        padding: 1rem 2rem;
+    }
+
+    .btn__gs i {
+        font-size: var(--fz-1);
+    }
+
+    .relative__img {
+        position: relative;
+
+        width: 330%;
+    }
+
+    .hero__img {
+        left: -35.5%;
+    }
+
+    /* info */
+    .img__info {
+        display: block;
+
+        width: 70%;
+        margin: auto;
+    }
+
+    .info__r {
+        padding-left: 0;
+    }
+
+    .info__l {
+        margin-bottom: 2.25rem;
+        padding-right: 0;
+    }
+
+    #info .pe-3 {
+        padding-right: .75rem;
+        padding-left: .75rem;
+    }
+
+    .card__info {
+        margin-bottom: 1.875rem;
+        padding: 2.25rem;
+
+        border-radius: 1.25rem;
+        /* background-color: rgba(19, 22, 29, 1); */
+        background-color: rgba(255, 255, 255, .1);
+    }
+
+    .btn__lm {
+        margin-top: 3rem;
+        margin-bottom: 0;
+    }
+
+    .owl-dots {
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+    }
+
+    /******************************************/
+    /*               ABOUT PAGE               */
+    /******************************************/
+
+    /********************************************/
+    /*               PROJECT PAGE               */
+    /********************************************/
+
+    /********************************************/
+    /*               CONTACT PAGE               */
+    /********************************************/
+
+    /****************************************/
+    /*               FAQ PAGE               */
+    /****************************************/
+    /* faq section */
+    .qbox {
+        padding: 24px 48px;
+        border-radius: 16px;
+    }
+
+    .qbox__collapse .txt__desc {
+        font-size: 1rem;
+    }
+
+    .qbox__link span,
+    .qbox__link i {
+        font-size: 20px;
+    }
+}
+
+/*=============== mobile view ===============*/
+@media screen and (max-width: 576px) {
+    /****************************************/
+    /*               VARIABLE               */
+    /****************************************/
+    :root {
+        /* utility space */
+        --m-sec: 4rem;
+        --p-sec: 4rem;
+    }
+
+    /***************************************/
+    /*               GENERAL               */
+    /***************************************/
+    h1 {
+        font-size: 2.75rem;
+    }
+
+    /* ========== class ========== */
+    /* navbar */
+    .m__nav {
+        padding: 0 1.875rem 0;
+    }
+
+    /* section */
+    .sec__x {
+        padding-right: .75rem;
+        padding-left: .75rem;
+    }
+
+    /* scroll up */
+    .scroll__up {
+        right: 1.875rem;
+        bottom: 4rem;
+    }
+
+    /* footer */
+    footer.sec__y {
+        padding-bottom: 1.25rem;
+    }
+
+    .foot__l {
+        padding-bottom: 3rem;
+    }
+
+    .foot__r {
+        padding-bottom: 4rem;
+    }
+
+    .foot__r .d-flex {
+        justify-content: start !important;
+    }
+
+    .foot__list {
+        margin-right: 3rem;
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    .foot {
+        justify-content: center !important;
+    }
+
+    .foot hr {
+        display: none;
+    }
+
+    /******************************************/
+    /*               INDEX PAGE               */
+    /******************************************/
+    /* jumbotron */
+    .jumbotron {
+        height: 52rem;
+    }
+
+    .jumbotron.sec__x {
+        padding: 0 .75rem 0;
+    }
+
+    .jumbotron .row h1 {
+        margin-top: 5rem;
+    }
+
+    .jumbotron .row p {
+        padding: 0 1.5rem 0;
+    }
+
+    .jumbotron .container .row .left {
+        margin-bottom: 4rem;
+    }
+
+    /* info */
+    .img__info {
+        width: 75%;
+    }
+
+    .info__r {
+        margin: 2rem 0;
+    }
+
+    .info__l {
+        margin-bottom: 2rem;
+    }
+
+    #info .pe-3 {
+        padding-right: 0 !important;
+        padding-left: 0;
+    }
+
+    .title__info {
+        overflow: hidden;
+    }
+
+    .btn__lm {
+        margin-top: 2rem;
+    }
+
+    /******************************************/
+    /*               ABOUT PAGE               */
+    /******************************************/
+
+    /********************************************/
+    /*               PROJECT PAGE               */
+    /********************************************/
+
+    /********************************************/
+    /*               CONTACT PAGE               */
+    /********************************************/
+
+    /****************************************/
+    /*               FAQ PAGE               */
+    /****************************************/
+    /* faq section */
+    .qbox {
+        padding: 24px 36px;
+        margin-bottom: 3rem;
+    }
+}

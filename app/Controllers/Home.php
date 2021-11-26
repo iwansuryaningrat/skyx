@@ -23,24 +23,21 @@ class Home extends BaseController
 
     public function index()
     {
-        
+
         // Akan dipindah ke Home controller
         $ip    = $this->request->getIPAddress(); // Mendapatkan IP user
         $date  = date("Y-m-d"); // Mendapatkan tanggal sekarang
-        $waktu = time(); //
         $timeinsert = date("Y-m-d H:i:s");
-        dd($ip);
-        
+
         // Cek berdasarkan IP, apakah user sudah pernah mengakses hari ini
         // $ip = '255.255.255.252';
         $s = $this->visitorsModel->getDataIP($ip, $date);
-        $ss = isset($s)?($s):0;
+        $ss = isset($s) ? ($s) : 0;
         // d($s);
         // dd($ss);
-        
+
         // Kalau belum ada, simpan data user tersebut ke database
-        if ($ss == null)
-        {
+        if ($ss == null) {
             // dd('Tereksekusi');
             // $this->db->query("INSERT INTO visitor(ip, date, hits, online, time) VALUES('".$ip."','".$date."','1','".$waktu."','".$timeinsert."')");
             $this->visitorsModel->save([
@@ -51,15 +48,13 @@ class Home extends BaseController
                 'time' => $timeinsert
             ]);
         }
-        
+
         // Jika sudah ada, update
-        else
-        {
+        else {
             // $this->db->query("UPDATE visitor SET hits=hits+1, online='".$waktu."' WHERE ip='".$ip."' AND date='".$date."'");
-            foreach ($s as $row)
-            {
+            foreach ($s as $row) {
                 $data['hits'] = $row['hits'] + 1;
-    
+
                 $this->visitorsModel->update($row['id'], [
                     'id' => $row['id'],
                     'ip' => $ip,
@@ -72,5 +67,15 @@ class Home extends BaseController
         }
 
         return view('welcome_message');
+    }
+
+    public function home()
+    {
+        $data = [
+            'title' => 'Skyx - One Stop Solutions For Blockchain Projects Investments',
+            'tab' => 'home'
+        ];
+
+        return view('mainpage/home', $data);
     }
 }
