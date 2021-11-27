@@ -6,6 +6,7 @@ use App\Models\DatausersModel;
 use App\Models\TeamsModel;
 use App\Models\VisitorsModel;
 use App\Models\ArtikelModel;
+use App\Models\ProjectsModel;
 
 use CodeIgniter\I18n\Time;
 
@@ -15,6 +16,7 @@ class Admin extends BaseController
     protected $teamsModel;
     protected $visitorsModel;
     protected $artikelModel;
+    protected $projectsModel;
 
     public function __construct()
     {
@@ -22,6 +24,7 @@ class Admin extends BaseController
         $this->teamsModel = new TeamsModel();
         $this->visitorsModel = new VisitorsModel();
         $this->artikelModel = new ArtikelModel();
+        $this->projectsModel = new ProjectsModel();
     }
 
     public function index()
@@ -65,9 +68,13 @@ class Admin extends BaseController
 
     public function projects()
     {
+        $dataProjects = $this->projectsModel->findAll();
+        // dd($dataProjects);
+
         $data = [
             'title' => 'Projects | SKYX',
-            'tab' => 'projects'
+            'tab' => 'projects',
+            'dataprojects' => $dataProjects
         ];
 
         return view('admin/projects', $data);
