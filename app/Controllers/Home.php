@@ -98,4 +98,14 @@ class Home extends BaseController
 
         return view('mainpage/faq', $data);
     }
+
+    public function about()
+    {
+        $data = [
+            'title' => 'About Us - Skyx',
+            'tab' => 'about'
+        ];
+
+        return view('mainpage/about', $data);
+    }
 }
