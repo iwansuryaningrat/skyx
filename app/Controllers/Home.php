@@ -88,4 +88,14 @@ class Home extends BaseController
 
         return view('mainpage/home', $data);
     }
+
+    public function faq()
+    {
+        $data = [
+            'title' => 'FAQs | Skyx - One Stop Solutions For Blockchain Projects Investments',
+            'tab' => 'faq'
+        ];
+
+        return view('mainpage/faq', $data);
+    }
 }

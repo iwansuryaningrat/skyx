@@ -32,13 +32,16 @@
 	<link rel="apple-touch-icon" sizes="180x180" href="">
 
 	<!-- Styles -->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> <!-- bootstrap styles -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+	<!-- bootstrap styles -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css" integrity="sha512-xnP2tOaCJnzp2d2IqKFcxuOiVCbuessxM6wuiolT9eeEJCyy0Vhcwa4zQvdrZNVqlqaxXhHqsSV1Ww7T2jSCUQ==" crossorigin="anonymous" referrerpolicy="no-referrer" /> <!-- bootstrap icon -->
 	<link rel="stylesheet" href="/mainpage/css/owl.carousel.min.css"> <!-- owl carousel min -->
 	<link rel="stylesheet" href="/mainpage/css/owl.theme.default.min.css"> <!-- owl carousel theme default min -->
-	<link rel="stylesheet" href="/mainpage/vendor/fontawesome-free-5.15.3-web/css/all.min.css"> <!-- fontawesome free v.5.15 -->
-	<link rel="stylesheet" href="/mainpage/vendor/akar-icons-fonts-main/src/css/akar-icons.css"> <!-- akar icon styles -->
+	<link rel="stylesheet" href="/mainpage/vendor/fontawesome-free-5.15.3-web/css/all.min.css">
 
+	<!-- fontawesome free v.5.15 -->
+	<link rel="stylesheet" href="/mainpage/vendor/akar-icons-fonts-main/src/css/akar-icons.css"> <!-- akar icon styles -->
 	<link rel="stylesheet" href="/mainpage/css/styles.css"> <!-- skyx styles -->
 
 	<!-- Favicon  -->
@@ -65,7 +68,7 @@
 			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 				<div class="navbar-nav ms-auto">
 					<a class="nav-link nav__link <?php if ($tab == 'home') : echo 'active';
-													endif; ?>" href=" /home/home">Home</a>
+													endif; ?>" href="/home/home">Home</a>
 					<a class="nav-link nav__link <?php if ($tab == 'about') : echo 'active';
 													endif; ?>" href="/home/about">About Us</a>
 					<a class="nav-link nav__link <?php if ($tab == 'projects') : echo 'active';
@@ -112,68 +115,111 @@
 	<i class="bi bi-caret-up-fill scroll__up"></i>
 	<!-- end scroll up button -->
 
-	<!-- jumbotron section -->
-	<div class="overflow-hidden">
-		<div class="jumbotron sec__x">
-			<div class="container">
-				<div class="row">
-					<!-- left -->
-					<div class="col-lg-7 col-12 left">
-						<h1>SKYX VENTURES CAPITAL</h1>
-						<p class="txt__second">One stop solutions for blockchain projects investments</p>
-						<div class="skyx__btn__gs">
-							<a href="/home/contact" class="btn__gs d-flex align-items-center">Get started<i class="ai-arrow-right"></i></a>
-						</div>
-					</div>
-
-					<!-- right -->
-					<div class="col-lg-5 col-12">
-						<div class="relative__img">
-							<div class="hero__img">
-								<img class="absolute__img" src="/mainpage/img/hero-bitcoin.svg" alt="...">
-							</div>
-						</div>
-					</div> <!-- end col -->
-				</div> <!-- end row -->
-			</div> <!-- end container -->
-		</div> <!-- end jumbotron -->
-	</div>
-	<!-- end jumbotron section -->
-
-	<!-- info section -->
-	<div class="sec__x sec__y">
+	<!-- header -->
+	<header>
 		<div class="container">
-			<div class="row">
-				<!-- left -->
-				<div class="col-lg-6 col-12">
-					<div class="info__l">
-						<img class="img__info" src="/mainpage/img/image-info.svg" alt="image-info-section">
+			<div class="head__other d-flex justify-content-center align-items-center">
+				<div class="header__main">
+					<h1>FAQ</h1>
+					<p class="txt__second">Frequently Asked Questions</p>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- end header -->
+
+	<!-- faq section -->
+	<div class="sec__x sec__b">
+		<div class="container">
+			<div>
+				<!-- qbox1 -->
+				<div class="qbox">
+					<a class="qbox__link d-flex align-items-center justify-content-between" data-bs-toggle="collapse" href="#qbox-1" role="button" aria-expanded="false" aria-controls="collapseExample">
+						<span>Skyx Token</span>
+						<i class="bi bi-caret-down-fill ms-3"></i>
+					</a>
+
+					<div class="collapse" id="qbox-1">
+						<div class="qbox__collapse">
+							<p class="txt__desc">
+								SKX merupakan token collateral milik SKYX. Dengan memiliki SKX anda akan mendapatkan garansi alokasi <b> private sale dari berbagai macam proyek berkualitas.</b>
+							</p>
+						</div>
 					</div>
 				</div>
+				<!-- end qbox1 -->
 
-				<!-- right -->
-				<div class="col-lg-6 col-12">
-					<div class="info__r">
-						<div id="info" class="owl-carousel owl-theme">
-							<?php foreach ($artikel as $data) : ?>
-								<div class="pe-3">
-									<div class="card__info">
-										<h2 class="title__info"><?= $data['judul']; ?></h2>
-										<p class="txt__desc"><?= $data['preview']; ?></p>
-										<div class="btn__lm">
-											<a href="#" class="d-flex align-items-center"><span class="d-flex">Learn more</span><i class="bi bi-arrow-right-short d-flex align-items-center"></i></a>
-										</div>
-									</div>
-								</div>
-							<?php endforeach; ?>
+				<!-- qbox2 -->
+				<div class="qbox">
+					<a class="qbox__link d-flex align-items-center justify-content-between" data-bs-toggle="collapse" href="#qbox-2" role="button" aria-expanded="false" aria-controls="collapseExample">
+						<span>BENEFITS FOR SKX HOLDERS</span>
+						<i class="bi bi-caret-down-fill ms-3"></i>
+					</a>
 
-						</div> <!-- end info owl carousel -->
-					</div> <!-- end info 4 -->
-				</div> <!-- end col -->
-			</div> <!-- end row -->
+					<div class="collapse" id="qbox-2">
+						<div class="qbox__collapse">
+							<p class="txt__desc">
+							<ol class="txt__desc">
+								<li>Garansi alokasi ICO dengan harga private sale, <b>bottom price</b></li>
+								<li>Screening berlapis untuk mendapatkan <b>project terbaik</b></li>
+								<li>Harga SKX fixed 1$, <b>harga stabil dan redeemable to BUSD</b></li>
+							</ol>
+							</p>
+						</div>
+					</div>
+				</div>
+				<!-- end qbox2 -->
+
+				<!-- qbox3 -->
+				<div class="qbox">
+					<a class="qbox__link d-flex align-items-center justify-content-between" data-bs-toggle="collapse" href="#qbox-3" role="button" aria-expanded="false" aria-controls="collapseExample">
+						<span>POOL WEIGHT :</span>
+						<i class="bi bi-caret-down-fill ms-3"></i>
+					</a>
+
+					<div class="collapse" id="qbox-3">
+						<div class="qbox__collapse">
+							<p class="txt__desc">
+								<b>1 SKX = 1 BUSD</b>
+							<ul class="txt__desc">
+								<li>Tier 1 : 2500 SKX min alokasi bobot 1</li>
+								<li>Tier 2 : 5000 SKX min alokasi bobot 2.5</li>
+								<li>Tier 3 : 10.000 SKX min alokasi bobot 6</li>
+								<li>Tier 4 : 25.000 SKX min alokasi bobot 18 - (limited for 4 holders)</li>
+							</ul>
+							<p class="txt__desc"><span>*</span>SKX token redeemable after 3 months <br><span>*</span>SKX token tidak untuk diperjualbelikan, dan hanya bisa redeem dari wallet awal investor </p>
+							</p>
+						</div>
+					</div>
+				</div>
+				<!-- end qbox3 -->
+
+				<!-- qbox4 -->
+				<div class="qbox">
+					<a class="qbox__link d-flex align-items-center justify-content-between" data-bs-toggle="collapse" href="#qbox-4" role="button" aria-expanded="false" aria-controls="collapseExample">
+						<span>Tahapan :</span>
+						<i class="bi bi-caret-down-fill ms-3"></i>
+					</a>
+
+					<div class="collapse" id="qbox-4">
+						<div class="qbox__collapse">
+							<p class="txt__desc">
+							<ol class="txt__desc">
+								<li>Tukar BUSD dengan SKX token dengan harga tetap 1 SKX = 1 BUSD</li>
+								<li>SKX holder akan mendapatkan privilege harga awal projek – projek baru, bahkan harga private sale (lebih murah dari public sale)</li>
+								<li>SKX holder dapet membeli maksimum alokasi yang didapat sesuai dengan bobot yang dimiliki</li>
+								<li>Private sale akan dibagikan tepat waktu sesuai dengan timeline projek </li>
+								<li>Token langsung dikirimkan ke wallet SKX holder </li>
+							</ol>
+							</p>
+						</div>
+					</div>
+				</div>
+				<!-- end qbox4 -->
+			</div>
 		</div> <!-- end container -->
 	</div>
-	<!-- end info section -->
+	<!-- end faq section -->
 
 	<!-- footer section -->
 	<footer class="sec__y">
@@ -234,37 +280,13 @@
 	<!-- end footer section -->
 
 	<!-- scripts -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <!-- jquery 3.5.1 Gcdn scripts -->
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> <!-- bootstrap scripts -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- jquery 3.5.1 Gcdn scripts -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+	</script> <!-- bootstrap scripts -->
 	<script src="/mainpage/js/owl.carousel.min.js"></script> <!-- owl carousel min scripts -->
 
 	<script src="/mainpage/js/scripts.js"></script> <!-- skyx scripts -->
-
-	<!-- carousel-info-home -->
-	<script>
-		$(document).ready(function() {
-			$('.owl-carousel#info').owlCarousel({
-				loop: true,
-				margin: 16,
-				nav: false,
-				dots: true,
-				autoplay: true,
-				autoplayTimeout: 6000,
-				smartSpeed: 1000,
-				responsive: {
-					0: {
-						items: 1
-					},
-					600: {
-						items: 1
-					},
-					1000: {
-						items: 1
-					}
-				}
-			});
-		});
-	</script>
 </body>
 
 </html>
