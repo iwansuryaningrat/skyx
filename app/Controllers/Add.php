@@ -78,13 +78,18 @@ class Add extends BaseController
             $image->move('foto/projects', $namaImage);
         }
 
+        $startDate = Time::parse($this->request->getVar('startdate'));
+        $startDate = $startDate->toDateString();
+        $endDate = Time::parse($this->request->getVar('enddate'));
+        $endDate = $endDate->toDateString();
+        // dd($startDate);
+
         $data = [
             'nama' => $this->request->getVar('name'),
             'deskripsi' => $this->request->getVar('deskripsi'),
-            'start_date' => $this->request->getVar('startdate'),
-            'end_date' => $this->request->getVar('enddate'),
+            'start_date' => $startDate,
+            'end_date' => $endDate,
             'price' => $this->request->getVar('price'),
-            'satuan' => $this->request->getVar('satuan'),
             'satuan' => $this->request->getVar('satuan'),
             'total_bon' => $this->request->getVar('totalbon'),
             'foto' => $namaImage
