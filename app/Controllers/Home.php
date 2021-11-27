@@ -69,7 +69,11 @@ class Home extends BaseController
             }
         }
 
-        return view('welcome_message');
+        $data = [
+            'title' => 'Skyx - START!'
+        ];
+
+        return view('mainpage/index', $data);
     }
 
     public function home()
