@@ -23,6 +23,7 @@ class Add extends BaseController
         $this->dataModel = new DatausersModel();
         $this->teamsModel = new TeamsModel();
         $this->visitorsModel = new VisitorsModel();
+        $this->artikelModel = new ArtikelModel();
         $this->projectsModel = new ProjectsModel();
     }
 
