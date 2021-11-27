@@ -6,10 +6,11 @@
     2. Variable
     3. General styles
     4. Index Page
-    5. About Page
-    6. Project Page
-    7. Contact Page
-    8. FAQ Page
+    5. Home Page
+    6. About Page
+    7. Project Page
+    8. Contact Page
+    9. FAQ Page
     99. Responsive / Media queries
 */
 
@@ -52,6 +53,8 @@ body {
         #023155 59.98%,
         #0d0d2b 86.99%
     );
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 a {
     text-decoration: none;
@@ -389,6 +392,56 @@ footer p {
 /******************************************/
 /*               INDEX PAGE               */
 /******************************************/
+.start__section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.start__content {
+    width: 72vw;
+}
+
+.start__content img {
+    width: 100%;
+}
+
+.start__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 18px;
+}
+
+.start__btn {
+    display: block;
+    padding: 20px 84px;
+    background: linear-gradient(90deg, #425ca9 0%, #1e3c72 35.42%, #282a6d 100%);
+    border-radius: .875rem;
+    font-weight: 700;
+    color: var(--white);
+    font-size: 24px;
+    transition: all .3s ease-in-out;
+}
+
+.start__btn:hover {
+    transform: scale(.95);
+}
+
+.start__btn span {
+    transition: all .4s ease-in-out;
+}
+
+.start__btn:hover span {
+    color: var(--white);
+    text-shadow: 0px 0px 9px var(--white);
+}
+
+/******************************************/
+/*               HOME PAGE               */
+/******************************************/
 /* jumbotron */
 .jumbotron {
     height: 45rem;
@@ -524,6 +577,32 @@ footer p {
 /********************************************/
 /*               CONTACT PAGE               */
 /********************************************/
+.contact__card {
+    background-color: rgba(255, 255, 255, .1);
+    backdrop-filter: blur(1.5rem);
+    padding: 60px;
+    border-radius: 27px;
+    max-width: 27.25rem;
+}
+
+.contact__card p:first-child {
+    margin-bottom: 20px;
+}
+
+.exo {
+    width: 64px;
+    height: 64px;
+    background-color: rgba(255, 255, 255, .1);
+    backdrop-filter: blur(1.5rem);
+    margin-bottom: 24px;
+    border-radius: 14px;
+}
+
+.contact__icon i {
+    color: var(--second);
+    font-size: 1.5rem;
+    margin-right: 1.5rem;
+}
 
 /****************************************/
 /*               FAQ PAGE               */
@@ -567,20 +646,12 @@ footer p {
     }
 
     /******************************************/
-    /*               ABOUT PAGE               */
+    /*               INDEX PAGE               */
     /******************************************/
-
-    /********************************************/
-    /*               PROJECT PAGE               */
-    /********************************************/
-
-    /********************************************/
-    /*               CONTACT PAGE               */
-    /********************************************/
-
-    /****************************************/
-    /*               FAQ PAGE               */
-    /****************************************/
+    .start__section {
+        max-width: 1440px;
+        margin: auto;
+    }
 }
 
 /*=============== tablet view ===============*/
@@ -690,7 +761,23 @@ footer p {
     }
 
     /******************************************/
-    /*               INDEX PAGE               */
+    /*               HOME PAGE               */
+    /******************************************/
+    .start__content {
+        width: 80vw;
+    }
+
+    .start__link {
+        margin-top: 24px;
+    }
+
+    .start__btn {
+        font-size: 20px;
+        padding: 16px 64px;
+    }
+
+    /******************************************/
+    /*               HOME PAGE               */
     /******************************************/
     /* jumbotron */
     .jumbotron {
@@ -881,6 +968,18 @@ footer p {
 
     /******************************************/
     /*               INDEX PAGE               */
+    /******************************************/
+    .start__link {
+        margin-top: 30px;
+    }
+
+    .start__btn {
+        font-size: 18px;
+        padding: 12px 48px;
+    }
+
+    /******************************************/
+    /*               HOME PAGE               */
     /******************************************/
     /* jumbotron */
     .jumbotron {
