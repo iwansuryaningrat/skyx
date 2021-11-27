@@ -359,8 +359,8 @@
 														<td><?= $row['deskripsi']; ?></td>
 														<td><?= $row['start_date']; ?></td>
 														<td><?= $row['end_date']; ?></td>
-														<td><?= $row['price']; ?></td>
-														<td><?= $row['total_raised']; ?></td>
+														<td><?= $row['price'] . " " . $row['satuan']; ?></td>
+														<td><?= $row['total_raised'] . " " . $row['satuan']; ?></td>
 														<td><?= $row['bon']; ?></td>
 														<td><?= $row['total_bon']; ?></td>
 														<td>
