@@ -148,45 +148,48 @@
 			</div> <!-- end text center -->
 			<div class="tp__content">
 				<div id="tp" class="owl-carousel owl-theme">
-					<!-- card1 -->
-					<div>
-						<a href="project-view.html" class="tp__link d-block">
-							<div class="tp__card my-3 mx-1">
-								<div>
-									<div class="tp__img"></div>
-									<p class="fw-bold tp__title">SugarBounce</p>
-									<p class="tp__desc tp__fz tp__seccond">SugarBounce is a game-changing ecosystem, ready to present a consummate universe for all NSFW entertainment needs.</p>
-								</div>
-
-								<div>
+					<?php foreach ($projects as $data) : ?>
+						<?php  ?>
+						<!-- card1 -->
+						<div>
+							<a href="project-view.html" class="tp__link d-block">
+								<div class="tp__card my-3 mx-1">
 									<div>
-										<p class="fw-bold tp__fz tp__mb">Price : 1 BON = 0,55 BUSD</p>
-										<p class="fw-bold tp__fz mb-0">Start : 23 Nov = 09:00 UTC</p>
-									</div>
-
-									<div class="tp__project">
-										<p class="tp__fz-sm">Open in 20 minutes</p>
-										<div class="progress__bar"></div>
-										<div class="d-flex justify-content-between align-items-center">
-											<p class="tp__fz-sm">0 BUSD</p>
-											<p class="tp__fz-sm">0 / 20000 BON</p>
-										</div>
+										<div class="tp__img"></div>
+										<p class="fw-bold tp__title"><?= $data['nama']; ?></p>
+										<p class="tp__desc tp__fz tp__seccond"><?= $data['deskripsi']; ?></p>
 									</div>
 
 									<div>
-										<div class="d-flex align-items-center justify-content-between tp__mb">
-											<p class="tp__fz fw-bold tp__second mb-0">TOTAL RAISED</p>
-											<p class="tp__fz fw-bold tp__second mb-0">1X =</p>
+										<div>
+											<p class="fw-bold tp__fz tp__mb">Price : 1 BON = <?= $data['price'] . " " . $data['satuan']; ?> BUSD</p>
+											<p class="fw-bold tp__fz mb-0">Start : 23 Nov = 09:00 UTC</p>
 										</div>
-										<div class="d-flex align-items-center justify-content-between">
-											<p class="tp__fz fw-bold mb-0">$ 180,000</p>
-											<p class="tp__fz fw-bold mb-0">$ 15,28</p>
+
+										<div class="tp__project">
+											<p class="tp__fz-sm">Open in 20 minutes</p>
+											<div class="progress__bar"></div>
+											<div class="d-flex justify-content-between align-items-center">
+												<p class="tp__fz-sm">0 BUSD</p>
+												<p class="tp__fz-sm"><?= $data['bon']; ?> / <?= $data['total_bon'] ?> BON</p>
+											</div>
+										</div>
+
+										<div>
+											<div class="d-flex align-items-center justify-content-between tp__mb">
+												<p class="tp__fz fw-bold tp__second mb-0">TOTAL RAISED</p>
+												<p class="tp__fz fw-bold tp__second mb-0">1X =</p>
+											</div>
+											<div class="d-flex align-items-center justify-content-between">
+												<p class="tp__fz fw-bold mb-0">$ <?= $data['total_raised']; ?></p>
+												<p class="tp__fz fw-bold mb-0">$ 15,28</p>
+											</div>
 										</div>
 									</div>
-								</div>
-							</div> <!-- end tp card -->
-						</a> <!-- end tp link -->
-					</div>
+								</div> <!-- end tp card -->
+							</a> <!-- end tp link -->
+						</div>
+					<?php endforeach; ?>
 
 					<!-- card2 -->
 					<div>

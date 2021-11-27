@@ -6,6 +6,7 @@ use App\Models\DatausersModel;
 use App\Models\TeamsModel;
 use App\Models\VisitorsModel;
 use App\Models\ArtikelModel;
+use App\Models\ProjectsModel;
 
 use CodeIgniter\I18n\Time;
 
@@ -22,6 +23,7 @@ class Home extends BaseController
         $this->teamsModel = new TeamsModel();
         $this->visitorsModel = new VisitorsModel();
         $this->artikelModel = new ArtikelModel();
+        $this->projectsModel = new ProjectsModel();
     }
 
     public function index()
@@ -79,11 +81,13 @@ class Home extends BaseController
     public function home()
     {
         $artikel = $this->artikelModel->findAll();
+        $projects = $this->projectsModel->findAll();
 
         $data = [
             'title' => 'Skyx - One Stop Solutions For Blockchain Projects Investments',
             'tab' => 'home',
-            'artikel' => $artikel
+            'artikel' => $artikel,
+            'projects' => $projects
         ];
 
         return view('mainpage/home', $data);
