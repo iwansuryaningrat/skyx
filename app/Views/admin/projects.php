@@ -315,7 +315,7 @@
 								<div class="card-header">
 									<div class="d-flex align-items-center">
 										<h4 class="card-title">Data Projects</h4>
-										<a class="d-block ml-auto" href="/add/addprojectform">
+										<a class="d-block ml-auto" href="/add/addprojectsform">
 											<button class="btn btn-primary btn-round d-flex align-items-center">
 												<i class="la flaticon-add d-block mr-2"></i>
 												<span class="d-block">Add Project</span>

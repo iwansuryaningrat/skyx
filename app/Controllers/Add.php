@@ -6,6 +6,7 @@ use App\Models\DatausersModel;
 use App\Models\TeamsModel;
 use App\Models\VisitorsModel;
 use App\Models\ArtikelModel;
+use App\Models\ProjectsModel;
 
 use CodeIgniter\I18n\Time;
 
@@ -15,13 +16,14 @@ class Add extends BaseController
     protected $teamsModel;
     protected $visitorsModel;
     protected $artikelModel;
+    protected $projectsModel;
 
     public function __construct()
     {
         $this->dataModel = new DatausersModel();
         $this->teamsModel = new TeamsModel();
         $this->visitorsModel = new VisitorsModel();
-        $this->artikelModel = new ArtikelModel();
+        $this->projectsModel = new ProjectsModel();
     }
 
     public function addTeamForm()
@@ -54,6 +56,44 @@ class Add extends BaseController
         ]);
 
         return redirect()->to('/admin/teams');
+    }
+
+    public function addProjectsForm()
+    {
+        $data = [
+            'title' => 'Form Add Projects | SKYX',
+            'tab' => 'projects'
+        ];
+
+        return view('admin/formaddprojects', $data);
+    }
+
+    public function addProjects()
+    {
+        $image = $this->request->getFile('foto');
+        if ($image->getError() == 4) {
+            $namaImage = 'default.jpg';
+        } else {
+            $namaImage = $image->getRandomName();
+            $image->move('foto/projects', $namaImage);
+        }
+
+        $data = [
+            'nama' => $this->request->getVar('name'),
+            'deskripsi' => $this->request->getVar('deskripsi'),
+            'start_date' => $this->request->getVar('startdate'),
+            'end_date' => $this->request->getVar('enddate'),
+            'price' => $this->request->getVar('price'),
+            'satuan' => $this->request->getVar('satuan'),
+            'satuan' => $this->request->getVar('satuan'),
+            'total_bon' => $this->request->getVar('totalbon'),
+            'foto' => $namaImage
+        ];
+        // dd($data);
+
+        $this->projectsModel->insert($data);
+
+        return redirect()->to('/admin/projects');
     }
 
     public function addArtikelForm()
