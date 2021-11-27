@@ -145,7 +145,8 @@
 					<div class="foot__l col-md-6 col-12">
 						<!-- foot description -->
 						<div class="foot__desc">
-							<img src="/mainpage/img/skyx-logo.svg" alt="skyx-logo">
+							<!-- <img src="/mainpage/img/skyx-logo.svg" alt="skyx-logo"> -->
+							<a href="/home/home" class="d-block"><img src="/mainpage/img/logo-skyx-word.svg" alt="skyx-logo"></a>
 							<p>Making it easy to get blockchain/crypto project allocation along with investor security by professional practitioners.</p>
 						</div>
 
@@ -177,7 +178,7 @@
 								<li class="foot__link fw-bold">Company</li>
 								<li class="foot__link"><a class="d-flex align-items-center" href="/home/project"><span class="d-block me-2">Projects</span><i class="ai-arrow-up-right d-flex align-items-center"></i></a></li>
 								<li class="foot__link"><a class="d-flex align-items-center" href="/home/about"><span class="d-block me-2">About Us</span><i class="ai-arrow-up-right d-flex align-items-center"></i></a></li>
-								<li class="foot__link"><a class="d-flex align-items-center" href="/homecontact"><span class="d-block me-2">Contact Us</span><i class="ai-arrow-up-right d-flex align-items-center"></i></a></li>
+								<li class="foot__link"><a class="d-flex align-items-center" href="/home/contact"><span class="d-block me-2">Contact Us</span><i class="ai-arrow-up-right d-flex align-items-center"></i></a></li>
 							</ul>
 						</div>
 					</div>
