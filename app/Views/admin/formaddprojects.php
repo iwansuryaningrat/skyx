@@ -361,7 +361,7 @@
                                         <div class="form-group form-show-validation row">
                                             <label for="price" class="col-lg-3 col-md-3 col-sm-4 mt-sm-2 text-right">Price <span class="required-label">*</span></label>
                                             <div class="col-lg-4 col-md-9 col-sm-8">
-                                                <input type="text" class="form-control" placeholder="price" aria-label="Price" aria-describedby="price-addon" id="price" name="price" required>
+                                                <input type="text" class="form-control" placeholder="Price" aria-label="Price" aria-describedby="price-addon" id="price" name="price" required>
                                             </div>
                                         </div>
                                         <div class="form-group form-show-validation row">
