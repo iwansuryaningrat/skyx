@@ -32,6 +32,31 @@ $(document).ready(function() {
 	});
 });
 
+// CAROUSEL
+// carousel-tp-home
+$(document).ready(function() {
+	$('.owl-carousel#tp').owlCarousel({
+		loop:true,
+		margin:16,
+		nav:false,
+		dots:false,
+		autoplay:true,
+		autoplayTimeout:6000,
+		smartSpeed:1000,
+		responsive:{
+			0:{
+				items:1
+			},
+			600:{
+	            items:2
+	        },
+	        1000:{
+	            items:3
+	        }
+	    }
+	});
+});
+
 // carousel-info-home
 $(document).ready(function() {
 	$('.owl-carousel#info').owlCarousel({

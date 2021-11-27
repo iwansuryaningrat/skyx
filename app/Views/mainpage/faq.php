@@ -231,7 +231,8 @@
 					<div class="foot__l col-md-6 col-12">
 						<!-- foot description -->
 						<div class="foot__desc">
-							<img src="/mainpage/img/skyx-logo.svg" alt="skyx-logo">
+							<!-- <img src="/mainpage/img/skyx-logo.svg" alt="skyx-logo"> -->
+							<a href="home.html" class="d-block"><img src="/mainpage/img/logo-skyx-word.svg" alt="skyx-logo"></a>
 							<p>Making it easy to get blockchain/crypto project allocation along with investor security by professional practitioners.</p>
 						</div>
 

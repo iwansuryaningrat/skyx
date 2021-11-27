@@ -140,6 +140,181 @@
 	</div>
 	<!-- end jumbotron section -->
 
+	<!-- top project -->
+	<div class="sec__x sec__y">
+		<div class="container">
+			<div class="text-center">
+				<h2 class="title__info">Top Project</h2>
+			</div> <!-- end text center -->
+			<div class="tp__content">
+				<div id="tp" class="owl-carousel owl-theme">
+					<!-- card1 -->
+					<div>
+						<a href="project-view.html" class="tp__link d-block">
+							<div class="tp__card my-3 mx-1">
+								<div>
+									<div class="tp__img"></div>
+									<p class="fw-bold tp__title">SugarBounce</p>
+									<p class="tp__desc tp__fz tp__seccond">SugarBounce is a game-changing ecosystem, ready to present a consummate universe for all NSFW entertainment needs.</p>
+								</div>
+
+								<div>
+									<div>
+										<p class="fw-bold tp__fz tp__mb">Price : 1 BON = 0,55 BUSD</p>
+										<p class="fw-bold tp__fz mb-0">Start : 23 Nov = 09:00 UTC</p>
+									</div>
+
+									<div class="tp__project">
+										<p class="tp__fz-sm">Open in 20 minutes</p>
+										<div class="progress__bar"></div>
+										<div class="d-flex justify-content-between align-items-center">
+											<p class="tp__fz-sm">0 BUSD</p>
+											<p class="tp__fz-sm">0 / 20000 BON</p>
+										</div>
+									</div>
+
+									<div>
+										<div class="d-flex align-items-center justify-content-between tp__mb">
+											<p class="tp__fz fw-bold tp__second mb-0">TOTAL RAISED</p>
+											<p class="tp__fz fw-bold tp__second mb-0">1X =</p>
+										</div>
+										<div class="d-flex align-items-center justify-content-between">
+											<p class="tp__fz fw-bold mb-0">$ 180,000</p>
+											<p class="tp__fz fw-bold mb-0">$ 15,28</p>
+										</div>
+									</div>
+								</div>
+							</div> <!-- end tp card -->
+						</a> <!-- end tp link -->
+					</div>
+
+					<!-- card2 -->
+					<div>
+						<a href="project-view.html" class="tp__link d-block">
+							<div class="tp__card my-3 mx-1">
+								<div>
+									<div class="tp__img"></div>
+									<p class="fw-bold tp__title">Solchicks</p>
+									<p class="tp__desc tp__fz tp__seccond">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, fugiat. Qui, voluptatum.</p>
+								</div>
+
+								<div>
+									<div>
+										<p class="fw-bold tp__fz tp__mb">Price : 1 BON = 0,55 BUSD</p>
+										<p class="fw-bold tp__fz mb-0">Start : 23 Nov = 09:00 UTC</p>
+									</div>
+
+									<div class="tp__project">
+										<p class="tp__fz-sm">Open in 20 minutes</p>
+										<div class="progress__bar"></div>
+										<div class="d-flex justify-content-between align-items-center">
+											<p class="tp__fz-sm">0 BUSD</p>
+											<p class="tp__fz-sm">0 / 20000 BON</p>
+										</div>
+									</div>
+
+									<div>
+										<div class="d-flex align-items-center justify-content-between tp__mb">
+											<p class="tp__fz fw-bold tp__second mb-0">TOTAL RAISED</p>
+											<p class="tp__fz fw-bold tp__second mb-0">1X =</p>
+										</div>
+										<div class="d-flex align-items-center justify-content-between">
+											<p class="tp__fz fw-bold mb-0">$ 180,000</p>
+											<p class="tp__fz fw-bold mb-0">$ 15,28</p>
+										</div>
+									</div>
+								</div>
+							</div> <!-- end tp card -->
+						</a> <!-- end tp link -->
+					</div>
+
+					<!-- card3 -->
+					<div>
+						<a href="project-view.html" class="tp__link d-block">
+							<div class="tp__card my-3 mx-1">
+								<div>
+									<div class="tp__img"></div>
+									<p class="fw-bold tp__title">Metaverse</p>
+									<p class="tp__desc tp__fz tp__seccond">Metaverse is a game-changing ecosystem. Optio omnis atque eveniet magni at voluptatum</p>
+								</div>
+
+								<div>
+									<div>
+										<p class="fw-bold tp__fz tp__mb">Price : 1 BON = 0,55 BUSD</p>
+										<p class="fw-bold tp__fz mb-0">Start : 23 Nov = 09:00 UTC</p>
+									</div>
+
+									<div class="tp__project">
+										<p class="tp__fz-sm">Open in 20 minutes</p>
+										<div class="progress__bar"></div>
+										<div class="d-flex justify-content-between align-items-center">
+											<p class="tp__fz-sm">0 BUSD</p>
+											<p class="tp__fz-sm">0 / 20000 BON</p>
+										</div>
+									</div>
+
+									<div>
+										<div class="d-flex align-items-center justify-content-between tp__mb">
+											<p class="tp__fz fw-bold tp__second mb-0">TOTAL RAISED</p>
+											<p class="tp__fz fw-bold tp__second mb-0">1X =</p>
+										</div>
+										<div class="d-flex align-items-center justify-content-between">
+											<p class="tp__fz fw-bold mb-0">$ 180,000</p>
+											<p class="tp__fz fw-bold mb-0">$ 15,28</p>
+										</div>
+									</div>
+								</div>
+							</div> <!-- end tp card -->
+						</a> <!-- end tp link -->
+					</div>
+
+					<!-- card4 -->
+					<div>
+						<a href="project-view.html" class="tp__link d-block">
+							<div class="tp__card my-3 mx-1">
+								<div>
+									<div class="tp__img"></div>
+									<p class="fw-bold tp__title">Monster Clan</p>
+									<p class="tp__desc tp__fz tp__seccond">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio omnis atque eveniet magni at voluptatum.</p>
+								</div>
+
+								<div>
+									<div>
+										<p class="fw-bold tp__fz tp__mb">Price : 1 BON = 0,55 BUSD</p>
+										<p class="fw-bold tp__fz mb-0">Start : 23 Nov = 09:00 UTC</p>
+									</div>
+
+									<div class="tp__project">
+										<p class="tp__fz-sm">Open in 20 minutes</p>
+										<div class="progress__bar"></div>
+										<div class="d-flex justify-content-between align-items-center">
+											<p class="tp__fz-sm">0 BUSD</p>
+											<p class="tp__fz-sm">0 / 20000 BON</p>
+										</div>
+									</div>
+
+									<div>
+										<div class="d-flex align-items-center justify-content-between tp__mb">
+											<p class="tp__fz fw-bold tp__second mb-0">TOTAL RAISED</p>
+											<p class="tp__fz fw-bold tp__second mb-0">1X =</p>
+										</div>
+										<div class="d-flex align-items-center justify-content-between">
+											<p class="tp__fz fw-bold mb-0">$ 180,000</p>
+											<p class="tp__fz fw-bold mb-0">$ 15,28</p>
+										</div>
+									</div>
+								</div>
+							</div> <!-- end tp card -->
+						</a> <!-- end tp link -->
+					</div>
+				</div>
+			</div> <!-- end tp content -->
+
+			<a href="project.html" class="tp__va"><span class="d-block me-2">View all</span><i class="bi bi-arrow-right-short d-flex align-items-center"></i></a>
+		</div> <!-- end container -->
+	</div>
+	<!-- end top projects -->
+
 	<!-- info section -->
 	<div class="sec__x sec__y">
 		<div class="container">
