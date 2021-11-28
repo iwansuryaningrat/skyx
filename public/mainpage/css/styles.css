@@ -849,16 +849,36 @@ footer p {
 /********************************************/
 /*               CONTACT PAGE               */
 /********************************************/
+.contact__flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .contact__card {
     background-color: rgba(255, 255, 255, .1);
     backdrop-filter: blur(1.5rem);
-    padding: 60px;
+    padding: 54px;
     border-radius: 27px;
-    max-width: 27.25rem;
+    width: 40vw;
+    max-width: 520px;
 }
 
 .contact__card p:first-child {
     margin-bottom: 20px;
+}
+
+.contact__card a {
+    color: var(--second);
+    text-decoration: underline;
+    font-size: 20px;
+    transition: all .3s ease-in-out;
+}
+
+.contact__card > a:hover,
+.contact__icon a:hover i {
+    color: var(--white);
+    text-shadow: 0 0 1.25rem rgba(255, 255, 255, 1);
 }
 
 .exo {
@@ -870,10 +890,16 @@ footer p {
     border-radius: 14px;
 }
 
+.contact__icon {
+    display: flex;
+    align-items: center;
+}
+
 .contact__icon i {
     color: var(--second);
     font-size: 1.5rem;
-    margin-right: 1.5rem;
+    margin-right: 1.75rem;
+    transition: all .3s ease-in-out;
 }
 
 /****************************************/
@@ -1221,6 +1247,19 @@ footer p {
     /********************************************/
     /*               CONTACT PAGE               */
     /********************************************/
+    .contact__card {
+        padding: 36px;
+        border-radius: 20px;
+        width: 42vw;
+    }
+    .exo {
+        width: 48px;
+        height: 48px;
+    }
+
+    .contact__card a {
+        font-size: 18px;
+    }
 
     /****************************************/
     /*               FAQ PAGE               */
@@ -1436,6 +1475,22 @@ footer p {
     /********************************************/
     /*               CONTACT PAGE               */
     /********************************************/
+    .contact__flex {
+        flex-direction: column;
+    }
+
+    .contact__card {
+        width: 100vw;
+        max-width: 100%;
+    }
+
+    .contact__card:first-child {
+        margin-bottom: 24px;
+    }
+
+    .contact__icon i {
+        font-size: 18px;
+    }
 
     /****************************************/
     /*               FAQ PAGE               */
