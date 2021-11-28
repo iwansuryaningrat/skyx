@@ -33,18 +33,19 @@
 
 	<!-- Styles -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
 	<!-- bootstrap styles -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css" integrity="sha512-xnP2tOaCJnzp2d2IqKFcxuOiVCbuessxM6wuiolT9eeEJCyy0Vhcwa4zQvdrZNVqlqaxXhHqsSV1Ww7T2jSCUQ==" crossorigin="anonymous" referrerpolicy="no-referrer" /> <!-- bootstrap icon -->
 	<link rel="stylesheet" href="/mainpage/css/owl.carousel.min.css"> <!-- owl carousel min -->
 	<link rel="stylesheet" href="/mainpage/css/owl.theme.default.min.css"> <!-- owl carousel theme default min -->
 	<link rel="stylesheet" href="/mainpage/vendor/fontawesome-free-5.15.3-web/css/all.min.css">
+
 	<!-- fontawesome free v.5.15 -->
 	<link rel="stylesheet" href="/mainpage/vendor/akar-icons-fonts-main/src/css/akar-icons.css"> <!-- akar icon styles -->
-
 	<link rel="stylesheet" href="/mainpage/css/styles.css"> <!-- skyx styles -->
 
 	<!-- Favicon  -->
-	<link rel="icon" href="">
+	<link rel="icon" href="/mainpage//img/favicon.ico">
 </head>
 
 <body>
@@ -120,20 +121,152 @@
 			<div class="head__other d-flex justify-content-center align-items-center">
 				<div class="header__main">
 					<h1>About us</h1>
-					<p class="txt__second">
-						SKYX adalah <b>ventures capital</b> yang memiliki visi membantu investor Crypto
-						untuk mendapatkan alokasi proyek blockchain / crypto. SKYX tidak hanya menawarkan <b>kemudahan</b>
-						tetapi juga <b>keamanan</b> kepada investor karena seluruh proyek telah melalui <b>screening berlapis</b> oleh
-						praktisi professional.
-					</p>
+					<p class="txt__second">SKYX adalah <span class="text-white fw-bold">ventures capital</span> yang memiliki visi membantu investor Crypto untuk mendapatkan alokasi proyek blockchain / crypto. SKYX tidak hanya menawarkan <span class="text-white fw-bold">kemudahan</span> tetapi juga <span class="text-white fw-bold">keamanan</span> kepada investor karena seluruh proyek telah melalui <span class="text-white fw-bold">screening berlapis</span> oleh praktisi professional.</p>
 				</div>
 			</div>
 		</div>
 	</header>
 	<!-- end header -->
 
-	<!-- faq section -->
-	<!-- end faq section -->
+	<!-- visi misi section -->
+	<div class="sec__x sec__y">
+		<div class="container">
+			<!-- visi -->
+			<div class="row visi">
+				<!-- left -->
+				<div class="col-lg-6 col-12 ">
+					<div class="v__left">
+						<h2 class="title__info">Vision</h2>
+						<p class="txt__second">One stop solutions for blockchain projects investments.</p>
+					</div>
+				</div>
+
+				<!-- right -->
+				<div class="col-lg-6 col-12">
+					<div class="v__right">
+						<div class="v__img bg__img" style="background-image: url(/mainpage/img/visi-img.png);"></div>
+					</div>
+				</div>
+			</div>
+			<!-- end visi -->
+
+			<div class="misi">
+				<div>
+					<h2 class="text-center title__info">Mission</h2>
+				</div>
+				<div>
+					<div class="row">
+						<!-- misi 1 -->
+						<div class="col-lg-3 col-md-6 col-12 m__pb">
+							<div class="m__card">
+								<div class="m__icon"></div>
+								<p>Memberikan informasi tercepat dan terpercaya terkait dunia blockchain.</p>
+							</div> <!-- end misi card -->
+						</div>
+
+						<!-- misi 2 -->
+						<div class="col-lg-3 col-md-6 col-12 m__pb">
+							<div class="m__card">
+								<div class="m__icon"></div>
+								<p>Memberikan kemudahan kepada investor dalam melakukan investasi di dunia blockchain.</p>
+							</div> <!-- end misi card -->
+						</div>
+
+						<!-- misi 3 -->
+						<div class="col-lg-3 col-md-6 col-12 m__pb">
+							<div class="m__card">
+								<div class="m__icon"></div>
+								<p>Me-research projects dengan standar tinggi skyx.</p>
+							</div> <!-- end misi card -->
+						</div>
+
+						<!-- misi 4 -->
+						<div class="col-lg-3 col-md-6 col-12 m__pb">
+							<div class="m__card">
+								<div class="m__icon"></div>
+								<p>Memitigasi resiko penipuan investasi.</p>
+							</div> <!-- end misi card -->
+						</div>
+					</div> <!-- end row -->
+				</div>
+			</div>
+		</div> <!-- end container -->
+	</div>
+	<!-- end visi misi section -->
+
+	<!-- our team section -->
+	<div class="sec__x sec__y">
+		<div class="container">
+			<div class="mteam__section">
+				<div class="mteam__head">
+					<h2 class="title__info">Meet our team</h2>
+					<p class="txt__second">We are OG in cryptocurrency and believe that blockchain is the future, our team consist of Bitcoin 101 Author, Ex-Big Four, Ex-Tokopedia (Biggest e-Commerce in Indonesia), Crypto Influencer and Educator, Stocks Analyst, Ex-Banker, and Network Engineer.</p>
+				</div>
+
+				<div class="mteam__grid">
+					<div>
+						<div class="mteam">
+							<div class="mteam__img bg__img" style="background-image: url(/mainpage/img/mteam_2.png);"></div>
+							<div class="mteam__name">
+								<p class="fw-bold">Tanoko</p>
+							</div>
+							<div class="mteam__jd">
+								<p class="txt__desc fw-bold">Head</p>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="mteam">
+							<div class="mteam__img bg__img" style="background-image: url(/mainpage/img/mteam_1.png);"></div>
+							<div class="mteam__name">
+								<p class="fw-bold">Sonny</p>
+							</div>
+							<div class="mteam__jd">
+								<p class="txt__desc fw-bold">Marketing</p>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="mteam">
+							<div class="mteam__img bg__img" style="background-image: url(/mainpage/img/mteam_3.png);"></div>
+							<div class="mteam__name">
+								<p class="fw-bold">Tan</p>
+							</div>
+							<div class="mteam__jd">
+								<p class="txt__desc fw-bold">Research</p>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="mteam">
+							<div class="mteam__img bg__img" style="background-image: url(/mainpage/img/mteam_5.png);"></div>
+							<div class="mteam__name">
+								<p class="fw-bold">Vanessa</p>
+							</div>
+							<div class="mteam__jd">
+								<p class="txt__desc fw-bold">Branding</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="mteam__grid">
+					<div>
+						<div class="mteam">
+							<div class="mteam__img bg__img" style="background-image: url(/mainpage/img/mteam_4.png);"></div>
+							<div class="mteam__name">
+								<p class="fw-bold">Wellson</p>
+							</div>
+							<div class="mteam__jd">
+								<p class="txt__desc fw-bold">BizDev</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end our team section -->
 
 	<!-- footer section -->
 	<footer class="sec__y">
@@ -152,9 +285,18 @@
 
 						<!-- foot contact -->
 						<div class="foot__contact">
-							<p>+62 823 9023 0499</p>
-							<p>info@skyx.fund</p>
-							<p>10528 Conrad Dr, Jacksonville, FL, 32218</p>
+							<a href="#" class="fc__link">
+								<i class="fas fa-phone-alt d-flex align-items-center"></i>
+								<span class="d-block">+62 823 9023 0499</span>
+							</a>
+							<a href="mailto:info@skyx.fund" target="_blank" class="fc__link">
+								<i class="fas fa-envelope d-flex align-items-center"></i>
+								<span class="d-block">info@skyx.fund</span>
+							</a>
+							<a href="#" class="fc__link">
+								<i class="fas fa-map-marked-alt d-flex align-items-center"></i>
+								<span class="d-block">10528 Conrad Dr, Jacksonville, FL, 32218</span>
+							</a>
 						</div>
 
 						<!-- foot social media icon -->
@@ -195,9 +337,12 @@
 
 	<!-- scripts -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 	<!-- jquery 3.5.1 Gcdn scripts -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-	</script> <!-- bootstrap scripts -->
+	</script>
+
+	<!-- bootstrap scripts -->
 	<script src="/mainpage/js/owl.carousel.min.js"></script> <!-- owl carousel min scripts -->
 
 	<script src="/mainpage/js/scripts.js"></script> <!-- skyx scripts -->

@@ -16,7 +16,7 @@ showMenu('navmini-close', 'navbar-mini');
 // scroll to up button
 $(document).ready(function() {
 	$(window).scroll(function() {
-		if($(window).scrollTop() > 540) {
+		if($(window).scrollTop() > 720) {
 			$('.scroll__up').css({
 				"opacity":"1", "pointer-events":"auto"
 			});

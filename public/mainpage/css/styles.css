@@ -41,11 +41,13 @@
 /***************************************/
 /*               GENERAL               */
 /***************************************/
+html {
+    background-color: rgba(19, 22, 29, 1);
+}
+
 body {
     font-family: var(--ff-body);
     font-weight: 400;
-    /* background-color: rgba(19, 22, 29, 1); */
-    /* background: linear-gradient(153.54deg, #1A1625 -6.12%, #25215C 27.77%, #023155 72.55%, #0D0D2B 104.97%); */
     background: linear-gradient(
         143.38deg,
         #1a1625 -5.55%,
@@ -89,6 +91,11 @@ h2 {
 }
 
 /* ========== class ========== */
+/* display section */
+.skyx__none {
+    display: none !important;
+}
+
 /* section */
 .sec__x {
     max-width: 72rem;
@@ -106,6 +113,12 @@ h2 {
 
 .sec__b {
     padding-bottom: var(--p-sec-md);
+}
+
+.bg__img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* font and typography */
@@ -261,6 +274,8 @@ h2 {
 
     backdrop-filter: blur(1.5rem);
     align-items: center;
+
+    z-index: 999;
 }
 
 i.scroll__up:hover {
@@ -300,6 +315,19 @@ footer p {
 
 .foot__desc p {
     margin-top: 1.5rem;
+}
+
+.fc__link {
+    display: flex;
+    align-items: center;
+    color: var(--second);
+    margin-bottom: 1rem;
+    transition: all .3s ease-in-out;
+}
+
+.fc__link i {
+    margin-right: 10px;
+    font-size: 1.25rem;
 }
 
 .foot__icon {
@@ -345,7 +373,8 @@ footer p {
 }
 
 .foot__link a:hover,
-.foot__icon a:hover i {
+.foot__icon a:hover i,
+.fc__link:hover {
     color: var(--white);
     text-shadow: 0 0 1rem rgba(255, 255, 255, 1);
 }
@@ -445,15 +474,20 @@ footer p {
 /******************************************/
 /* jumbotron */
 .jumbotron {
-    height: 45rem;
+    height: 54vw;
+    max-height: 45rem;
 }
 
 .jumbotron .row h1 {
-    margin-top: 7.75rem;
+    margin-top: 9.5rem;
 }
 
 .jumbotron .row p {
-    margin-top: 1.875rem;
+    margin-top: 1rem;
+}
+
+.left {
+    max-width: 580px;
 }
 
 .skyx__btn__gs {
@@ -489,15 +523,15 @@ footer p {
 
 .relative__img {
     position: relative;
-    z-index: -1;
-    top: 24%;
+    z-index: 0;
+    top: 29%;
 
     width: 540%;
 }
 
 .hero__img {
     position: absolute;
-    left: -40%;
+    left: -39%;
 
     width: 100%;
 }
@@ -667,6 +701,109 @@ footer p {
 /******************************************/
 /*               ABOUT PAGE               */
 /******************************************/
+/* visi */
+.visi {
+    margin-bottom: 100px;
+}
+
+.v__left {
+    width: 464px;
+}
+
+.v__left p {
+    font-size: 42px;
+}
+
+.v__right {
+    padding-left: 18px;
+}
+
+.v__img {
+    height: 376px;
+    width: 100%;
+    border-radius: 24px;
+}
+
+/* misi */
+.m__card {
+    min-height: 360px;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, .1);
+    backdrop-filter: blur(1.5rem);
+    border-radius: 1.125rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.m__card p {
+    margin-bottom: 0;
+}
+
+.m__icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 9px;
+    background-color: rgba(255, 255, 255, .1);
+    backdrop-filter: blur(1.5rem);
+    margin-bottom: 24px;
+}
+
+/* why us */
+
+/* our team */
+.mteam__section {
+    background-color: rgba(255, 255, 255, .1);
+    backdrop-filter: blur(1.5rem);
+    border-radius: 36px;
+    padding: 72px 120px;
+}
+
+.mteam__head {
+    text-align: center;
+    margin-bottom: 64px;
+}
+
+.mteam__grid {
+    display: grid;
+    -webkit-box-pack: center;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, 154px);
+    gap: 54px 72px;
+    max-width: 840px;
+    margin: 0px auto;
+    margin-bottom: 54px;
+}
+
+.mteam__grid:last-child {
+    margin-bottom: 0;
+}
+
+.mteam {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mteam p {
+    font-size: 20px;
+}
+
+.mteam__img {
+    width: 154px;
+    height: 154px;
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 42px 0 42px 0;
+    margin-bottom: 20px;
+}
+
+.mteam__name p {
+    margin-bottom: 9px;
+}
+
+.mteam__jd p {
+    margin-bottom: 0;
+}
 
 /********************************************/
 /*               PROJECT PAGE               */
@@ -873,7 +1010,8 @@ footer p {
     /******************************************/
     /* jumbotron */
     .jumbotron {
-        height: 64rem;
+        height: 54.5rem;
+        max-height: 64rem;
     }
 
     .jumbotron.sec__x {
@@ -888,6 +1026,10 @@ footer p {
         padding: 0 3rem 0;
 
         text-align: center;
+    }
+
+    .left {
+        max-width: 100%;
     }
 
     .skyx__btn__gs {
@@ -914,7 +1056,7 @@ footer p {
     }
 
     .hero__img {
-        left: -35.5%;
+        left: -35.6%;
     }
 
     /* top projects */
@@ -976,6 +1118,27 @@ footer p {
     /******************************************/
     /*               ABOUT PAGE               */
     /******************************************/
+    /* visi */
+    .v__left {
+        width: 80%;
+        text-align: center;
+        margin: auto;
+        margin-bottom: 36px;
+    }
+
+    .v__left p {
+        font-size: 27px;
+    }
+
+    /* misi */
+    .m__pb {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+
+    .m__card {
+        min-height: 0;
+    }
 
     /********************************************/
     /*               PROJECT PAGE               */
@@ -1023,6 +1186,10 @@ footer p {
     }
 
     /* ========== class ========== */
+    .head__other {
+        height: 450px;
+    }
+
     /* navbar */
     .m__nav {
         padding: 0 1.875rem 0;
@@ -1088,7 +1255,7 @@ footer p {
     /******************************************/
     /* jumbotron */
     .jumbotron {
-        height: 52rem;
+        height: 43.5rem;
     }
 
     .jumbotron.sec__x {
@@ -1105,6 +1272,10 @@ footer p {
 
     .jumbotron .container .row .left {
         margin-bottom: 4rem;
+    }
+
+    .hero__img {
+        left: -35.4%;
     }
 
     /* top projects */
@@ -1150,6 +1321,18 @@ footer p {
     /******************************************/
     /*               ABOUT PAGE               */
     /******************************************/
+    /* visi */
+    .visi {
+        margin-bottom: 48px;
+    }
+
+    .v__left p {
+        font-size: 24px;
+    }
+
+    .v__img {
+        height: 240px;
+    }
 
     /********************************************/
     /*               PROJECT PAGE               */
