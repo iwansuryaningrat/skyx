@@ -45,7 +45,7 @@
 	<link rel="stylesheet" href="/mainpage/css/styles.css"> <!-- skyx styles -->
 
 	<!-- Favicon  -->
-	<link rel="icon" href="">
+	<link rel="icon" href="/mainpage/img/favicon.ico">
 </head>
 
 <body>
@@ -238,9 +238,18 @@
 
 						<!-- foot contact -->
 						<div class="foot__contact">
-							<p>+62 823 9023 0499</p>
-							<p>info@skyx.fund</p>
-							<p>10528 Conrad Dr, Jacksonville, FL, 32218</p>
+							<a href="#" class="fc__link">
+								<i class="fas fa-phone-alt d-flex align-items-center"></i>
+								<span class="d-block">+62 823 9023 0499</span>
+							</a>
+							<a href="mailto:info@skyx.fund" target="_blank" class="fc__link">
+								<i class="fas fa-envelope d-flex align-items-center"></i>
+								<span class="d-block">info@skyx.fund</span>
+							</a>
+							<a href="#" class="fc__link">
+								<i class="fas fa-map-marked-alt d-flex align-items-center"></i>
+								<span class="d-block">10528 Conrad Dr, Jacksonville, FL, 32218</span>
+							</a>
 						</div>
 
 						<!-- foot social media icon -->

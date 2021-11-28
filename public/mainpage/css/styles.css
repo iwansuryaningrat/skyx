@@ -317,6 +317,11 @@ footer p {
     margin-top: 1.5rem;
 }
 
+.foot__contact {
+    display: flex;
+    flex-direction: column;
+}
+
 .fc__link {
     display: flex;
     align-items: center;
