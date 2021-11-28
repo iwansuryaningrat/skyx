@@ -45,7 +45,7 @@
 	<link rel="stylesheet" href="/mainpage/css/styles.css"> <!-- skyx styles -->
 
 	<!-- Favicon  -->
-	<link rel="icon" href="/mainpage//img/favicon.ico">
+	<link rel="icon" href="/mainpage/img/favicon.ico">
 </head>
 
 <body>
@@ -144,7 +144,7 @@
 				<!-- right -->
 				<div class="col-lg-6 col-12">
 					<div class="v__right">
-						<div class="v__img bg__img" style="background-image: url(/mainpage/img/visi-img.png);"></div>
+						<div class="v__img bg__img" style="background-image: url(assets/img/visi-img.png);"></div>
 					</div>
 				</div>
 			</div>
@@ -198,75 +198,221 @@
 	<div class="sec__x sec__y">
 		<div class="container">
 			<div class="mteam__section">
+				<!-- mteam head -->
 				<div class="mteam__head">
 					<h2 class="title__info">Meet our team</h2>
 					<p class="txt__second">We are OG in cryptocurrency and believe that blockchain is the future, our team consist of Bitcoin 101 Author, Ex-Big Four, Ex-Tokopedia (Biggest e-Commerce in Indonesia), Crypto Influencer and Educator, Stocks Analyst, Ex-Banker, and Network Engineer.</p>
-				</div>
+				</div> <!-- end mteam head -->
 
-				<div class="mteam__grid">
-					<div>
-						<div class="mteam">
-							<div class="mteam__img bg__img" style="background-image: url(/mainpage/img/mteam_2.png);"></div>
-							<div class="mteam__name">
-								<p class="fw-bold">Tanoko</p>
-							</div>
-							<div class="mteam__jd">
-								<p class="txt__desc fw-bold">Head</p>
-							</div>
+				<!-- mteam flex -->
+				<div class="mteam__flex">
+					<div class="mteam">
+						<div class="mteam__img bg__img" style="background-image: url(assets/img/mteam_2.png);"></div>
+						<div class="mteam__name">
+							<p class="fw-bold">Sigit Tanoko</p>
+						</div>
+						<div class="mteam__jd">
+							<p class="txt__desc fw-bold">CEO</p>
+						</div>
+						<div class="mteam__icon">
+							<a href="#"><i class="fab fa-instagram-square"></i></a>
+							<a href="#"><i class="fab fa-linkedin"></i></a>
 						</div>
 					</div>
-					<div>
-						<div class="mteam">
-							<div class="mteam__img bg__img" style="background-image: url(/mainpage/img/mteam_1.png);"></div>
-							<div class="mteam__name">
-								<p class="fw-bold">Sonny</p>
-							</div>
-							<div class="mteam__jd">
-								<p class="txt__desc fw-bold">Marketing</p>
-							</div>
-						</div>
-					</div>
-					<div>
-						<div class="mteam">
-							<div class="mteam__img bg__img" style="background-image: url(/mainpage/img/mteam_3.png);"></div>
-							<div class="mteam__name">
-								<p class="fw-bold">Tan</p>
-							</div>
-							<div class="mteam__jd">
-								<p class="txt__desc fw-bold">Research</p>
-							</div>
-						</div>
-					</div>
-					<div>
-						<div class="mteam">
-							<div class="mteam__img bg__img" style="background-image: url(/mainpage/img/mteam_5.png);"></div>
-							<div class="mteam__name">
-								<p class="fw-bold">Vanessa</p>
-							</div>
-							<div class="mteam__jd">
-								<p class="txt__desc fw-bold">Branding</p>
-							</div>
-						</div>
-					</div>
-				</div>
 
-				<div class="mteam__grid">
-					<div>
-						<div class="mteam">
-							<div class="mteam__img bg__img" style="background-image: url(/mainpage/img/mteam_4.png);"></div>
-							<div class="mteam__name">
-								<p class="fw-bold">Wellson</p>
-							</div>
-							<div class="mteam__jd">
-								<p class="txt__desc fw-bold">BizDev</p>
-							</div>
+					<div class="mteam">
+						<div class="mteam__img bg__img" style="background-image: url(assets/img/mteam_1.png);"></div>
+						<div class="mteam__name">
+							<p class="fw-bold">Jefri Tan</p>
+						</div>
+						<div class="mteam__jd">
+							<p class="txt__desc fw-bold">COO</p>
+						</div>
+						<div class="mteam__icon">
+							<a href="#"><i class="fab fa-instagram-square"></i></a>
+							<a href="#"><i class="fab fa-linkedin"></i></a>
 						</div>
 					</div>
-				</div>
-			</div>
-		</div>
+
+					<div class="mteam">
+						<div class="mteam__img bg__img" style="background-image: url(assets/img/mteam_11.png);"></div>
+						<div class="mteam__name">
+							<p class="fw-bold">Abie Rezanto</p>
+						</div>
+						<div class="mteam__jd">
+							<p class="txt__desc fw-bold">CRO</p>
+						</div>
+						<div class="mteam__icon">
+							<a href="#"><i class="fab fa-instagram-square"></i></a>
+							<a href="#"><i class="fab fa-linkedin"></i></a>
+						</div>
+					</div>
+
+					<div class="mteam">
+						<div class="mteam__img bg__img" style="background-image: url(assets/img/mteam_6.png);"></div>
+						<div class="mteam__name">
+							<p class="fw-bold">Putri Sinta</p>
+						</div>
+						<div class="mteam__jd">
+							<p class="txt__desc fw-bold">Head of Finance</p>
+						</div>
+						<div class="mteam__icon">
+							<a href="#"><i class="fab fa-instagram-square"></i></a>
+							<a href="#"><i class="fab fa-linkedin"></i></a>
+						</div>
+					</div>
+
+					<div class="mteam">
+						<div class="mteam__img bg__img" style="background-image: url(assets/img/mteam_3.png);"></div>
+						<div class="mteam__name">
+							<p class="fw-bold">Daniel Wijaya</p>
+						</div>
+						<div class="mteam__jd">
+							<p class="txt__desc fw-bold">Head of Sales</p>
+						</div>
+						<div class="mteam__icon">
+							<a href="#"><i class="fab fa-instagram-square"></i></a>
+							<a href="#"><i class="fab fa-linkedin"></i></a>
+						</div>
+					</div>
+
+					<div class="mteam">
+						<div class="mteam__img bg__img" style="background-image: url(assets/img/mteam_4.png);"></div>
+						<div class="mteam__name">
+							<p class="fw-bold">Wellson</p>
+						</div>
+						<div class="mteam__jd">
+							<p class="txt__desc fw-bold">Investment Analyst</p>
+						</div>
+						<div class="mteam__icon">
+							<a href="#"><i class="fab fa-instagram-square"></i></a>
+							<a href="#"><i class="fab fa-linkedin"></i></a>
+						</div>
+					</div>
+
+					<div class="mteam">
+						<div class="mteam__img bg__img" style="background-image: url(assets/img/mteam_8.png);"></div>
+						<div class="mteam__name">
+							<p class="fw-bold">Vanessa</p>
+						</div>
+						<div class="mteam__jd">
+							<p class="txt__desc fw-bold">Head of Branding</p>
+						</div>
+						<div class="mteam__icon">
+							<a href="#"><i class="fab fa-instagram-square"></i></a>
+							<a href="#"><i class="fab fa-linkedin"></i></a>
+						</div>
+					</div>
+
+					<div class="mteam">
+						<div class="mteam__img bg__img" style="background-image: url(assets/img/mteam_10.png);"></div>
+						<div class="mteam__name">
+							<p class="fw-bold">Joshua Stephen</p>
+						</div>
+						<div class="mteam__jd">
+							<p class="txt__desc fw-bold">Head of Engineering</p>
+						</div>
+						<div class="mteam__icon">
+							<a href="#"><i class="fab fa-instagram-square"></i></a>
+							<a href="#"><i class="fab fa-linkedin"></i></a>
+						</div>
+					</div>
+
+					<div class="mteam">
+						<div class="mteam__img bg__img" style="background-image: url(assets/img/mteam_5.png);"></div>
+						<div class="mteam__name">
+							<p class="fw-bold">Elizabeth Lioe</p>
+						</div>
+						<div class="mteam__jd">
+							<p class="txt__desc fw-bold">Head of Public Relations</p>
+						</div>
+						<div class="mteam__icon">
+							<a href="#"><i class="fab fa-instagram-square"></i></a>
+							<a href="#"><i class="fab fa-linkedin"></i></a>
+						</div>
+					</div>
+
+					<div class="mteam">
+						<div class="mteam__img bg__img" style="background-image: url(assets/img/mteam_7.png);"></div>
+						<div class="mteam__name">
+							<p class="fw-bold">Mickey Marudut</p>
+						</div>
+						<div class="mteam__jd">
+							<p class="txt__desc fw-bold">Creative Director</p>
+						</div>
+						<div class="mteam__icon">
+							<a href="#"><i class="fab fa-instagram-square"></i></a>
+							<a href="#"><i class="fab fa-linkedin"></i></a>
+						</div>
+					</div>
+
+					<div class="mteam">
+						<div class="mteam__img bg__img" style="background-image: url(assets/img/mteam_12.png);"></div>
+						<div class="mteam__name">
+							<p class="fw-bold">Sonny Yu</p>
+						</div>
+						<div class="mteam__jd">
+							<p class="txt__desc fw-bold">Head of Marketing</p>
+						</div>
+						<div class="mteam__icon">
+							<a href="#"><i class="fab fa-instagram-square"></i></a>
+							<a href="#"><i class="fab fa-linkedin"></i></a>
+						</div>
+					</div>
+
+					<div class="mteam">
+						<div class="mteam__img bg__img" style="background-image: url(assets/img/mteam_9.png);"></div>
+						<div class="mteam__name">
+							<p class="fw-bold">Yustheja</p>
+						</div>
+						<div class="mteam__jd">
+							<p class="txt__desc fw-bold">Techniacl Architect</p>
+						</div>
+						<div class="mteam__icon">
+							<a href="#"><i class="fab fa-instagram-square"></i></a>
+							<a href="#"><i class="fab fa-linkedin"></i></a>
+						</div>
+					</div>
+
+					<div class="mteam">
+						<div class="mteam__img bg__img" style="background-image: url(assets/img/mteam_13.png);"></div>
+						<div class="mteam__name">
+							<p class="fw-bold">Benny</p>
+						</div>
+						<div class="mteam__jd">
+							<p class="txt__desc fw-bold">Product Manager</p>
+						</div>
+						<div class="mteam__icon">
+							<a href="#"><i class="fab fa-instagram-square"></i></a>
+							<a href="#"><i class="fab fa-linkedin"></i></a>
+						</div>
+					</div>
+				</div> <!-- end mteam flex -->
+			</div> <!-- end mteam section -->
+		</div> <!-- end container -->
 	</div>
 	<!-- end our team section -->
+
+	<!-- our partnership -->
+	<div class="sec__x sec__y">
+		<div class="container">
+			<div>
+				<h2 class="title__info text-center">Our Partnership</h2>
+				<div class="pship">
+					<figure class="pship__icon">
+						<!-- picture in here -->
+					</figure>
+					<figure class="pship__icon">
+						<!-- picture in here -->
+					</figure>
+					<figure class="pship__icon">
+						<!-- picture in here -->
+					</figure>
+				</div> <!-- end pship -->
+			</div>
+		</div> <!-- end container -->
+	</div>
+	<!-- end our partnership -->
 
 	<!-- footer section -->
 	<footer class="sec__y">
