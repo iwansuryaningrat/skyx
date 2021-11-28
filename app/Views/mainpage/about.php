@@ -147,22 +147,21 @@
 						<div class="foot__desc">
 							<!-- <img src="/mainpage/img/skyx-logo.svg" alt="skyx-logo"> -->
 							<a href="/home/home" class="d-block"><img src="/mainpage/img/logo-skyx-word.svg" alt="skyx-logo"></a>
-							<p>Making it easy to get blockchain/crypto project allocation along with investor security by professional practitioners.</p>
+							<p>One stop solutions for blockchain projects investments</p>
 						</div>
 
 						<!-- foot contact -->
 						<div class="foot__contact">
 							<p>+62 823 9023 0499</p>
 							<p>info@skyx.fund</p>
-							<p> 10528 Conrad Dr, Jacksonville, FL, 32218</p>
+							<p>10528 Conrad Dr, Jacksonville, FL, 32218</p>
 						</div>
 
 						<!-- foot social media icon -->
 						<div class="foot__icon">
-							<a href="#instagram"><i class="fab fa-instagram"></i></a>
-							<a href="#twitter"><i class="fab fa-twitter"></i></a>
-							<a href="#telegram"><i class="fab fa-telegram-plane"></i></a>
-							<a href="#linkedin"><i class="fab fa-linkedin-in"></i></a>
+							<a href="https://www.instagram.com/skyx.fund/" target="_blank"><i class="fab fa-instagram"></i></a>
+							<a href="https://twitter.com/skyx_fund" target="_blank"><i class="fab fa-twitter"></i></a>
+							<a href="https://t.me/skyx_community" target="_blank"><i class="fab fa-telegram-plane"></i></a>
 						</div>
 					</div>
 
