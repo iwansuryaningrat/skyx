@@ -117,13 +117,15 @@ class Admin extends BaseController
 
     public function artikel()
     {
-        $artikel = $this->artikelModel->findAll();
-        $data = [
-            'title' => 'Artikel | SKYX',
-            'tab' => 'artikel',
-            'artikel' => $artikel
-        ];
+        // $artikel = $this->artikelModel->findAll();
+        // $data = [
+        //     'title' => 'Artikel | SKYX',
+        //     'tab' => 'artikel',
+        //     'artikel' => $artikel
+        // ];
+        $data = ['title' => '404 - Not Found'];
 
-        return view('admin/artikel', $data);
+        // return view('admin/artikel', $data);
+        return view('errors/404', $data);
     }
 }
