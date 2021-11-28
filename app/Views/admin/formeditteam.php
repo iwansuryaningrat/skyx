@@ -321,15 +321,15 @@
                                     <?= csrf_field(); ?>
                                     <div class="card-body">
                                         <div class="form-group form-show-validation row">
-                                            <label for="name" class="col-lg-3 col-md-3 col-sm-4 mt-sm-2 text-right">Nama <span class="required-label">*</span></label>
+                                            <label for="name" class="col-lg-3 col-md-3 col-sm-4 mt-sm-2 text-right">Nama </span></label>
                                             <div class="col-lg-4 col-md-9 col-sm-8">
-                                                <input type="text" class="form-control" id="name" name="name" value="<?= $datateam['nama']; ?>" placeholder="Masukkan Nama Team" required>
+                                                <input type="text" class="form-control" id="name" name="name" value="<?= $datateam['nama']; ?>" placeholder="Masukkan Nama Team">
                                             </div>
                                         </div>
                                         <div class="form-group form-show-validation row">
-                                            <label for="jabatan" class="col-lg-3 col-md-3 col-sm-4 mt-sm-2 text-right">Jabatan <span class="required-label">*</span></label>
+                                            <label for="jabatan" class="col-lg-3 col-md-3 col-sm-4 mt-sm-2 text-right">Jabatan </span></label>
                                             <div class="col-lg-4 col-md-9 col-sm-8">
-                                                <input type="text" class="form-control" placeholder="Jabatan" aria-label="jabatan" aria-describedby="jabatan-addon" id="jabatan" name="jabatan" value="<?= $datateam['jabatan']; ?>" required>
+                                                <input type="text" class="form-control" placeholder="Jabatan" aria-label="jabatan" aria-describedby="jabatan-addon" id="jabatan" name="jabatan" value="<?= $datateam['jabatan']; ?>">
                                             </div>
                                         </div>
                                         <div class="form-group form-show-validation row">
@@ -339,15 +339,15 @@
                                             </div>
                                         </div>
                                         <div class="form-group form-show-validation row">
-                                            <label for="instagram" class="col-lg-3 col-md-3 col-sm-4 mt-sm-2 text-right">Instagram <span class="required-label">*</span></label>
+                                            <label for="instagram" class="col-lg-3 col-md-3 col-sm-4 mt-sm-2 text-right">Instagram </span></label>
                                             <div class="col-lg-4 col-md-9 col-sm-8">
-                                                <input type="text" class="form-control" placeholder="Masukkan Link Instagram" aria-label="instagram" aria-describedby="instagram-addon" id="instagram" name="instagram" value="<?= $datateam['ig']; ?>" required>
+                                                <input type="text" class="form-control" placeholder="Masukkan Link Instagram" aria-label="instagram" aria-describedby="instagram-addon" id="instagram" name="instagram" value="<?= $datateam['ig']; ?>">
                                             </div>
                                         </div>
                                         <div class="form-group form-show-validation row">
-                                            <label for="linkedin" class="col-lg-3 col-md-3 col-sm-4 mt-sm-2 text-right">Linkedin <span class="required-label">*</span></label>
+                                            <label for="linkedin" class="col-lg-3 col-md-3 col-sm-4 mt-sm-2 text-right">Linkedin </span></label>
                                             <div class="col-lg-4 col-md-9 col-sm-8">
-                                                <input type="text" class="form-control" placeholder="Masukkan Link Linkedin" aria-label="linkedin" aria-describedby="linkedin-addon" id="linkedin" name="linkedin" value="<?= $datateam['linkedin']; ?>" required>
+                                                <input type="text" class="form-control" placeholder="Masukkan Link Linkedin" aria-label="linkedin" aria-describedby="linkedin-addon" id="linkedin" name="linkedin" value="<?= $datateam['linkedin']; ?>">
                                             </div>
                                         </div>
                                         <div class="separator-solid"></div>

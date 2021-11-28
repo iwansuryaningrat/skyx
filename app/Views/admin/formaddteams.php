@@ -333,9 +333,9 @@
                                             </div>
                                         </div>
                                         <div class="form-group form-show-validation row">
-                                            <label for="deskripsi" class="col-lg-3 col-md-3 col-sm-4 mt-sm-2 text-right">Deskripsi <span class="required-label">*</span></label>
+                                            <label for="deskripsi" class="col-lg-3 col-md-3 col-sm-4 mt-sm-2 text-right">Deskripsi </span></label>
                                             <div class="col-lg-4 col-md-9 col-sm-8">
-                                                <textarea class="form-control" id="deskripsi" rows="5" placeholder="Tambahkan Deskripsi" aria-label="deskripsi" aria-describedby="deskripsi-addon" name="deskripsi" required></textarea>
+                                                <textarea class="form-control" id="deskripsi" rows="5" placeholder="Tambahkan Deskripsi" aria-label="deskripsi" aria-describedby="deskripsi-addon" name="deskripsi"></textarea>
                                             </div>
                                         </div>
                                         <div class="form-group form-show-validation row">
