@@ -136,7 +136,7 @@
 				<div class="qbox">
 					<a class="qbox__link d-flex align-items-center justify-content-between" data-bs-toggle="collapse" href="#qbox-1" role="button" aria-expanded="false" aria-controls="collapseExample">
 						<span>Skyx Token</span>
-						<i class="bi bi-caret-down-fill ms-3"></i>
+						<i class="bi bi-caret-down-fill ms-3 qbox__transform"></i>
 					</a>
 
 					<div class="collapse" id="qbox-1">
@@ -153,7 +153,7 @@
 				<div class="qbox">
 					<a class="qbox__link d-flex align-items-center justify-content-between" data-bs-toggle="collapse" href="#qbox-2" role="button" aria-expanded="false" aria-controls="collapseExample">
 						<span>BENEFITS FOR SKX HOLDERS</span>
-						<i class="bi bi-caret-down-fill ms-3"></i>
+						<i class="bi bi-caret-down-fill ms-3 qbox__transform"></i>
 					</a>
 
 					<div class="collapse" id="qbox-2">
@@ -174,7 +174,7 @@
 				<div class="qbox">
 					<a class="qbox__link d-flex align-items-center justify-content-between" data-bs-toggle="collapse" href="#qbox-3" role="button" aria-expanded="false" aria-controls="collapseExample">
 						<span>POOL WEIGHT</span>
-						<i class="bi bi-caret-down-fill ms-3"></i>
+						<i class="bi bi-caret-down-fill ms-3 qbox__transform"></i>
 					</a>
 
 					<div class="collapse" id="qbox-3">
@@ -198,7 +198,7 @@
 				<div class="qbox">
 					<a class="qbox__link d-flex align-items-center justify-content-between" data-bs-toggle="collapse" href="#qbox-4" role="button" aria-expanded="false" aria-controls="collapseExample">
 						<span>Tahapan</span>
-						<i class="bi bi-caret-down-fill ms-3"></i>
+						<i class="bi bi-caret-down-fill ms-3 qbox__transform"></i>
 					</a>
 
 					<div class="collapse" id="qbox-4">

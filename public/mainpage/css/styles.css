@@ -754,40 +754,35 @@ footer p {
     margin-bottom: 24px;
 }
 
-/* why us */
-
 /* our team */
 .mteam__section {
     background-color: rgba(255, 255, 255, .1);
     backdrop-filter: blur(1.5rem);
     border-radius: 36px;
-    padding: 72px 120px;
+    padding: 72px 96px;
 }
 
 .mteam__head {
     text-align: center;
-    margin-bottom: 64px;
+    margin-bottom: 48px;
 }
 
-.mteam__grid {
-    display: grid;
-    -webkit-box-pack: center;
+.mteam__head p {
+    padding: 0 42px;
+}
+
+.mteam__flex {
+    display: flex;
     justify-content: center;
-    grid-template-columns: repeat(auto-fit, 154px);
-    gap: 54px 72px;
-    max-width: 840px;
-    margin: 0px auto;
-    margin-bottom: 54px;
-}
-
-.mteam__grid:last-child {
-    margin-bottom: 0;
+    flex-wrap: wrap;
 }
 
 .mteam {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 24px 36px;
+    max-width: 154px;
 }
 
 .mteam p {
@@ -802,12 +797,49 @@ footer p {
     margin-bottom: 20px;
 }
 
-.mteam__name p {
-    margin-bottom: 9px;
+.mteam__name,
+.mteam__jd {
+    margin-bottom: 3px;
 }
 
+.mteam__name p,
 .mteam__jd p {
     margin-bottom: 0;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.mteam__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.mteam__icon i {
+    color: var(--second);
+    font-size: 24px;
+    margin: 0 9px;
+    transition: all .3s ease-in-out;
+}
+
+.mteam__icon a:hover i {
+    color: var(--white);
+}
+
+
+/* our partnership */
+.pship {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.pship__icon {
+    padding: 20px 15px;
+    margin: 0 15px;
+    height: 84px;
 }
 
 /********************************************/
@@ -868,6 +900,16 @@ footer p {
 .qbox__collapse .txt__desc {
     text-align: justify;
     text-justify: inter-word;
+}
+
+.qbox__transform {
+    transition: all .3s linear;
+    display: flex;
+    align-items: center;
+}
+
+.qbox__link[aria-expanded='true'] .qbox__transform {
+    transform: rotate(180deg);
 }
 
 /******************************************/
@@ -1145,6 +1187,33 @@ footer p {
         min-height: 0;
     }
 
+    /* our team */
+    .mteam__section {
+        padding: 48px 30px;
+    }
+
+    .mteam__head {
+        margin-bottom: 30px;
+    }
+
+    .mteam__head p {
+        padding: 0 30px;
+    }
+
+    .mteam {
+        margin: 16px 24px;
+        max-width: 130px;
+    }
+
+    .mteam p {
+        font-size: 18px;
+    }
+
+    .mteam__img {
+        width: 130px;
+        height: 130px;
+    }
+
     /********************************************/
     /*               PROJECT PAGE               */
     /********************************************/
@@ -1337,6 +1406,27 @@ footer p {
 
     .v__img {
         height: 240px;
+    }
+
+    /* our team */
+    .mteam__section {
+        padding: 48px 0;
+    }
+
+    .mteam {
+        margin: 16px 14px;
+    }
+
+    .mteam p {
+        font-size: 16px;
+    }
+
+    .mteam__img {
+        margin-bottom: 14px;
+    }
+
+    .mteam__icon i {
+        font-size: 18px;
     }
 
     /********************************************/
