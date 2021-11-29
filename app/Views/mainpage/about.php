@@ -144,7 +144,7 @@
 				<!-- right -->
 				<div class="col-lg-6 col-12">
 					<div class="v__right">
-						<div class="v__img bg__img" style="background-image: url(assets/img/visi-img.png);"></div>
+						<div class="v__img bg__img" style="background-image: url(/mainpage/img/visi-img.png);"></div>
 					</div>
 				</div>
 			</div>
@@ -206,187 +206,21 @@
 
 				<!-- mteam flex -->
 				<div class="mteam__flex">
-					<div class="mteam">
-						<div class="mteam__img bg__img" style="background-image: url(assets/img/mteam_2.png);"></div>
-						<div class="mteam__name">
-							<p class="fw-bold">Sigit Tanoko</p>
+					<?php foreach ($teams as $row) : ?>
+						<div class="mteam">
+							<div class="mteam__img bg__img" style="background-image: url(/foto/<?= $row['foto']; ?>);"></div>
+							<div class="mteam__name">
+								<p class="fw-bold"><?= $row['nama']; ?></p>
+							</div>
+							<div class="mteam__jd">
+								<p class="txt__desc fw-bold"><?= $row['jabatan']; ?></p>
+							</div>
+							<div class="mteam__icon">
+								<a href="<?= $row['ig']; ?>" target="_blank"><i class="fab fa-instagram-square"></i></a>
+								<a href="<?= $row['linkedin'] ?>" target="_blank"><i class="fab fa-linkedin"></i></a>
+							</div>
 						</div>
-						<div class="mteam__jd">
-							<p class="txt__desc fw-bold">CEO</p>
-						</div>
-						<div class="mteam__icon">
-							<a href="#"><i class="fab fa-instagram-square"></i></a>
-							<a href="#"><i class="fab fa-linkedin"></i></a>
-						</div>
-					</div>
-
-					<div class="mteam">
-						<div class="mteam__img bg__img" style="background-image: url(assets/img/mteam_1.png);"></div>
-						<div class="mteam__name">
-							<p class="fw-bold">Jefri Tan</p>
-						</div>
-						<div class="mteam__jd">
-							<p class="txt__desc fw-bold">COO</p>
-						</div>
-						<div class="mteam__icon">
-							<a href="#"><i class="fab fa-instagram-square"></i></a>
-							<a href="#"><i class="fab fa-linkedin"></i></a>
-						</div>
-					</div>
-
-					<div class="mteam">
-						<div class="mteam__img bg__img" style="background-image: url(assets/img/mteam_11.png);"></div>
-						<div class="mteam__name">
-							<p class="fw-bold">Abie Rezanto</p>
-						</div>
-						<div class="mteam__jd">
-							<p class="txt__desc fw-bold">CRO</p>
-						</div>
-						<div class="mteam__icon">
-							<a href="#"><i class="fab fa-instagram-square"></i></a>
-							<a href="#"><i class="fab fa-linkedin"></i></a>
-						</div>
-					</div>
-
-					<div class="mteam">
-						<div class="mteam__img bg__img" style="background-image: url(assets/img/mteam_6.png);"></div>
-						<div class="mteam__name">
-							<p class="fw-bold">Putri Sinta</p>
-						</div>
-						<div class="mteam__jd">
-							<p class="txt__desc fw-bold">Head of Finance</p>
-						</div>
-						<div class="mteam__icon">
-							<a href="#"><i class="fab fa-instagram-square"></i></a>
-							<a href="#"><i class="fab fa-linkedin"></i></a>
-						</div>
-					</div>
-
-					<div class="mteam">
-						<div class="mteam__img bg__img" style="background-image: url(assets/img/mteam_3.png);"></div>
-						<div class="mteam__name">
-							<p class="fw-bold">Daniel Wijaya</p>
-						</div>
-						<div class="mteam__jd">
-							<p class="txt__desc fw-bold">Head of Sales</p>
-						</div>
-						<div class="mteam__icon">
-							<a href="#"><i class="fab fa-instagram-square"></i></a>
-							<a href="#"><i class="fab fa-linkedin"></i></a>
-						</div>
-					</div>
-
-					<div class="mteam">
-						<div class="mteam__img bg__img" style="background-image: url(assets/img/mteam_4.png);"></div>
-						<div class="mteam__name">
-							<p class="fw-bold">Wellson</p>
-						</div>
-						<div class="mteam__jd">
-							<p class="txt__desc fw-bold">Investment Analyst</p>
-						</div>
-						<div class="mteam__icon">
-							<a href="#"><i class="fab fa-instagram-square"></i></a>
-							<a href="#"><i class="fab fa-linkedin"></i></a>
-						</div>
-					</div>
-
-					<div class="mteam">
-						<div class="mteam__img bg__img" style="background-image: url(assets/img/mteam_8.png);"></div>
-						<div class="mteam__name">
-							<p class="fw-bold">Vanessa</p>
-						</div>
-						<div class="mteam__jd">
-							<p class="txt__desc fw-bold">Head of Branding</p>
-						</div>
-						<div class="mteam__icon">
-							<a href="#"><i class="fab fa-instagram-square"></i></a>
-							<a href="#"><i class="fab fa-linkedin"></i></a>
-						</div>
-					</div>
-
-					<div class="mteam">
-						<div class="mteam__img bg__img" style="background-image: url(assets/img/mteam_10.png);"></div>
-						<div class="mteam__name">
-							<p class="fw-bold">Joshua Stephen</p>
-						</div>
-						<div class="mteam__jd">
-							<p class="txt__desc fw-bold">Head of Engineering</p>
-						</div>
-						<div class="mteam__icon">
-							<a href="#"><i class="fab fa-instagram-square"></i></a>
-							<a href="#"><i class="fab fa-linkedin"></i></a>
-						</div>
-					</div>
-
-					<div class="mteam">
-						<div class="mteam__img bg__img" style="background-image: url(assets/img/mteam_5.png);"></div>
-						<div class="mteam__name">
-							<p class="fw-bold">Elizabeth Lioe</p>
-						</div>
-						<div class="mteam__jd">
-							<p class="txt__desc fw-bold">Head of Public Relations</p>
-						</div>
-						<div class="mteam__icon">
-							<a href="#"><i class="fab fa-instagram-square"></i></a>
-							<a href="#"><i class="fab fa-linkedin"></i></a>
-						</div>
-					</div>
-
-					<div class="mteam">
-						<div class="mteam__img bg__img" style="background-image: url(assets/img/mteam_7.png);"></div>
-						<div class="mteam__name">
-							<p class="fw-bold">Mickey Marudut</p>
-						</div>
-						<div class="mteam__jd">
-							<p class="txt__desc fw-bold">Creative Director</p>
-						</div>
-						<div class="mteam__icon">
-							<a href="#"><i class="fab fa-instagram-square"></i></a>
-							<a href="#"><i class="fab fa-linkedin"></i></a>
-						</div>
-					</div>
-
-					<div class="mteam">
-						<div class="mteam__img bg__img" style="background-image: url(assets/img/mteam_12.png);"></div>
-						<div class="mteam__name">
-							<p class="fw-bold">Sonny Yu</p>
-						</div>
-						<div class="mteam__jd">
-							<p class="txt__desc fw-bold">Head of Marketing</p>
-						</div>
-						<div class="mteam__icon">
-							<a href="#"><i class="fab fa-instagram-square"></i></a>
-							<a href="#"><i class="fab fa-linkedin"></i></a>
-						</div>
-					</div>
-
-					<div class="mteam">
-						<div class="mteam__img bg__img" style="background-image: url(assets/img/mteam_9.png);"></div>
-						<div class="mteam__name">
-							<p class="fw-bold">Yustheja</p>
-						</div>
-						<div class="mteam__jd">
-							<p class="txt__desc fw-bold">Techniacl Architect</p>
-						</div>
-						<div class="mteam__icon">
-							<a href="#"><i class="fab fa-instagram-square"></i></a>
-							<a href="#"><i class="fab fa-linkedin"></i></a>
-						</div>
-					</div>
-
-					<div class="mteam">
-						<div class="mteam__img bg__img" style="background-image: url(assets/img/mteam_13.png);"></div>
-						<div class="mteam__name">
-							<p class="fw-bold">Benny</p>
-						</div>
-						<div class="mteam__jd">
-							<p class="txt__desc fw-bold">Product Manager</p>
-						</div>
-						<div class="mteam__icon">
-							<a href="#"><i class="fab fa-instagram-square"></i></a>
-							<a href="#"><i class="fab fa-linkedin"></i></a>
-						</div>
-					</div>
+					<?php endforeach; ?>
 				</div> <!-- end mteam flex -->
 			</div> <!-- end mteam section -->
 		</div> <!-- end container -->

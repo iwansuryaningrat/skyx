@@ -15,4 +15,14 @@ class TeamsModel extends Model
     {
         return $this->where(['id' => $id])->first();
     }
+
+    public function getSum()
+    {
+        $db = \Config\Database::connect();
+        $builder = $db->table('teams');
+        $query   = $builder->countAllResults();
+        // $result  = $query->getResultArray();        
+
+        return $query;
+    }
 }
