@@ -68,7 +68,7 @@
 			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 				<div class="navbar-nav ms-auto">
 					<a class="nav-link nav__link <?php if ($tab == 'home') : echo 'active';
-													endif; ?>" href="/home/home">Home</a>
+													endif; ?>" href=" /home/home">Home</a>
 					<a class="nav-link nav__link <?php if ($tab == 'about') : echo 'active';
 													endif; ?>" href="/home/about">About Us</a>
 					<a class="nav-link nav__link <?php if ($tab == 'projects') : echo 'active';

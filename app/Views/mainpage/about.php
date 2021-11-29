@@ -104,7 +104,7 @@
 
 						<!-- foot -->
 						<div class="navbarmini__foot text-center pt-4">
-							<div style="font-size: 14px;" class="txt__second">"One stop solutions for blockchain projects investments."</div>
+							<div style="font-size: 14px;" class="txt__second">"One stop solutions for blockchain investments."</div>
 						</div>
 			</div> <!-- end nav mini -->
 		</div> <!-- end navbar mini -->
