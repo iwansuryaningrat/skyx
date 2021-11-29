@@ -101,7 +101,7 @@
 
 						<!-- foot -->
 						<div class="navbarmini__foot text-center pt-4">
-							<div style="font-size: 14px;" class="txt__second">"One stop solutions for blockchain projects investments."</div>
+							<div style="font-size: 14px;" class="txt__second">"One stop solutions for blockchain investments."</div>
 						</div>
 			</div> <!-- end nav mini -->
 		</div> <!-- end navbar mini -->
@@ -120,7 +120,7 @@
 					<!-- left -->
 					<div class="col-lg-7 col-12 left">
 						<h1>SKYX VENTURES CAPITAL</h1>
-						<p class="txt__second">One stop solutions for blockchain projects investments</p>
+						<p class="txt__second">One stop solutions for blockchain investments</p>
 						<div class="skyx__btn__gs">
 							<a href="/home/contact" class="btn__gs d-flex align-items-center">Get started<i class="ai-arrow-right"></i></a>
 						</div>
@@ -245,23 +245,23 @@
 						<div class="foot__desc">
 							<!-- <img src="/mainpage/img/skyx-logo.svg" alt="skyx-logo"> -->
 							<a href="/home/home" class="d-block"><img src="/mainpage/img/logo-skyx-word.svg" alt="skyx-logo"></a>
-							<p>One stop solutions for blockchain projects investments</p>
+							<p>One stop solutions for blockchain investments</p>
 						</div>
 
 						<!-- foot contact -->
 						<div class="foot__contact">
-							<a href="#" class="fc__link">
+							<!-- <a href="#" class="fc__link">
 								<i class="fas fa-phone-alt d-flex align-items-center"></i>
 								<span class="d-block">+62 823 9023 0499</span>
-							</a>
+							</a> -->
 							<a href="mailto:info@skyx.fund" target="_blank" class="fc__link">
 								<i class="fas fa-envelope d-flex align-items-center"></i>
 								<span class="d-block">info@skyx.fund</span>
 							</a>
-							<a href="#" class="fc__link">
+							<!-- <a href="#" class="fc__link">
 								<i class="fas fa-map-marked-alt d-flex align-items-center"></i>
 								<span class="d-block">10528 Conrad Dr, Jacksonville, FL, 32218</span>
-							</a>
+							</a> -->
 						</div>
 
 						<!-- foot social media icon -->
