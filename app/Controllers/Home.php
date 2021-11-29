@@ -128,4 +128,14 @@ class Home extends BaseController
 
         return view('mainpage/contact', $data);
     }
+
+    public function projects()
+    {
+        $data = [
+            'title' => 'Projects - Skyx',
+            'tab' => 'projects'
+        ];
+
+        return view('mainpage/projects', $data);
+    }
 }
