@@ -157,10 +157,37 @@
 	<!-- form contact -->
 	<div class="sec__x sec__y">
 		<div class="container">
-			<div>
+			<div class="head__section">
 				<h2>Get in touch</h2>
-				<p class="txt__second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic atque minus porro
-					iste, doloremque iure ut quidem inventore repellat dolores.</p>
+				<p class="txt__second">Feel free to drop us a line below.</p>
+			</div>
+
+			<div class="row">
+				<div class="col-12">
+					<div class="skyx__form">
+						<form class="row g-5" action="">
+							<div class="col-md-6">
+								<input type="text" class="skyx__fcontrol" id="firstName" placeholder="First Name" required>
+							</div>
+							<div class="col-md-6">
+								<input type="text" class="skyx__fcontrol" id="lastName" placeholder="Last Name" required>
+							</div>
+
+							<div class="col-12">
+								<input type="text" class="skyx__fcontrol" id="userName" placeholder="Username" required>
+							</div>
+							<div class="col-12">
+								<input type="email" class="skyx__fcontrol" id="email" placeholder="Email" required>
+							</div>
+							<div class="col-12">
+								<input type="text" class="skyx__fcontrol" id="phoneNumber" placeholder="Phone Number" required>
+							</div>
+							<div class="col-12">
+								<input class="skyx__submit" type="submit" value="Subscribe">
+							</div>
+						</form>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>

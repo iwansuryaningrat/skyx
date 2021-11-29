@@ -90,6 +90,10 @@ h2 {
     font-weight: 700;
 }
 
+*:focus {
+    outline: none;
+}
+
 /* ========== class ========== */
 /* display section */
 .skyx__none {
@@ -119,6 +123,11 @@ h2 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.head__section {
+    text-align: center;
+    margin-bottom: 48px;
 }
 
 /* font and typography */
@@ -849,6 +858,10 @@ footer p {
 /********************************************/
 /*               CONTACT PAGE               */
 /********************************************/
+.contact__foot {
+    margin-top: 48px;
+}
+
 .contact__flex {
     display: flex;
     align-items: center;
@@ -900,6 +913,56 @@ footer p {
     font-size: 1.5rem;
     margin-right: 1.75rem;
     transition: all .3s ease-in-out;
+}
+
+.skyx__form {
+    width: 64%;
+    margin: auto;
+    font-size: 20px;
+}
+
+.skyx--flabel {
+    color: var(--white);
+    font-weight: 700;
+}
+
+.skyx__fcontrol {
+    background-color: transparent;
+    font-size: 20px;
+    color: rgba(255, 255, 255, .8);
+    border-radius: 0;
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-color: #7EB1E0;
+    padding: 12px 0;
+    display: block;
+    width: 100%;
+    appearance: none;
+    line-height: 1.5;
+}
+
+.skyx__fcontrol::placeholder {
+    color: rgba(255, 255, 255, .4);
+}
+
+.skyx__fcontrol:focus {
+    border-color: var(--white);
+}
+
+.skyx__submit {
+    width: 100%;
+    padding: 1rem 0;
+    display: block;
+    background: linear-gradient(90deg, #425CA9 0%, #1E3C72 35.42%, #282A6D 100%);
+    border-radius: 15px;
+    border: none;
+    color: var(--white);
+    font-size: 24px;
+    transition: all .3s ease-in-out;
+}
+
+.skyx__submit:hover {
+    transform: scale(.98);
 }
 
 /****************************************/
@@ -1261,6 +1324,22 @@ footer p {
         font-size: 18px;
     }
 
+    .skyx__form {
+        width: 80%;
+        font-size: 18px;
+    }
+
+    .skyx__fcontrol,
+    .skyx__fcontrol::placeholder {
+        font-size: 18px;
+    }
+
+    .skyx__submit {
+        font-size: 20px;
+        border-radius: 12px;
+        padding: 14px 0;
+    }
+
     /****************************************/
     /*               FAQ PAGE               */
     /****************************************/
@@ -1490,6 +1569,10 @@ footer p {
 
     .contact__icon i {
         font-size: 18px;
+    }
+
+    .skyx__form {
+        width: 86%;
     }
 
     /****************************************/
