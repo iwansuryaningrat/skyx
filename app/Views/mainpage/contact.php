@@ -141,8 +141,7 @@
 				<div class="contact__card">
 					<div class="exo"></div>
 					<p>Social Media</p>
-					<p class="txt__desc">Stay connected with all our social media to get interesting news and
-						information.</p>
+					<p class="txt__desc">Stay connected with all our social media to get interesting news and information.</p>
 					<div class="contact__icon">
 						<a href="https://www.instagram.com/skyx.fund/" target="_blank"><i class="fab fa-instagram"></i></a>
 						<a href="https://twitter.com/skyx_fund" target="_blank"><i class="fab fa-twitter"></i></a>
