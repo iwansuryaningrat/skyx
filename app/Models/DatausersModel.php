@@ -137,4 +137,9 @@ class DatausersModel extends Model
 
         return $data;
     }
+
+    public function getUser($email, $phone)
+    {
+        return $this->where(['email' => $email, 'phone' => $phone])->first();
+    }
 }

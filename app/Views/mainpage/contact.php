@@ -165,22 +165,22 @@
 			<div class="row">
 				<div class="col-12">
 					<div class="skyx__form">
-						<form class="row g-5" action="">
+						<form class="row g-5" action="/add/users">
 							<div class="col-md-6">
-								<input type="text" class="skyx__fcontrol" id="firstName" placeholder="First Name" required>
+								<input type="text" class="skyx__fcontrol" id="firstName" name="firstName" placeholder="First Name" required>
 							</div>
 							<div class="col-md-6">
-								<input type="text" class="skyx__fcontrol" id="lastName" placeholder="Last Name" required>
+								<input type="text" class="skyx__fcontrol" id="lastName" name="lastName" placeholder="Last Name" required>
 							</div>
 
 							<div class="col-12">
-								<input type="text" class="skyx__fcontrol" id="userName" placeholder="Username" required>
+								<input type="text" class="skyx__fcontrol" id="userName" name="userName" placeholder="Username" required>
 							</div>
 							<div class="col-12">
-								<input type="email" class="skyx__fcontrol" id="email" placeholder="Email" required>
+								<input type="email" class="skyx__fcontrol" id="email" name="email" placeholder="Email" required>
 							</div>
 							<div class="col-12">
-								<input type="text" class="skyx__fcontrol" id="phoneNumber" placeholder="Phone Number" required>
+								<input type="text" class="skyx__fcontrol" id="phoneNumber" name="phoneNumber" placeholder="Phone Number" required>
 							</div>
 							<div class="col-12">
 								<input class="skyx__submit" type="submit" value="Subscribe">

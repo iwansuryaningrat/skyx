@@ -139,4 +139,29 @@ class Add extends BaseController
 
         return redirect()->to('/admin/teams');
     }
+
+    public function users()
+    {
+        $email = $this->request->getVar('email');
+        $phone = $this->request->getVar('phoneNumber');
+        $user = $this->dataModel->getUser($email, $phone);
+        // dd($user);
+
+        // Validasi
+        if ($user != null) {
+            echo "data sudah ada";
+        } else {
+            $data = [
+                'first_name' => $this->request->getVar('firstName'),
+                'last_name' => $this->request->getVar('lastName'),
+                'username' => $this->request->getVar('userName'),
+                'email' => $email,
+                'phone' => $phone
+            ];
+
+            $this->dataModel->insert($data);
+
+            return redirect()->to('/home/contact');
+        }
+    }
 }
