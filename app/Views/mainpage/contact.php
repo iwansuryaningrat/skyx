@@ -134,13 +134,13 @@
 			<div class="contact__flex">
 				<div class="contact__card">
 					<div class="exo"></div>
-					<p>Contact Information</p>
+					<p class="cc__title">Contact Information</p>
 					<p class="txt__desc">For general queries, including partnership opportunities, please email.</p>
 					<a href="mailto:info@skyx.fund" target="_blank">support@skyxmail.org</a>
 				</div> <!-- contact card -->
 				<div class="contact__card">
 					<div class="exo"></div>
-					<p>Social Media</p>
+					<p class="cc__title">Social Media</p>
 					<p class="txt__desc">Stay connected with all our social media to get interesting news and information.</p>
 					<div class="contact__icon">
 						<a href="https://www.instagram.com/skyx.fund/" target="_blank"><i class="fab fa-instagram"></i></a>
