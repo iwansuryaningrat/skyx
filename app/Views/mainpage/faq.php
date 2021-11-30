@@ -142,7 +142,7 @@
 					<div class="collapse" id="qbox-1">
 						<div class="qbox__collapse">
 							<p class="txt__desc">
-								SKX merupakan token collateral milik SKYX. Dengan memiliki SKX anda akan mendapatkan garansi alokasi <b> private sale dari berbagai macam proyek berkualitas.</b>
+								SKX merupakan token collateral milik SKYX. Dengan memiliki SKX, Anda akan mendapatkan garansi alokasi <b> private sale dari berbagai macam proyek berkualitas.</b>
 							</p>
 						</div>
 					</div>
