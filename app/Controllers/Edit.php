@@ -6,6 +6,7 @@ use App\Models\DatausersModel;
 use App\Models\TeamsModel;
 use App\Models\VisitorsModel;
 use App\Models\ArtikelModel;
+use App\Models\PartnershipModel;
 
 use CodeIgniter\I18n\Time;
 
@@ -15,6 +16,7 @@ class Edit extends BaseController
     protected $teamsModel;
     protected $visitorsModel;
     protected $artikelModel;
+    protected $partnershipModel;
 
     public function __construct()
     {
@@ -22,6 +24,7 @@ class Edit extends BaseController
         $this->teamsModel = new TeamsModel();
         $this->visitorsModel = new VisitorsModel();
         $this->artikelModel = new ArtikelModel();
+        $this->partnershipModel = new PartnershipModel();
     }
 
     public function editTeamForm($id)

@@ -7,6 +7,7 @@ use App\Models\TeamsModel;
 use App\Models\VisitorsModel;
 use App\Models\ArtikelModel;
 use App\Models\ProjectsModel;
+use App\Models\PartnershipModel;
 
 use CodeIgniter\I18n\Time;
 
@@ -17,6 +18,7 @@ class Admin extends BaseController
     protected $visitorsModel;
     protected $artikelModel;
     protected $projectsModel;
+    protected $partnershipModel;
 
     public function __construct()
     {
@@ -25,6 +27,7 @@ class Admin extends BaseController
         $this->visitorsModel = new VisitorsModel();
         $this->artikelModel = new ArtikelModel();
         $this->projectsModel = new ProjectsModel();
+        $this->partnershipModel = new PartnershipModel();
     }
 
     public function index()
