@@ -58,6 +58,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 a {
     text-decoration: none;
 }
@@ -502,6 +503,7 @@ footer p {
 
 .left {
     max-width: 580px;
+    z-index: 5;
 }
 
 .skyx__btn__gs {
@@ -516,7 +518,9 @@ footer p {
 
     color: var(--white);
     border-radius: .875rem;
-    background: linear-gradient(90deg, #425ca9 0%, #1e3c72 35.42%, #282a6d 100%);
+    background: linear-gradient(90deg, #425CA9 0%, #1E3C72 23.02%, #282A6D 50.78%, #1E3C72 72.86%, #425CA9 100%);
+    transition: all .4s ease-in-out;
+    background-size: 300% 100%;
 }
 
 .btn__gs i {
@@ -524,11 +528,12 @@ footer p {
 
     margin-left: .75rem;
 
-    transition: transform .3s ease-in-out;
+    transition: transform .4s ease-in-out;
 }
 
 .btn__gs:hover {
     color: var(--white);
+    background-position: 100% 0;
 }
 
 .btn__gs:hover i {
@@ -537,7 +542,6 @@ footer p {
 
 .relative__img {
     position: relative;
-    z-index: 0;
     top: 29%;
 
     width: 540%;
@@ -740,7 +744,7 @@ footer p {
 
 /* misi */
 .m__card {
-    min-height: 360px;
+    min-height: 376px;
     padding: 30px;
     background-color: rgba(255, 255, 255, .1);
     backdrop-filter: blur(1.5rem);
@@ -748,6 +752,7 @@ footer p {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    cursor: pointer;
 }
 
 .m__card p {
@@ -755,12 +760,30 @@ footer p {
 }
 
 .m__icon {
-    width: 48px;
-    height: 48px;
+    padding: 1rem;
     border-radius: 9px;
     background-color: rgba(255, 255, 255, .1);
     backdrop-filter: blur(1.5rem);
     margin-bottom: 24px;
+}
+
+.m__icon i {
+    font-size: 36px;
+    display: flex;
+    align-items: center;
+    color: rgba(255, 255, 255, .6);
+    transition: all .2s ease-in-out;
+}
+
+.m__card:hover,
+.contact__card:hover {
+    background: linear-gradient(114.18deg, rgba(0, 219, 222, 0.3) 1.53%, rgba(252, 0, 255, 0.3) 84.54%);
+}
+
+.m__card:hover .m__icon i,
+.contact__card:hover .m__icon i {
+    color: var(--white);
+    text-shadow: 0 0 1.25rem rgba(255, 255, 255, 1);
 }
 
 /* our team */
@@ -836,7 +859,6 @@ footer p {
     color: var(--white);
 }
 
-
 /* our partnership */
 .pship {
     display: flex;
@@ -849,6 +871,11 @@ footer p {
     padding: 20px 15px;
     margin: 0 15px;
     height: 84px;
+}
+
+.pship__icon img {
+    display: block;
+    height: 100%;
 }
 
 /********************************************/
@@ -892,15 +919,6 @@ footer p {
 .contact__icon a:hover i {
     color: var(--white);
     text-shadow: 0 0 1.25rem rgba(255, 255, 255, 1);
-}
-
-.exo {
-    width: 64px;
-    height: 64px;
-    background-color: rgba(255, 255, 255, .1);
-    backdrop-filter: blur(1.5rem);
-    margin-bottom: 24px;
-    border-radius: 14px;
 }
 
 .contact__icon {
@@ -953,16 +971,18 @@ footer p {
     width: 100%;
     padding: 1rem 0;
     display: block;
-    background: linear-gradient(90deg, #425CA9 0%, #1E3C72 35.42%, #282A6D 100%);
+    background: linear-gradient(90deg, #425CA9 0%, #1E3C72 23.02%, #282A6D 50.78%, #1E3C72 72.86%, #425CA9 100%);
+    background-size: 300% 100%;
     border-radius: 15px;
     border: none;
     color: var(--white);
     font-size: 24px;
-    transition: all .3s ease-in-out;
+    transition: all .5s ease-in-out;
 }
 
 .skyx__submit:hover {
     transform: scale(.98);
+    background-position: 100% 0;
 }
 
 /****************************************/
@@ -1526,6 +1546,12 @@ footer p {
         height: 240px;
     }
 
+    /* misi */
+    .m__icon i {
+        font-size: 27px;
+        
+    }
+
     /* our team */
     .mteam__section {
         padding: 48px 0;
@@ -1545,6 +1571,13 @@ footer p {
 
     .mteam__icon i {
         font-size: 18px;
+    }
+
+    /* partnership */
+    .pship__icon {
+        height: 64px;
+        margin: 0 12px;
+        padding: 18px 12px;
     }
 
     /********************************************/

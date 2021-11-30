@@ -80,3 +80,10 @@ $(document).ready(function() {
 	    }
 	});
 });
+
+// tooltips
+// partnership
+const tooltipsPship = document.querySelectorAll('.pship__tt')
+tooltipsPship.forEach(t => {
+	new bootstrap.Tooltip(t)
+})

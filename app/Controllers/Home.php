@@ -87,7 +87,7 @@ class Home extends BaseController
         $projects = $this->projectsModel->findAll();
 
         $data = [
-            'title' => 'Skyx - One Stop Solutions For Blockchain Projects Investments',
+            'title' => 'Skyx - One Stop Solutions For Blockchain Investments',
             'tab' => 'home',
             'artikel' => $artikel,
             'projects' => $projects
