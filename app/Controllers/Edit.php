@@ -84,4 +84,53 @@ class Edit extends BaseController
         $this->teamsModel->delete($id);
         return redirect()->to('/admin/teams');
     }
+
+    public function editPartnerForm($id)
+    {
+        $dataPartner = $this->partnershipModel->getPartnerData($id);
+        // dd($dataPartner);
+
+        $data = [
+            'title' => 'Edit Partner Data | SKYX',
+            'tab' => 'partnership',
+            'datapartner' => $dataPartner
+        ];
+
+        return view('admin/formeditpartner', $data);
+    }
+
+    public function editPartner($id)
+    {
+        $dataPartner = $this->partnershipModel->getPartnerData($id);
+
+        $image = $this->request->getFile('foto');
+        if ($image->getError() == 4) {
+            $namaImage = $dataPartner['logo'];
+        } else {
+            $namaImage = $image->getRandomName();
+            $image->move('foto/partnership/', $namaImage);
+        }
+        // dd($namaImage);
+
+        $data = [
+            'id' => $id,
+            'nama' => $this->request->getVar('name'),
+            'link' => $this->request->getVar('link'),
+            'logo' => $namaImage
+        ];
+
+        $this->partnershipModel->update($id, $data);
+
+        // dd($data);
+
+        return redirect()->to('/admin/partnership');
+    }
+
+    public function deletePartner($id)
+    {
+        // $id = (int)$id;
+        // dd($id);
+        $this->partnershipModel->delete($id);
+        return redirect()->to('/admin/partnership');
+    }
 }

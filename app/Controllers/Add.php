@@ -62,6 +62,35 @@ class Add extends BaseController
         return redirect()->to('/admin/teams');
     }
 
+    public function addPartnerForm()
+    {
+        $data = [
+            'title' => 'Form Add Partner | SKYX',
+            'tab' => 'partnership'
+        ];
+
+        return view('admin/formaddpartners', $data);
+    }
+
+    public function addPartner()
+    {
+        $image = $this->request->getFile('foto');
+        if ($image->getError() == 4) {
+            $namaImage = 'default.jpg';
+        } else {
+            $namaImage = $image->getRandomName();
+            $image->move('foto/partnership', $namaImage);
+        }
+
+        $this->partnershipModel->insert([
+            'nama' => $this->request->getVar('name'),
+            'link' => $this->request->getVar('link'),
+            'logo' => $namaImage
+        ]);
+
+        return redirect()->to('/admin/partnership');
+    }
+
     public function addProjectsForm()
     {
         $data = [
