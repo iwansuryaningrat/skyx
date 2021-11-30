@@ -256,6 +256,13 @@
 								<p>Teams</p>
 							</a>
 						</li>
+						<!-- Partnership -->
+						<li class="nav-item <?php if ($tab == "partnership") echo "active"; ?>">
+							<a href="/admin/partnership">
+								<i class="fas fa-handshake"></i>
+								<p>Partnership</p>
+							</a>
+						</li>
 						<!-- Projects -->
 						<li class="nav-item <?php if ($tab == "projects") echo "active"; ?>">
 							<a href="/admin/projects">

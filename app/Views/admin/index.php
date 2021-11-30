@@ -20,7 +20,7 @@
 				],
 				urls: ['/admin/assets/css/fonts.min.css']
 			},
-			active: function () {
+			active: function() {
 				sessionStorage.fonts = true;
 			}
 		});
@@ -41,6 +41,7 @@
 			justify-content: center;
 			align-items: center;
 		}
+
 		.logo-header a img {
 			/* width: 100%; */
 			height: 48px;
@@ -57,8 +58,7 @@
 				<a href="/admin/index" class="logo">
 					<img src="/admin/assets/img/skyx-logo.svg" alt="navbar brand" class="navbar-brand">
 				</a>
-				<button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse"
-					data-target="collapse" aria-expanded="false" aria-label="Toggle navigation">
+				<button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse" data-target="collapse" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon">
 						<i class="icon-menu"></i>
 					</span>
@@ -90,8 +90,7 @@
 					</div>
 					<ul class="navbar-nav topbar-nav ml-md-auto align-items-center">
 						<li class="nav-item toggle-nav-search hidden-caret">
-							<a class="nav-link" data-toggle="collapse" href="#search-nav" role="button"
-								aria-expanded="false" aria-controls="search-nav">
+							<a class="nav-link" data-toggle="collapse" href="#search-nav" role="button" aria-expanded="false" aria-controls="search-nav">
 								<i class="fa fa-search"></i>
 							</a>
 						</li>
@@ -163,23 +162,19 @@
 						</li>
 						<!-- Profile -->
 						<li class="nav-item dropdown hidden-caret">
-							<a class="dropdown-toggle profile-pic" data-toggle="dropdown" href="#"
-								aria-expanded="false">
+							<a class="dropdown-toggle profile-pic" data-toggle="dropdown" href="#" aria-expanded="false">
 								<div class="avatar-sm">
-									<img src="/admin/assets/img/profile.jpg" alt="..."
-										class="avatar-img rounded-circle">
+									<img src="/admin/assets/img/profile.jpg" alt="..." class="avatar-img rounded-circle">
 								</div>
 							</a>
 							<ul class="dropdown-menu dropdown-user animated fadeIn">
 								<div class="dropdown-user-scroll scrollbar-outer">
 									<li>
 										<div class="user-box">
-											<div class="avatar-lg"><img src="/admin/assets/img/profile.jpg"
-													alt="image profile" class="avatar-img rounded"></div>
+											<div class="avatar-lg"><img src="/admin/assets/img/profile.jpg" alt="image profile" class="avatar-img rounded"></div>
 											<div class="u-text">
 												<h4>Hizrian</h4>
-												<p class="text-muted">hello@example.com</p><a href="profile.html"
-													class="btn btn-xs btn-secondary btn-sm">View Profile</a>
+												<p class="text-muted">hello@example.com</p><a href="profile.html" class="btn btn-xs btn-secondary btn-sm">View Profile</a>
 											</div>
 										</div>
 									</li>
@@ -262,6 +257,13 @@
 							<a href="/admin/teams">
 								<i class="fas fa-id-card"></i>
 								<p>Teams</p>
+							</a>
+						</li>
+						<!-- Partnership -->
+						<li class="nav-item <?php if ($tab == "partnership") echo "active"; ?>">
+							<a href="/admin/partnership">
+								<i class="fas fa-handshake"></i>
+								<p>Partnership</p>
 							</a>
 						</li>
 						<!-- Projects -->
@@ -493,13 +495,13 @@
 					<nav class="pull-left">
 						<ul class="nav">
 							<li class="nav-item">
-								
+
 							</li>
 							<li class="nav-item">
-								
+
 							</li>
 							<li class="nav-item">
-								
+
 							</li>
 						</ul>
 					</nav>
@@ -510,7 +512,7 @@
 			</footer>
 		</div>
 
-		
+
 
 	</div>
 	<!--   Core JS Files   -->
@@ -588,7 +590,7 @@
 
 	<!-- Atlantis JS -->
 	<script src="/admin/assets/js/atlantis.min.js"></script>
-	
+
 	<!-- Circle Chart Script -->
 	<script>
 		Circles.create({
@@ -656,7 +658,9 @@
 					legendColor: '#f3545d',
 					fill: true,
 					borderWidth: 2,
-					data: [<?php for ($i = 0; $i < 12; $i++) {echo $databulan[$i].',';}?>]
+					data: [<?php for ($i = 0; $i < 12; $i++) {
+								echo $databulan[$i] . ',';
+							} ?>]
 				}, {
 					label: "Visitors",
 					borderColor: '#fdaf4b',
@@ -666,7 +670,9 @@
 					legendColor: '#fdaf4b',
 					fill: true,
 					borderWidth: 2,
-					data: [<?php for ($i = 0; $i < 12; $i++) {echo $visitorsMonthly[$i].',';}?>]
+					data: [<?php for ($i = 0; $i < 12; $i++) {
+								echo $visitorsMonthly[$i] . ',';
+							} ?>]
 				}, {
 					label: "Total Subscribers",
 					borderColor: '#177dff',
@@ -676,7 +682,9 @@
 					legendColor: '#177dff',
 					fill: true,
 					borderWidth: 2,
-					data: [<?php for ($i = 0; $i < 12; $i++) {echo $kumulatif[$i].',';}?>]
+					data: [<?php for ($i = 0; $i < 12; $i++) {
+								echo $kumulatif[$i] . ',';
+							} ?>]
 				}, {
 					label: "Total Visitors",
 					borderColor: '#00FFFF',
@@ -686,7 +694,9 @@
 					legendColor: '#00FFFF',
 					fill: true,
 					borderWidth: 2,
-					data: [<?php for ($i = 0; $i < 12; $i++) {echo $visitorsKumulatif[$i].',';}?>]
+					data: [<?php for ($i = 0; $i < 12; $i++) {
+								echo $visitorsKumulatif[$i] . ',';
+							} ?>]
 				}]
 			},
 			options: {
@@ -735,7 +745,7 @@
 						}
 					}]
 				},
-				legendCallback: function (chart) {
+				legendCallback: function(chart) {
 					var text = [];
 					text.push('<ul class="' + chart.id + '-legend html-legend">');
 					for (var i = 0; i < chart.data.datasets.length; i++) {

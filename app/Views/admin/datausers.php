@@ -1,24 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<title><?= $title; ?></title>
 	<meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
-	<link rel="icon" href="/admin/assets/img/icon.ico" type="image/x-icon"/>
-	
+	<link rel="icon" href="/admin/assets/img/icon.ico" type="image/x-icon" />
+
 	<!-- Fonts and icons -->
 	<script src="/admin/assets/js/plugin/webfont/webfont.min.js"></script>
 	<script>
 		WebFont.load({
-			google: {"families":["Lato:300,400,700,900"]},
-			custom: {"families":["Flaticon", "Font Awesome 5 Solid", "Font Awesome 5 Regular", "Font Awesome 5 Brands", "simple-line-icons"], urls: ['/admin/assets/css/fonts.min.css']},
+			google: {
+				"families": ["Lato:300,400,700,900"]
+			},
+			custom: {
+				"families": ["Flaticon", "Font Awesome 5 Solid", "Font Awesome 5 Regular", "Font Awesome 5 Brands", "simple-line-icons"],
+				urls: ['/admin/assets/css/fonts.min.css']
+			},
 			active: function() {
 				sessionStorage.fonts = true;
 			}
 		});
 	</script>
 
-    <style>
+	<style>
 		.logo-header a {
 			width: 100%;
 			height: 100%;
@@ -26,6 +32,7 @@
 			justify-content: center;
 			align-items: center;
 		}
+
 		.logo-header a img {
 			/* width: 100%; */
 			height: 48px;
@@ -40,6 +47,7 @@
 	<!-- CSS Just for demo purpose, don't include it in your project -->
 	<link rel="stylesheet" href="/admin/assets/css/demo.css">
 </head>
+
 <body>
 	<div class="wrapper">
 		<div class="main-header">
@@ -48,8 +56,7 @@
 				<a href="/admin/index" class="logo">
 					<img src="/admin/assets/img/skyx-logo.svg" alt="navbar brand" class="navbar-brand">
 				</a>
-				<button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse"
-					data-target="collapse" aria-expanded="false" aria-label="Toggle navigation">
+				<button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse" data-target="collapse" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon">
 						<i class="icon-menu"></i>
 					</span>
@@ -81,8 +88,7 @@
 					</div>
 					<ul class="navbar-nav topbar-nav ml-md-auto align-items-center">
 						<li class="nav-item toggle-nav-search hidden-caret">
-							<a class="nav-link" data-toggle="collapse" href="#search-nav" role="button"
-								aria-expanded="false" aria-controls="search-nav">
+							<a class="nav-link" data-toggle="collapse" href="#search-nav" role="button" aria-expanded="false" aria-controls="search-nav">
 								<i class="fa fa-search"></i>
 							</a>
 						</li>
@@ -154,23 +160,19 @@
 						</li>
 						<!-- Profile -->
 						<li class="nav-item dropdown hidden-caret">
-							<a class="dropdown-toggle profile-pic" data-toggle="dropdown" href="#"
-								aria-expanded="false">
+							<a class="dropdown-toggle profile-pic" data-toggle="dropdown" href="#" aria-expanded="false">
 								<div class="avatar-sm">
-									<img src="/admin/assets/img/profile.jpg" alt="..."
-										class="avatar-img rounded-circle">
+									<img src="/admin/assets/img/profile.jpg" alt="..." class="avatar-img rounded-circle">
 								</div>
 							</a>
 							<ul class="dropdown-menu dropdown-user animated fadeIn">
 								<div class="dropdown-user-scroll scrollbar-outer">
 									<li>
 										<div class="user-box">
-											<div class="avatar-lg"><img src="/admin/assets/img/profile.jpg"
-													alt="image profile" class="avatar-img rounded"></div>
+											<div class="avatar-lg"><img src="/admin/assets/img/profile.jpg" alt="image profile" class="avatar-img rounded"></div>
 											<div class="u-text">
 												<h4>Hizrian</h4>
-												<p class="text-muted">hello@example.com</p><a href="profile.html"
-													class="btn btn-xs btn-secondary btn-sm">View Profile</a>
+												<p class="text-muted">hello@example.com</p><a href="profile.html" class="btn btn-xs btn-secondary btn-sm">View Profile</a>
 											</div>
 										</div>
 									</li>
@@ -255,6 +257,13 @@
 								<p>Teams</p>
 							</a>
 						</li>
+						<!-- Partnership -->
+						<li class="nav-item <?php if ($tab == "partnership") echo "active"; ?>">
+							<a href="/admin/partnership">
+								<i class="fas fa-handshake"></i>
+								<p>Partnership</p>
+							</a>
+						</li>
 						<!-- Projects -->
 						<li class="nav-item <?php if ($tab == "projects") echo "active"; ?>">
 							<a href="/admin/projects">
@@ -282,7 +291,7 @@
 		</div>
 		<!-- End Sidebar -->
 
-        <!-- Main Panel -->
+		<!-- Main Panel -->
 		<div class="main-panel">
 			<div class="container">
 				<div class="page-inner">
@@ -316,7 +325,7 @@
 								</div>
 								<div class="card-body">
 									<div class="table-responsive">
-										<table id="basic-datatables" class="display table table-striped table-hover" >
+										<table id="basic-datatables" class="display table table-striped table-hover">
 											<thead>
 												<tr>
 													<th>First Name</th>
@@ -339,14 +348,14 @@
 											</tfoot>
 											<tbody>
 												<?php foreach ($users as $data) : ?>
-												<tr>
-													<td><?= $data['first_name'] ?></td>
-													<td><?= $data['last_name'] ?></td>
-													<td><?= $data['username'] ?></td>
-													<td><?= $data['email'] ?></td>
-													<td><?= $data['phone'] ?></td>
-													<td><?= $data['created_at'] ?></td>
-												</tr>
+													<tr>
+														<td><?= $data['first_name'] ?></td>
+														<td><?= $data['last_name'] ?></td>
+														<td><?= $data['username'] ?></td>
+														<td><?= $data['email'] ?></td>
+														<td><?= $data['phone'] ?></td>
+														<td><?= $data['created_at'] ?></td>
+													</tr>
 												<?php endforeach; ?>
 											</tbody>
 										</table>
@@ -362,13 +371,13 @@
 					<nav class="pull-left">
 						<ul class="nav">
 							<li class="nav-item">
-								
+
 							</li>
 							<li class="nav-item">
-								
+
 							</li>
 							<li class="nav-item">
-								
+
 							</li>
 						</ul>
 					</nav>
@@ -379,7 +388,7 @@
 			</footer>
 		</div>
 	</div>
-		
+
 	<!--   Core JS Files   -->
 	<script src="/admin/assets/js/core/jquery.3.2.1.min.js"></script>
 	<script src="/admin/assets/js/core/popper.min.js"></script>
@@ -403,14 +412,14 @@
 
 	<!-- Atlantis JS -->
 	<script src="/admin/assets/js/atlantis.min.js"></script>
-	
+
 	<!-- Atlantis DEMO methods, don't include it in your project! -->
 	<script src="/admin/assets/js/setting-demo2.js"></script>
-	<script >
+	<script>
 		$(document).ready(function() {
-			$('#basic-datatables').DataTable({
-			});
+			$('#basic-datatables').DataTable({});
 		});
 	</script>
 </body>
+
 </html>
