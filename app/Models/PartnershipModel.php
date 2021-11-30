@@ -11,7 +11,7 @@ class PartnershipModel extends Model
     protected $useTimestamps = true;
     protected $allowedFields = ['nama', 'link', 'foto', 'created_at', 'updated_at'];
 
-    public function getTeamData($id)
+    public function getPartnerData($id)
     {
         return $this->where(['id' => $id])->first();
     }
