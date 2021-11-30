@@ -56,7 +56,7 @@ class Edit extends BaseController
             $namaImage = $dataTeam['foto'];
         } else {
             $namaImage = $image->getRandomName();
-            $image->move('foto/', $namaImage);
+            $image->move('foto/teams/', $namaImage);
         }
         // dd($namaImage);
 

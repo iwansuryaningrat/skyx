@@ -337,7 +337,7 @@
 												<tr>
 													<th>Nama</th>
 													<th>Jabatan</th>
-													<th>Deskripsi</th>
+													<th>Foto</th>
 													<th>Sosial Media</th>
 													<th style="width: 10%">Action</th>
 												</tr>
@@ -346,7 +346,7 @@
 												<tr>
 													<th>Nama</th>
 													<th>Jabatan</th>
-													<th>Deskripsi</th>
+													<th>Foto</th>
 													<th>Sosial Media</th>
 													<th>Action</th>
 												</tr>
@@ -356,7 +356,7 @@
 													<tr>
 														<td><?= $row['nama']; ?></td>
 														<td><?= $row['jabatan']; ?></td>
-														<td><?= $row['deskripsi']; ?></td>
+														<td><img src="/foto/teams/<?= $row['foto']; ?>" style="width : 48px;" alt=""></td>
 														<td>
 															<!-- Sosmed Icon -->
 															<div class="form-button-action">

@@ -362,7 +362,7 @@
                                             <label class="col-lg-3 col-md-3 col-sm-4 mt-sm-2 text-right">Upload Image </label>
                                             <div class="col-lg-4 col-md-9 col-sm-8">
                                                 <div class="input-file input-file-image">
-                                                    <img class="img-upload-preview img-circle" width="100" height="100" src="/foto/<?= $datateam['foto']; ?>" alt="preview">
+                                                    <img class="img-upload-preview img-circle" width="100" height="100" src="/foto/teams/<?= $datateam['foto']; ?>" alt="preview">
                                                     <input type="file" class="form-control form-control-file" id="foto" name="foto" accept="image/*" value="<?= $datateam['foto']; ?>">
                                                     <label for="foto" class="btn btn-primary btn-round btn-lg"><i class="fa fa-file-image"></i> Upload a Image</label>
                                                 </div>

@@ -208,7 +208,7 @@
 				<div class="mteam__flex">
 					<?php foreach ($teams as $row) : ?>
 						<div class="mteam">
-							<div class="mteam__img bg__img" style="background-image: url(/foto/<?= $row['foto']; ?>);"></div>
+							<div class="mteam__img bg__img" style="background-image: url(/foto/teams/<?= $row['foto']; ?>);"></div>
 							<div class="mteam__name">
 								<p class="fw-bold"><?= $row['nama']; ?></p>
 							</div>
