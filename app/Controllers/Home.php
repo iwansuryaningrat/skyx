@@ -109,14 +109,14 @@ class Home extends BaseController
     public function about()
     {
         $teams = $this->teamsModel->findAll();
-        $sum = $this->teamsModel->getSum();
+        $partner = $this->partnershipModel->findAll();
         // dd($sum);
         // dd($teams);
         $data = [
             'title' => 'About Us - Skyx',
             'tab' => 'about',
             'teams' => $teams,
-            'sum' => $sum
+            'partner' => $partner
         ];
 
         return view('mainpage/about', $data);
