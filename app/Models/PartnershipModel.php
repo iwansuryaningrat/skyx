@@ -9,7 +9,7 @@ class PartnershipModel extends Model
     protected $table = 'partnership';
     protected $primarykey = 'id';
     protected $useTimestamps = true;
-    protected $allowedFields = ['nama', 'link', 'foto', 'created_at', 'updated_at'];
+    protected $allowedFields = ['nama', 'link', 'logo', 'created_at', 'updated_at'];
 
     public function getPartnerData($id)
     {
