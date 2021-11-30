@@ -131,4 +131,17 @@ class Admin extends BaseController
         // return view('admin/artikel', $data);
         return view('errors/404', $data);
     }
+
+    public function partnership()
+    {
+        $dataPartner = $this->partnershipModel->findAll();
+
+        $data = [
+            'title' => 'Partnership | Skyx',
+            'tab' => 'partnership',
+            'data' => $dataPartner
+        ];
+
+        return view('admin/partnership', $data);
+    }
 }
