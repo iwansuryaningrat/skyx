@@ -98,12 +98,12 @@
                 <a class="navmini__link <?php if ($tab == 'contact') : echo 'active';
                                         endif; ?>" href="/home/contact">Contact</a>
                 <a class="navmini__link <?php if ($tab == 'faq') : echo 'active';
-                                        endif; ?>" href="/home/faq">FAQ<a>
+                                        endif; ?>" href="/home/faq">FAQ</a>
 
-                        <!-- foot -->
-                        <div class="navbarmini__foot text-center pt-4">
-                            <div style="font-size: 14px;" class="txt__second">"One stop solutions for blockchain projects investments."</div>
-                        </div>
+                <!-- foot -->
+                <div class="navbarmini__foot text-center pt-4">
+                    <div style="font-size: 14px;" class="txt__second">"One stop solutions for blockchain projects investments."</div>
+                </div>
             </div> <!-- end nav mini -->
         </div> <!-- end navbar mini -->
     </nav> <!-- end nav -->
