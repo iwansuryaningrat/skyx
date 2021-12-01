@@ -105,7 +105,7 @@
 
 						<!-- foot -->
 						<div class="navbarmini__foot text-center pt-4">
-							<div style="font-size: 14px;" class="txt__second">"One stop solutions for blockchain investments."</div>
+							<div style="font-size: 14px;" class="txt__second">"One stop solutions for blockchain projects investments."</div>
 						</div>
 			</div> <!-- end nav mini -->
 		</div> <!-- end navbar mini -->
@@ -138,7 +138,7 @@
 				<div class="col-lg-6 col-12 ">
 					<div class="v__left">
 						<h2 class="title__info">Vision</h2>
-						<p class="txt__second">One stop solutions for blockchain investments</p>
+						<p class="txt__second">One stop solutions for blockchain projects investments</p>
 					</div>
 				</div>
 
@@ -274,7 +274,7 @@
 						<div class="foot__desc">
 							<!-- <img src="/mainpage/img/skyx-logo.svg" alt="skyx-logo"> -->
 							<a href="/home/home" class="d-block"><img src="/mainpage/img/logo-skyx-word.svg" alt="skyx-logo"></a>
-							<p>One stop solutions for blockchain investments</p>
+							<p>One Stop Solutions For Blockchain Projects Investments</p>
 						</div>
 
 						<!-- foot contact -->
