@@ -881,6 +881,39 @@ footer p {
 /********************************************/
 /*               PROJECT PAGE               */
 /********************************************/
+.prjct__link:hover .prjct__card {
+    box-shadow: 0 0 18px 0 rgba(0, 209, 255, 0.5);
+    background: linear-gradient(90deg, rgba(10, 207, 254, 0.2) 0%, rgba(73, 90, 255, 0.2) 100%);
+    transform: scale(.96);
+}
+
+.prjct__link p {
+    font-size: 24px;
+}
+
+.prjct__card {
+    padding: 36px;
+    text-align: center;
+    border-radius: 24px;
+    background-color: rgba(255, 255, 255, .1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 360px;
+    border: 2px solid rgba(0, 209, 255, 0.6);
+    box-shadow: 0 0 14px 0 rgba(0, 209, 255, 0.2);
+    transition: all .3s ease-in-out;
+}
+
+.prjct__content {
+    padding: 0 16px;
+}
+
+.prjct__point {
+    border-bottom: 2px solid rgba(255, 255, 255, .6);
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+}
 
 /********************************************/
 /*               CONTACT PAGE               */
@@ -1326,6 +1359,13 @@ footer p {
     /********************************************/
     /*               PROJECT PAGE               */
     /********************************************/
+    .prjct__card {
+        height: 300px;
+    }
+
+    .prjct__content p {
+        font-size: 20px;
+    }
 
     /********************************************/
     /*               CONTACT PAGE               */
@@ -1583,6 +1623,10 @@ footer p {
     /********************************************/
     /*               PROJECT PAGE               */
     /********************************************/
+    .prjct__lvl {
+        width: 80vw;
+        margin: auto;
+    }
 
     /********************************************/
     /*               CONTACT PAGE               */
