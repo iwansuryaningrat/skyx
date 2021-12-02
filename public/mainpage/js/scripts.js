@@ -81,9 +81,34 @@ $(document).ready(function() {
 	});
 });
 
+// carousel-project-step-project
+$(document).ready(function() {
+	$('.owl-carousel#step-project').owlCarousel({
+		loop:false,
+		margin:16,
+		nav:true,
+		dots:false,
+		autoplay:false,
+		autoplayTimeout:6000,
+		smartSpeed:1000,
+		responsive:{
+			0:{
+				items:1
+			},
+			600:{
+	            items:3
+	        },
+	        1000:{
+	            items:3
+	        }
+	    }
+	});
+});
+
 // tooltips
 // partnership
 const tooltipsPship = document.querySelectorAll('.pship__tt')
 tooltipsPship.forEach(t => {
 	new bootstrap.Tooltip(t)
 })
+

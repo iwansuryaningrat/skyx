@@ -193,7 +193,95 @@
     <!-- step project section -->
     <div class="sec__x sec__y">
         <div class="container">
+            <div class="prjct__step">
+                <h2 class="title__info text-center">Tahapan Project</h2>
+                <div id="step-project" class="owl-carousel owl-theme">
+                    <div>
+                        <div class="ps__card">
+                            <div class="ps__img">
+                                <img src="/mainpage/img/icon-step-5.png" alt="...">
+                            </div>
+                            <div class="ps__progress">
+                                <div class="ps__progress2">
+                                    <div class="ps__progress3"></div>
+                                </div>
+                            </div>
+                            <div class="ps__desc">
+                                <p class="fw-bold">Step 1</p>
+                                <p>Tukar BUSD dengan SKX token dengan harga tetap 1 SKX = 1 BUSD.</p>
+                            </div>
+                        </div>
+                    </div>
 
+                    <div>
+                        <div class="ps__card">
+                            <div class="ps__img">
+                                <img src="/mainpage/img/icon-step-2.png" alt="...">
+                            </div>
+                            <div class="ps__progress">
+                                <div class="ps__progress2">
+                                    <div class="ps__progress3"></div>
+                                </div>
+                            </div>
+                            <div class="ps__desc">
+                                <p class="fw-bold">Step 2</p>
+                                <p>SKX holder akan mendapatkan privilege harga awal projek - projek baru, bahkan harga private sale (lebih murah dari public sale).</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="ps__card">
+                            <div class="ps__img">
+                                <img src="/mainpage/img/icon-step-4.png" alt="...">
+                            </div>
+                            <div class="ps__progress">
+                                <div class="ps__progress2">
+                                    <div class="ps__progress3"></div>
+                                </div>
+                            </div>
+                            <div class="ps__desc">
+                                <p class="fw-bold">Step 3</p>
+                                <p>SKX holder dapat membeli maksimum alokasi yang di dapat sesuai dengan bobot yang dimiliki.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="ps__card">
+                            <div class="ps__img">
+                                <img src="/mainpage/img/icon-step-3.png" alt="...">
+                            </div>
+                            <div class="ps__progress">
+                                <div class="ps__progress2">
+                                    <div class="ps__progress3"></div>
+                                </div>
+                            </div>
+                            <div class="ps__desc">
+                                <p class="fw-bold">Step 4</p>
+                                <p>Private sale akan dibagikan tepat waktu sesuai dengan timeline projek.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="ps__card">
+                            <div class="ps__img">
+                                <img src="/mainpage/img/icon-step-1.png" alt="...">
+                            </div>
+                            <div class="ps__progress">
+                                <div class="ps__progress2">
+                                    <div class="ps__progress3"></div>
+                                </div>
+                            </div>
+                            <div class="ps__desc">
+                                <p class="fw-bold">Step 5</p>
+                                <p>Token langsung dikirimkan ke wallet SKX holder.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div> <!-- end container -->
     </div>
     <!-- step project section -->
