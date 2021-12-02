@@ -102,7 +102,7 @@
 
 				<!-- foot -->
 				<div class="navbarmini__foot text-center pt-4">
-					<div style="font-size: 14px;" class="txt__second">"One stop solutions for blockchain projects investments."</div>
+					<div style="font-size: 14px;" class="txt__second">"One-stop solutions for blockchain projects investments."</div>
 				</div>
 			</div> <!-- end nav mini -->
 		</div> <!-- end navbar mini -->
@@ -153,6 +153,7 @@
 						<a href="https://www.instagram.com/skyx.fund/" target="_blank"><i class="fab fa-instagram"></i></a>
 						<a href="https://twitter.com/skyx_fund" target="_blank"><i class="fab fa-twitter"></i></a>
 						<a href="https://t.me/skyx_community" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+						<a href="https://www.linkedin.com/company/skyxfund" target="_blank"><i class="fab fa-linkedin-in"></i></a>
 					</div>
 				</div> <!-- contact card -->
 			</div> <!-- end contact flex -->
@@ -199,6 +200,29 @@
 	</div>
 	<!-- end form contact -->
 
+	<!-- modal -->
+	<!-- Button trigger modal -->
+	<button type="button" class="btn btn-primary shadow-none" data-bs-toggle="modal" data-bs-target="#exampleModal">Launch demo modal</button>
+
+	<!-- Modal -->
+	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content modal__content">
+				<div class="modal__close">
+					<button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<p class="text-center">Thank you for subscribe us. Now you can join our community for more information.</p>
+					<div class="modal__icon">
+						<a href="https://www.instagram.com/skyx.fund/" target="_blank"><i class="fab fa-instagram"></i></a>
+						<a href="https://twitter.com/skyx_fund" target="_blank"><i class="fab fa-twitter"></i></a>
+						<a href="https://t.me/skyx_community" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<!-- footer section -->
 	<footer class="sec__y">
 		<div class="sec__x">
@@ -211,7 +235,7 @@
 						<div class="foot__desc">
 							<!-- <img src="/mainpage/img/skyx-logo.svg" alt="skyx-logo"> -->
 							<a href="/home/home" class="d-block"><img src="/mainpage/img/logo-skyx-word.svg" alt="skyx-logo"></a>
-							<p>One Stop Solutions For Blockchain Projects Investments</p>
+							<p>One-stop Solutions For Blockchain Projects Investments</p>
 						</div>
 
 						<!-- foot contact -->
@@ -235,6 +259,7 @@
 							<a href="https://www.instagram.com/skyx.fund/" target="_blank"><i class="fab fa-instagram"></i></a>
 							<a href="https://twitter.com/skyx_fund" target="_blank"><i class="fab fa-twitter"></i></a>
 							<a href="https://t.me/skyx_community" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+							<a href="https://www.linkedin.com/company/skyxfund" target="_blank"><i class="fab fa-linkedin-in"></i></a>
 						</div>
 					</div>
 
@@ -249,8 +274,9 @@
 							<ul class="foot__list">
 								<li class="foot__link fw-bold">Company</li>
 								<li class="foot__link"><a class="d-flex align-items-center" href="/home/project"><span class="d-block me-2">Projects</span><i class="ai-arrow-up-right d-flex align-items-center"></i></a></li>
+								<li class="foot__link"><a class="d-flex align-items-center" href="/home/portfolio"><span class="d-block me-2">Portfolio</span><i class="ai-arrow-up-right d-flex align-items-center"></i></a></li>
+								<li class="foot__link"><a class="d-flex align-items-center" href="/home/partner"><span class="d-block me-2">Partnership</span><i class="ai-arrow-up-right d-flex align-items-center"></i></a></li>
 								<li class="foot__link"><a class="d-flex align-items-center" href="/home/about"><span class="d-block me-2">About Us</span><i class="ai-arrow-up-right d-flex align-items-center"></i></a></li>
-								<li class="foot__link"><a class="d-flex align-items-center" href="/home/contact"><span class="d-block me-2">Contact Us</span><i class="ai-arrow-up-right d-flex align-items-center"></i></a></li>
 							</ul>
 						</div>
 					</div>

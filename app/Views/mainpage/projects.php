@@ -102,7 +102,7 @@
 
                 <!-- foot -->
                 <div class="navbarmini__foot text-center pt-4">
-                    <div style="font-size: 14px;" class="txt__second">"One stop solutions for blockchain projects investments."</div>
+                    <div style="font-size: 14px;" class="txt__second">"One-stop solutions for blockchain projects investments."</div>
                 </div>
             </div> <!-- end nav mini -->
         </div> <!-- end navbar mini -->
@@ -129,63 +129,67 @@
     <!-- level project section -->
     <div class="sec__x sec__y">
         <div class="container">
-            <div class="row prjct__lvl">
-                <!-- tier1 -->
-                <div class="col-lg-3 col-md-6 col-12 px-4 py-lg-0 py-md-4 py-3">
-                    <a href="#" class="prjct__link">
-                        <p class="text-center fw-bold">TIER 1</p>
-                        <div class="prjct__card">
-                            <div class="prjct__content">
-                                <p class="prjct__point">2500 SKX</p>
-                                <p class="mb-0">1 POOL WEIGHT</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <!-- end tier1 -->
+            <div class="prjct__lvl">
+                <h2 class="title__info text-center">Tier Level</h2>
 
-                <!-- tier2 -->
-                <div class="col-lg-3 col-md-6 col-12 px-4 px-4 py-lg-0 py-md-4 py-3">
-                    <a href="#" class="prjct__link">
-                        <p class="text-center fw-bold">TIER 2</p>
-                        <div class="prjct__card">
-                            <div class="prjct__content">
-                                <p class="prjct__point">5000 SKX</p>
-                                <p class="mb-0">2.5 POOL WEIGHT</p>
+                <div class="row">
+                    <!-- tier1 -->
+                    <div class="col-lg-3 col-md-6 col-12 px-4 py-lg-0 py-md-4 py-3">
+                        <a href="#" class="prjct__link">
+                            <p class="text-center fw-bold">TIER 1</p>
+                            <div class="prjct__card">
+                                <div class="prjct__content">
+                                    <p class="prjct__point">2500 SKX</p>
+                                    <p class="mb-0">1 POOL WEIGHT</p>
+                                </div>
                             </div>
-                        </div>
-                    </a>
-                </div>
-                <!-- end tier2 -->
+                        </a>
+                    </div>
+                    <!-- end tier1 -->
 
-                <!-- tier3 -->
-                <div class="col-lg-3 col-md-6 col-12 px-4 px-4 py-lg-0 py-md-4 py-3">
-                    <a href="#" class="prjct__link">
-                        <p class="text-center fw-bold">TIER 3</p>
-                        <div class="prjct__card">
-                            <div class="prjct__content">
-                                <p class="prjct__point">10000 SKX</p>
-                                <p class="mb-0">6 POOL WEIGHT</p>
+                    <!-- tier2 -->
+                    <div class="col-lg-3 col-md-6 col-12 px-4 px-4 py-lg-0 py-md-4 py-3">
+                        <a href="#" class="prjct__link">
+                            <p class="text-center fw-bold">TIER 2</p>
+                            <div class="prjct__card">
+                                <div class="prjct__content">
+                                    <p class="prjct__point">5000 SKX</p>
+                                    <p class="mb-0">2.5 POOL WEIGHT</p>
+                                </div>
                             </div>
-                        </div>
-                    </a>
-                </div>
-                <!-- end tier3 -->
+                        </a>
+                    </div>
+                    <!-- end tier2 -->
 
-                <!-- tier4 -->
-                <div class="col-lg-3 col-md-6 col-12 px-4 px-4 py-lg-0 py-md-4 py-3">
-                    <a href="#" class="prjct__link">
-                        <p class="text-center fw-bold">TIER 4</p>
-                        <div class="prjct__card">
-                            <div class="prjct__content">
-                                <p class="prjct__point">25000 SKX</p>
-                                <p class="mb-0">18 POOL WEIGHT</p>
+                    <!-- tier3 -->
+                    <div class="col-lg-3 col-md-6 col-12 px-4 px-4 py-lg-0 py-md-4 py-3">
+                        <a href="#" class="prjct__link">
+                            <p class="text-center fw-bold">TIER 3</p>
+                            <div class="prjct__card">
+                                <div class="prjct__content">
+                                    <p class="prjct__point">10000 SKX</p>
+                                    <p class="mb-0">6 POOL WEIGHT</p>
+                                </div>
                             </div>
-                        </div>
-                    </a>
-                </div>
-                <!-- end tier4 -->
-            </div> <!-- end row -->
+                        </a>
+                    </div>
+                    <!-- end tier3 -->
+
+                    <!-- tier4 -->
+                    <div class="col-lg-3 col-md-6 col-12 px-4 px-4 py-lg-0 py-md-4 py-3">
+                        <a href="#" class="prjct__link">
+                            <p class="text-center fw-bold">TIER 4</p>
+                            <div class="prjct__card">
+                                <div class="prjct__content">
+                                    <p class="prjct__point">25000 SKX</p>
+                                    <p class="mb-0">18 POOL WEIGHT</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- end tier4 -->
+                </div> <!-- end row -->
+            </div>
         </div> <!-- end container -->
     </div>
     <!-- level project section -->
@@ -225,7 +229,7 @@
                             </div>
                             <div class="ps__desc">
                                 <p class="fw-bold">Step 2</p>
-                                <p>SKX holder akan mendapatkan privilege harga awal projek - projek baru, bahkan harga private sale (lebih murah dari public sale).</p>
+                                <p>SKX holder akan mendapatkan privilege hara awal projek - projek baru, bahkan harga private sale (lebih murah dari public sale).</p>
                             </div>
                         </div>
                     </div>
@@ -298,7 +302,7 @@
                         <div class="foot__desc">
                             <!-- <img src="/mainpage/img/skyx-logo.svg" alt="skyx-logo"> -->
                             <a href="/home/home" class="d-block"><img src="/mainpage/img/logo-skyx-word.svg" alt="skyx-logo"></a>
-                            <p>One Stop Solutions For Blockchain Projects Investments</p>
+                            <p>One-stop Solutions For Blockchain Projects Investments</p>
                         </div>
 
                         <!-- foot contact -->
@@ -322,6 +326,7 @@
                             <a href="https://www.instagram.com/skyx.fund/" target="_blank"><i class="fab fa-instagram"></i></a>
                             <a href="https://twitter.com/skyx_fund" target="_blank"><i class="fab fa-twitter"></i></a>
                             <a href="https://t.me/skyx_community" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+                            <a href="https://www.linkedin.com/company/skyxfund" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
 
@@ -336,8 +341,9 @@
                             <ul class="foot__list">
                                 <li class="foot__link fw-bold">Company</li>
                                 <li class="foot__link"><a class="d-flex align-items-center" href="/home/project"><span class="d-block me-2">Projects</span><i class="ai-arrow-up-right d-flex align-items-center"></i></a></li>
+                                <li class="foot__link"><a class="d-flex align-items-center" href="/home/portfolio"><span class="d-block me-2">Portfolio</span><i class="ai-arrow-up-right d-flex align-items-center"></i></a></li>
+                                <li class="foot__link"><a class="d-flex align-items-center" href="/home/partner"><span class="d-block me-2">Partnership</span><i class="ai-arrow-up-right d-flex align-items-center"></i></a></li>
                                 <li class="foot__link"><a class="d-flex align-items-center" href="/home/about"><span class="d-block me-2">About Us</span><i class="ai-arrow-up-right d-flex align-items-center"></i></a></li>
-                                <li class="foot__link"><a class="d-flex align-items-center" href="/home/contact"><span class="d-block me-2">Contact Us</span><i class="ai-arrow-up-right d-flex align-items-center"></i></a></li>
                             </ul>
                         </div>
                     </div>

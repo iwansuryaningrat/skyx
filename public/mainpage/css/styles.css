@@ -9,8 +9,10 @@
     5. Home Page
     6. About Page
     7. Project Page
-    8. Contact Page
-    9. FAQ Page
+    8. Portfolio Page
+    9. Partnership Page
+    10. Contact Page
+    11. FAQ Page
     99. Responsive / Media queries
 */
 
@@ -261,6 +263,24 @@ h2 {
     transform: translateY(0%);
 }
 
+/* dropdown */
+.nav__dropdown {
+    position: absolute;
+    border-radius: 12px;
+    padding: 18px;
+    background: linear-gradient(122.47deg, rgba(255, 255, 255, 0.25) -14.62%, rgba(255, 255, 255, 0.1) 98.48%);
+    backdrop-filter: blur(1.5rem);
+    top: 84px;
+    right: 290px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nav__dropdown .nav__link {
+    margin-left: 0;
+}
+
 /* scroll up */
 .scroll__up {
     font-size: 2rem;
@@ -435,12 +455,39 @@ footer p {
 }
 
 /* modal */
+.modal__close {
+    position: absolute;
+    z-index: 99;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+}
+
 .modal__content {
-    background-color: rgba(255, 255, 255, .3);
+    background: linear-gradient(122.47deg, rgba(255, 255, 255, 0.25) -14.62%, rgba(255, 255, 255, 0.1) 98.48%);
     backdrop-filter: blur(1.5rem);
     border: none;
     padding: 36px;
     border-radius: 18px;
+}
+
+.modal__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 18px;
+}
+
+.modal__icon a i {
+    font-size: 30px;
+    color: rgba(255, 255, 255, .6);
+    margin: 0 1rem;
+    transition: all .3s ease-in-out;
+}
+
+.modal__icon a:hover i {
+    color: var(--white);
+    text-shadow: 0 0 1.25rem rgba(255, 255, 255, 1);
 }
 
 /******************************************/
@@ -868,25 +915,6 @@ footer p {
     color: var(--white);
 }
 
-/* our partnership */
-.pship {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.pship__icon {
-    padding: 20px 15px;
-    margin: 0 15px;
-    height: 84px;
-}
-
-.pship__icon img {
-    display: block;
-    height: 100%;
-}
-
 /********************************************/
 /*               PROJECT PAGE               */
 /********************************************/
@@ -1021,6 +1049,31 @@ footer p {
     height: 1.5rem;
     width: 1.5rem;
 }
+
+/**********************************************/
+/*               PORTFOLIO PAGE               */
+/**********************************************/
+.portfo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.portfo__icon {
+    padding: 20px 15px;
+    margin: 0 15px;
+    height: 84px;
+}
+
+.portfo__icon img {
+    display: block;
+    height: 100%;
+}
+
+/************************************************/
+/*               PARTNERSHIP PAGE               */
+/************************************************/
 
 /********************************************/
 /*               CONTACT PAGE               */

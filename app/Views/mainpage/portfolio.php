@@ -20,7 +20,7 @@
 	<meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
 
 	<!-- Webpage Title -->
-	<title><?= $title; ?></title>
+	<title>Portfolio - Skyx</title>
 
 	<!-- apple touch icon -->
 	<link rel="apple-touch-icon" sizes="57x57" href="">
@@ -47,10 +47,9 @@
 </head>
 
 <body>
-	<!-- navigation section -->
 	<nav class="navbar navbar-expand-lg navbar-light navbar__skyx position-sticky sticky-top">
 		<div class="container-fluid m__nav">
-			<a class="navbar-brand" href="/home/home">
+			<a class="navbar-brand" href="home.html">
 				<img class="nav__img" src="/mainpage/img/skyx-logo.svg" alt="skyx-logo">
 			</a> <!-- end navbar bran -->
 
@@ -65,16 +64,11 @@
 
 			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 				<div class="navbar-nav ms-auto">
-					<a class="nav-link nav__link <?php if ($tab == 'home') : echo 'active';
-													endif; ?>" href=" /home/home">Home</a>
-					<a class="nav-link nav__link <?php if ($tab == 'about') : echo 'active';
-													endif; ?>" href="/home/about">About Us</a>
-					<a class="nav-link nav__link <?php if ($tab == 'projects') : echo 'active';
-													endif; ?>" href="/home/projects">Projects</a>
-					<a class="nav-link nav__link <?php if ($tab == 'contact') : echo 'active';
-													endif; ?>" href="/home/contact">Contact</a>
-					<a class="nav-link nav__link <?php if ($tab == 'faq') : echo 'active';
-													endif; ?>" href="/home/faq">FAQ</a>
+					<a class="nav-link nav__link" aria-current="page" href="home.html">Home</a>
+					<a class="nav-link nav__link" href="about.html">About Us</a>
+					<a class="nav-link nav__link active" href="project.html">Projects</a>
+					<a class="nav-link nav__link" href="contact.html">Contact</a>
+					<a class="nav-link nav__link" href="faq.html">FAQ</a>
 				</div> <!-- end navbar nav -->
 			</div> <!-- end navbar -->
 		</div> <!-- end container fluid -->
@@ -89,16 +83,11 @@
 				</div>
 
 				<!-- main -->
-				<a class="navmini__link <?php if ($tab == 'home') : echo 'active';
-										endif; ?>" href="/home/home">Home</a>
-				<a class="navmini__link <?php if ($tab == 'about') : echo 'active';
-										endif; ?>" href="/home/about">About Us</a>
-				<a class="navmini__link <?php if ($tab == 'projects') : echo 'active';
-										endif; ?>" href="/home/projects">Projects</a>
-				<a class="navmini__link <?php if ($tab == 'contact') : echo 'active';
-										endif; ?>" href="/home/contact">Contact</a>
-				<a class="navmini__link <?php if ($tab == 'faq') : echo 'active';
-										endif; ?>" href="/home/faq">FAQ</a>
+				<a class="navmini__link" href="home.html">Home</a>
+				<a class="navmini__link" href="about.html">About Us</a>
+				<a class="navmini__link" href="project.html">Projects</a>
+				<a class="navmini__link" href="contact.html">Contact</a>
+				<a class="navmini__link active" href="faq.html">FAQ</a>
 
 				<!-- foot -->
 				<div class="navbarmini__foot text-center pt-4">
@@ -106,133 +95,44 @@
 				</div>
 			</div> <!-- end nav mini -->
 		</div> <!-- end navbar mini -->
-	</nav> <!-- end nav -->
-	<!-- end navigation section -->
+	</nav>
 
 	<!-- scroll up button -->
 	<i class="bi bi-caret-up-fill scroll__up"></i>
 	<!-- end scroll up button -->
 
-	<!-- jumbotron section -->
-	<div class="overflow-hidden">
-		<div class="jumbotron sec__x">
-			<div class="container">
-				<div class="row">
-					<!-- left -->
-					<div class="col-lg-7 col-12 left">
-						<h1>SKYX VENTURE CAPITAL</h1>
-						<p class="txt__second">One-stop solutions for blockchain projects investments</p>
-						<div class="skyx__btn__gs">
-							<a href="/home/contact" class="btn__gs d-flex align-items-center">Get started<i class="ai-arrow-right"></i></a>
-						</div>
-					</div>
-
-					<!-- right -->
-					<div class="col-lg-5 col-12">
-						<div class="relative__img">
-							<div class="hero__img">
-								<img class="absolute__img" src="/mainpage/img/hero-bitcoin.svg" alt="...">
-							</div>
-						</div>
-					</div> <!-- end col -->
-				</div> <!-- end row -->
-			</div> <!-- end container -->
-		</div> <!-- end jumbotron -->
-	</div>
-	<!-- end jumbotron section -->
-
-	<!-- top project -->
-	<div class="sec__x sec__y skyx__none">
+	<!-- header -->
+	<header>
 		<div class="container">
-			<div class="text-center">
-				<h2 class="title__info">Top Project</h2>
-			</div> <!-- end text center -->
-			<div class="tp__content">
-				<div id="tp" class="owl-carousel owl-theme">
-					<?php foreach ($projects as $data) : ?>
-						<?php  ?>
-						<!-- card1 -->
-						<div>
-							<a href="project-view.html" class="tp__link d-block">
-								<div class="tp__card my-3 mx-1">
-									<div>
-										<div class="tp__img"></div>
-										<p class="fw-bold tp__title"><?= $data['nama']; ?></p>
-										<p class="tp__desc tp__fz tp__seccond"><?= $data['deskripsi']; ?></p>
-									</div>
-
-									<div>
-										<div>
-											<p class="fw-bold tp__fz tp__mb">Price : 1 BON = <?= $data['price'] . " " . $data['satuan']; ?> BUSD</p>
-											<p class="fw-bold tp__fz mb-0">Start : 23 Nov = 09:00 UTC</p>
-										</div>
-
-										<div class="tp__project">
-											<p class="tp__fz-sm">Open in 20 minutes</p>
-											<div class="progress__bar"></div>
-											<div class="d-flex justify-content-between align-items-center">
-												<p class="tp__fz-sm">0 BUSD</p>
-												<p class="tp__fz-sm"><?= $data['bon']; ?> / <?= $data['total_bon'] ?> BON</p>
-											</div>
-										</div>
-
-										<div>
-											<div class="d-flex align-items-center justify-content-between tp__mb">
-												<p class="tp__fz fw-bold tp__second mb-0">TOTAL RAISED</p>
-												<p class="tp__fz fw-bold tp__second mb-0">1X =</p>
-											</div>
-											<div class="d-flex align-items-center justify-content-between">
-												<p class="tp__fz fw-bold mb-0">$ <?= $data['total_raised']; ?></p>
-												<p class="tp__fz fw-bold mb-0">$ 15,28</p>
-											</div>
-										</div>
-									</div>
-								</div> <!-- end tp card -->
-							</a> <!-- end tp link -->
-						</div>
-					<?php endforeach; ?>
+			<div class="head__other d-flex justify-content-center align-items-center">
+				<div class="header__main">
+					<h1>Portfolio</h1>
+					<p class="txt__second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident amet soluta, est sapiente architecto praesentium necessitatibus placeat nemo.</p>
 				</div>
-			</div> <!-- end tp content -->
+			</div>
+		</div>
+	</header>
+	<!-- end header -->
 
-			<a href="/home/project" class="tp__va"><span class="d-block me-2">View all</span><i class="bi bi-arrow-right-short d-flex align-items-center"></i></a>
-		</div> <!-- end container -->
-	</div>
-	<!-- end top projects -->
-
-	<!-- info section -->
+	<!-- portfolio section -->
 	<div class="sec__x sec__y">
 		<div class="container">
-			<div class="row">
-				<!-- left -->
-				<div class="col-lg-6 col-12">
-					<div class="info__l">
-						<img class="img__info" src="/mainpage/img/image-info.svg" alt="image-info-section">
-					</div>
-				</div>
-
-				<!-- right -->
-				<div class="col-lg-6 col-12">
-					<div class="info__r">
-						<div id="info" class="owl-carousel owl-theme">
-							<?php foreach ($artikel as $data) : ?>
-								<div class="pe-3">
-									<div class="card__info">
-										<h2 class="title__info"><?= $data['judul']; ?></h2>
-										<p class="txt__desc"><?= $data['preview']; ?></p>
-										<div class="btn__lm">
-											<a href="/home/about" class="d-flex align-items-center"><span class="d-flex">Learn more</span><i class="bi bi-arrow-right-short d-flex align-items-center"></i></a>
-										</div>
-									</div>
-								</div>
-							<?php endforeach; ?>
-
-						</div> <!-- end info owl carousel -->
-					</div> <!-- end info 4 -->
-				</div> <!-- end col -->
-			</div> <!-- end row -->
+			<div>
+				<div class="portfo">
+					<figure class="portfo__icon">
+						<a href="https://universeisland.games/" target="_blank"><img src="/mainpage/img/partnership/universeisland-logo.png" alt="..." class="pship__tt" data-bs-toggle="tooltip" data-bs-placement="top" title="Universe Island"></a>
+					</figure>
+					<figure class="portfo__icon">
+						<a href="https://www.solchicks.io/" target="_blank"><img src="/mainpage/img/partnership/solchicks-logo.png" alt="..." class="pship__tt" data-bs-toggle="tooltip" data-bs-placement="top" title="SolChicks"></a>
+					</figure>
+					<figure class="portfo__icon">
+						<a href="https://wingswap.io/" target="_blank"><img src="/mainpage/img/partnership/wingswap-logo.png" alt="..." class="pship__tt" data-bs-toggle="tooltip" data-bs-placement="top" title="WingSwap"></a>
+					</figure>
+				</div> <!-- end pship -->
+			</div>
 		</div> <!-- end container -->
 	</div>
-	<!-- end info section -->
+	<!-- end portfolio section -->
 
 	<!-- footer section -->
 	<footer class="sec__y">
@@ -309,32 +209,6 @@
 	<script src="/mainpage/js/owl.carousel.min.js"></script> <!-- owl carousel min scripts -->
 
 	<script src="/mainpage/js/scripts.js"></script> <!-- skyx scripts -->
-
-	<!-- carousel-info-home -->
-	<script>
-		$(document).ready(function() {
-			$('.owl-carousel#info').owlCarousel({
-				loop: true,
-				margin: 16,
-				nav: false,
-				dots: true,
-				autoplay: true,
-				autoplayTimeout: 6000,
-				smartSpeed: 1000,
-				responsive: {
-					0: {
-						items: 1
-					},
-					600: {
-						items: 1
-					},
-					1000: {
-						items: 1
-					}
-				}
-			});
-		});
-	</script>
 </body>
 
 </html>

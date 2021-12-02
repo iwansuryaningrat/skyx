@@ -105,7 +105,7 @@
 
 				<!-- foot -->
 				<div class="navbarmini__foot text-center pt-4">
-					<div style="font-size: 14px;" class="txt__second">"One stop solutions for blockchain projects investments."</div>
+					<div style="font-size: 14px;" class="txt__second">"One-stop solutions for blockchain projects investments."</div>
 				</div>
 			</div> <!-- end nav mini -->
 		</div> <!-- end navbar mini -->
@@ -122,7 +122,7 @@
 			<div class="head__other d-flex justify-content-center align-items-center">
 				<div class="header__main">
 					<h1>About us</h1>
-					<p class="txt__second">SKYX adalah <span class="text-white fw-bold">ventures capital</span> yang memiliki visi membantu investor Crypto untuk mendapatkan alokasi proyek blockchain / crypto. SKYX tidak hanya menawarkan <span class="text-white fw-bold">kemudahan</span> tetapi juga <span class="text-white fw-bold">keamanan</span> kepada investor karena seluruh proyek telah melalui <span class="text-white fw-bold">screening berlapis</span> oleh praktisi professional.</p>
+					<p class="txt__second">SKYX is a growing Venture Capital aiming to provide opportunities for investors who want to invest in crypto projects. We aim to provide access to our clients. Thus they can beneficially invest in selected projects that we have thoroughly researched, which we see as good prospects and potential.</p>
 				</div>
 			</div>
 		</div>
@@ -138,7 +138,7 @@
 				<div class="col-lg-6 col-12 ">
 					<div class="v__left">
 						<h2 class="title__info">Vision</h2>
-						<p class="txt__second">One stop solutions for blockchain projects investments</p>
+						<p class="txt__second">One-stop solutions for blockchain projects investments</p>
 					</div>
 				</div>
 
@@ -244,23 +244,6 @@
 	</div>
 	<!-- end our team section -->
 
-	<!-- our partnership -->
-	<div class="sec__x sec__y">
-		<div class="container">
-			<div>
-				<h2 class="title__info text-center">Our Partnership</h2>
-				<div class="pship">
-					<?php foreach ($partner as $row) : ?>
-						<figure class="pship__icon">
-							<!-- picture in here -->
-							<a href="<?= $row['link']; ?>" target="_blank"><img src="/foto/partnership/<?= $row['logo']; ?>" alt="..." class="pship__tt" data-bs-toggle="tooltip" data-bs-placement="top" title="<?= $row['nama']; ?>"></a>
-						</figure>
-					<?php endforeach; ?>
-				</div> <!-- end pship -->
-			</div>
-		</div> <!-- end container -->
-	</div>
-	<!-- end our partnership -->
 
 	<!-- footer section -->
 	<footer class="sec__y">
@@ -274,7 +257,7 @@
 						<div class="foot__desc">
 							<!-- <img src="/mainpage/img/skyx-logo.svg" alt="skyx-logo"> -->
 							<a href="/home/home" class="d-block"><img src="/mainpage/img/logo-skyx-word.svg" alt="skyx-logo"></a>
-							<p>One Stop Solutions For Blockchain Projects Investments</p>
+							<p>One-stop Solutions For Blockchain Projects Investments</p>
 						</div>
 
 						<!-- foot contact -->
@@ -298,6 +281,7 @@
 							<a href="https://www.instagram.com/skyx.fund/" target="_blank"><i class="fab fa-instagram"></i></a>
 							<a href="https://twitter.com/skyx_fund" target="_blank"><i class="fab fa-twitter"></i></a>
 							<a href="https://t.me/skyx_community" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+							<a href="https://www.linkedin.com/company/skyxfund" target="_blank"><i class="fab fa-linkedin-in"></i></a>
 						</div>
 					</div>
 
@@ -312,8 +296,9 @@
 							<ul class="foot__list">
 								<li class="foot__link fw-bold">Company</li>
 								<li class="foot__link"><a class="d-flex align-items-center" href="/home/project"><span class="d-block me-2">Projects</span><i class="ai-arrow-up-right d-flex align-items-center"></i></a></li>
+								<li class="foot__link"><a class="d-flex align-items-center" href="/home/portfolio"><span class="d-block me-2">Portfolio</span><i class="ai-arrow-up-right d-flex align-items-center"></i></a></li>
+								<li class="foot__link"><a class="d-flex align-items-center" href="/home/partner"><span class="d-block me-2">Partnership</span><i class="ai-arrow-up-right d-flex align-items-center"></i></a></li>
 								<li class="foot__link"><a class="d-flex align-items-center" href="/home/about"><span class="d-block me-2">About Us</span><i class="ai-arrow-up-right d-flex align-items-center"></i></a></li>
-								<li class="foot__link"><a class="d-flex align-items-center" href="/home/contact"><span class="d-block me-2">Contact Us</span><i class="ai-arrow-up-right d-flex align-items-center"></i></a></li>
 							</ul>
 						</div>
 					</div>
