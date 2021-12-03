@@ -165,7 +165,7 @@
 										<i class="fi fi-br-paper-plane"></i>
 									</div>
 								</div>
-								<p>Memberikan informasi tercepat dan terpercaya terkait dunia blockchain.</p>
+								<p>Providing the fastest and most trusted information related to the world of blockchain.</p>
 							</div> <!-- end misi card -->
 						</div>
 
@@ -177,7 +177,7 @@
 										<i class="fi fi-br-life-ring"></i>
 									</div>
 								</div>
-								<p>Memberikan kemudahan kepada investor dalam melakukan investasi di dunia blockchain.</p>
+								<p>Providing convenience to investors in investing in the blockchain world.</p>
 							</div> <!-- end misi card -->
 						</div>
 
@@ -189,7 +189,7 @@
 										<i class="fi fi-br-diamond"></i>
 									</div>
 								</div>
-								<p>Me-research projects dengan standar tinggi skyx.</p>
+								<p>Researching projects with SKYX high standards.</p>
 							</div> <!-- end misi card -->
 						</div>
 
@@ -201,7 +201,7 @@
 										<i class="fi fi-br-shield-check"></i>
 									</div>
 								</div>
-								<p>Memitigasi resiko penipuan investasi.</p>
+								<p>Mitigating the risk of investment fraud.</p>
 							</div> <!-- end misi card -->
 						</div>
 					</div> <!-- end row -->
@@ -281,6 +281,7 @@
 							<a href="https://www.instagram.com/skyx.fund/" target="_blank"><i class="fab fa-instagram"></i></a>
 							<a href="https://twitter.com/skyx_fund" target="_blank"><i class="fab fa-twitter"></i></a>
 							<a href="https://t.me/skyx_community" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+							<a href="https://t.me/skyx_announcement" target="_blank"><i class="fab fa-telegram-plane"></i></a>
 							<a href="https://www.linkedin.com/company/skyxfund" target="_blank"><i class="fab fa-linkedin-in"></i></a>
 						</div>
 					</div>
@@ -292,6 +293,7 @@
 								<li class="foot__link fw-bold">Quick Links</li>
 								<li class="foot__link"><a class="d-flex align-items-center" href="/home/home"><span class="d-block me-2">Home</span><i class="ai-arrow-up-right d-flex align-items-center"></i></a></li>
 								<li class="foot__link"><a class="d-flex align-items-center" href="/home/faq"><span class="d-block me-2">FAQs</span><i class="ai-arrow-up-right d-flex align-items-center"></i></a></li>
+								<li class="foot__link"><a class="d-flex align-items-center" href="/home/contact"><span class="d-block me-2">Contact Us</span><i class="ai-arrow-up-right d-flex align-items-center"></i></a></li>
 							</ul>
 							<ul class="foot__list">
 								<li class="foot__link fw-bold">Company</li>
