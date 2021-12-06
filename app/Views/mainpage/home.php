@@ -10,7 +10,7 @@
 				<!-- left -->
 				<div class="col-lg-7 col-12 left">
 					<h1>SKYX VENTURE CAPITAL</h1>
-					<p class="txt__second">One-stop solutions for blockchain projects investments</p>
+					<p class="txt__second">One-stop solutions for blockchain project investments</p>
 					<div class="skyx__btn__gs">
 						<a href="/home/contact" class="btn__gs d-flex align-items-center">Get started<i class="ai-arrow-right"></i></a>
 					</div>
