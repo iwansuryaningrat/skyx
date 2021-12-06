@@ -56,6 +56,8 @@ class Admin extends BaseController
         // Mengambil data visitors bulanan
         $visitorsKumulatif = $this->visitorsModel->getBulananKumulatif();
 
+        $admin = user()->toArray();
+
         $data = [
             'title' => 'Dashboard Admin | SKYX',
             'tab' => 'dashboard',
@@ -65,7 +67,8 @@ class Admin extends BaseController
             'newSubscribers' => $newSubscribers,
             'visitors' => $visitors,
             'visitorsMonthly' => $visitorsMonthly,
-            'visitorsKumulatif' => $visitorsKumulatif
+            'visitorsKumulatif' => $visitorsKumulatif,
+            'admin' => $admin
         ];
 
         return view('admin/index', $data);
