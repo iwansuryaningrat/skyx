@@ -23,13 +23,13 @@
     <title><?= $title; ?></title>
 
     <!-- apple touch icon -->
-    <link rel="apple-touch-icon" sizes="57x57" href="">
-    <link rel="apple-touch-icon" sizes="72x72" href="">
-    <link rel="apple-touch-icon" sizes="76x76" href="">
-    <link rel="apple-touch-icon" sizes="114x114" href="">
-    <link rel="apple-touch-icon" sizes="120x120" href="">
-    <link rel="apple-touch-icon" sizes="144x144" href="">
-    <link rel="apple-touch-icon" sizes="180x180" href="">
+    <link rel="apple-touch-icon" sizes="57x57" href="/mainpage/img/icon/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/mainpage/img/icon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/mainpage/img/icon/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/mainpage/img/icon/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/mainpage/img/icon/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/mainpage/img/icon/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/mainpage/img/icon/apple-touch-icon-180x180.png">
 
     <!-- Styles -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> <!-- bootstrap styles -->
@@ -43,7 +43,7 @@
     <link rel="stylesheet" href="/mainpage/css/styles.css"> <!-- skyx styles -->
 
     <!-- Favicon  -->
-    <link rel="icon" href="/mainpage/img/favicon.ico">
+    <link rel="icon" href="/mainpage/img/icon/favicon.ico">
 </head>
 
 <body>
