@@ -146,7 +146,7 @@ h2 {
 
 /* navbar */
 .navbar__skyx {
-    padding: .5rem 0;
+    padding: 0;
 
     background-color: rgba(2, 49, 85, .1);
 
@@ -164,6 +164,7 @@ h2 {
 .nav__link {
     font-size: 1rem;
     font-weight: 700;
+    padding: 1.625rem 1rem;
 
     margin-left: 3.75rem;
 
@@ -249,12 +250,23 @@ h2 {
     color: var(--second);
 }
 
+.navmini__link.p__link {
+    margin: 0;
+    padding: 1rem 0 1rem 1.5rem;
+}
+
+.navmini__icon i {
+    color: var(--second);
+    transition: all .3s ease-in-out;
+}
+
 .navmini__close i {
     color: var(--second);
 }
 
 .navmini__link:hover,
-.navmini__link.active {
+.navmini__link.active,
+.navmini__icon:hover i {
     color: var(--white) !important;
     text-shadow: 0 0 1.25rem rgba(255, 255, 255, 1);
 }
@@ -263,22 +275,37 @@ h2 {
     transform: translateY(0%);
 }
 
+.navmini__icon[aria-expanded='true'] .qbox__transform {
+    transform: rotate(180deg);
+}
+
 /* dropdown */
 .nav__dropdown {
     position: absolute;
     border-radius: 12px;
     padding: 18px;
-    background: linear-gradient(122.47deg, rgba(255, 255, 255, 0.25) -14.62%, rgba(255, 255, 255, 0.1) 98.48%);
-    backdrop-filter: blur(1.5rem);
-    top: 84px;
-    right: 290px;
-    display: flex;
+    background-color: rgba(23, 27, 36, 1);
+    top: 100%;
+    left: 0;
     flex-direction: column;
     justify-content: center;
+    width: 160px;
+    margin-left: 3.75rem;
+    display: none;
+    opacity: 0;
+    transition: all .6s ease-in-out;
+    z-index: -1;
 }
 
 .nav__dropdown .nav__link {
     margin-left: 0;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.navbar-nav .position-relative:hover .nav__dropdown {
+    opacity: 1;
+    display: flex;
 }
 
 /* scroll up */
@@ -488,6 +515,23 @@ footer p {
 .modal__icon a:hover i {
     color: var(--white);
     text-shadow: 0 0 1.25rem rgba(255, 255, 255, 1);
+}
+
+.modal__btn {
+    margin-top: 30px;
+    padding: .75rem 4rem;
+    border-radius: .875rem;
+    background: linear-gradient(90deg, #425ca9 0%, #1e3c72 35.42%, #282a6d 100%);
+    color: var(--white);
+    font-size: 20px;
+    transition: all .3s ease-in-out;
+    background-size: 300% 100%;
+    font-weight: 700;
+}
+
+.modal__btn:hover {
+    color: var(--white);
+    background-position: 96% 0;
 }
 
 /******************************************/
@@ -800,19 +844,20 @@ footer p {
 
 /* misi */
 .m__card {
-    min-height: 376px;
+    min-height: 384px;
     padding: 30px;
     background-color: rgba(255, 255, 255, .1);
     backdrop-filter: blur(1.5rem);
     border-radius: 1.125rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: start;
     cursor: pointer;
 }
 
 .m__card p {
     margin-bottom: 0;
+    font-size: 23px;
 }
 
 .m__icon {
@@ -820,7 +865,7 @@ footer p {
     border-radius: 9px;
     background-color: rgba(255, 255, 255, .1);
     backdrop-filter: blur(1.5rem);
-    margin-bottom: 24px;
+    margin-bottom: 30px;
 }
 
 .m__icon i {
@@ -1053,7 +1098,8 @@ footer p {
 /**********************************************/
 /*               PORTFOLIO PAGE               */
 /**********************************************/
-.portfo {
+.portfo,
+.partnership {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1061,19 +1107,62 @@ footer p {
 }
 
 .portfo__icon {
-    padding: 20px 15px;
+    padding: 30px 18px;
     margin: 0 15px;
-    height: 84px;
+    height: 130px;
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .portfo__icon img {
     display: block;
-    height: 100%;
+    max-height: 55px;
+    max-width: 100%;
 }
 
 /************************************************/
 /*               PARTNERSHIP PAGE               */
 /************************************************/
+.partner__icon {
+    min-height: 120px;
+    width: 240px;
+    position: relative;
+    border-radius: 15px;
+    background: linear-gradient(120.29deg, rgba(255, 255, 255, 0.24) -1.86%, rgba(255, 255, 255, 0.05) 101.48%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    margin: 15px;
+}
+
+.partner__icon img {
+    position: relative;
+    max-height: 55px;
+    max-width: 100%;
+    z-index: 30;
+}
+
+.partner__cover {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    background: linear-gradient(120.29deg, rgba(255, 255, 255, 0.20) -1.86%, rgba(255, 255, 255, 0.05) 101.48%);
+    border: 2px solid rgba(255, 255, 255, .15);
+    border-radius: 15px;
+    opacity: .5;
+    transition: all .3s ease-in-out;
+}
+
+.partner__icon:hover .partner__cover {
+    opacity: 1;
+}
 
 /********************************************/
 /*               CONTACT PAGE               */
@@ -1268,6 +1357,10 @@ footer p {
     }
 
     /* navbar */
+    .navbar__skyx {
+        padding: .5rem 0;
+    }
+
     .m__nav {
         padding: 0 2.25rem 0;
     }
@@ -1489,6 +1582,14 @@ footer p {
         min-height: 0;
     }
 
+    .m__card p {
+        font-size: var(--fz-2);
+    }
+
+    .m__icon {
+        margin-bottom: 24px;
+    }
+
     /* our team */
     .mteam__section {
         padding: 48px 30px;
@@ -1556,6 +1657,24 @@ footer p {
         font-size: 30px;
         width: 1.25rem;
         height: 1.25rem;
+    }
+
+    /**********************************************/
+    /*               PORTFOLIO PAGE               */
+    /**********************************************/
+    .portfo__icon {
+        padding: 20px 14px;
+        margin: 0 12px;
+        height: 90px;
+        width: 200px;
+    }
+
+    /************************************************/
+    /*               PARTNERSHIP PAGE               */
+    /************************************************/
+    .partner__icon {
+        width: 200px;
+        margin: 12px;
     }
 
     /********************************************/
@@ -1817,6 +1936,28 @@ footer p {
     .prjct__lvl {
         width: 80vw;
         margin: auto;
+    }
+    
+    /**********************************************/
+    /*               PORTFOLIO PAGE               */
+    /**********************************************/
+    .portfo__icon {
+        padding: 12px 9px;
+        margin: 0 9px;
+        height: 90px;
+        width: 45%;
+    }
+
+    /************************************************/
+    /*               PARTNERSHIP PAGE               */
+    /************************************************/
+    .partner__icon {
+        width: 45%;
+        min-height: 0;
+        height: 100px;
+        margin: 6px;
+        padding: 20px;
+        border-radius: 10px;
     }
 
     /********************************************/
