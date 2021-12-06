@@ -8,8 +8,7 @@
 		<div class="head__other d-flex justify-content-center align-items-center">
 			<div class="header__main">
 				<h1>Contact Us</h1>
-				<p class="txt__second">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tortor iaculis
-					consectetur imperdiet morbi etiam. Tristique odio magna nulla purus aliquet nec.</p>
+				<p class="txt__second">Contact us immediately if you are interested in us, we are ready to help you.</p>
 			</div>
 		</div>
 	</div>
