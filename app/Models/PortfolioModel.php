@@ -11,7 +11,7 @@ class PortfolioModel extends Model
     protected $useTimestamps = true;
     protected $allowedFields = ['nama', 'link', 'logo', 'created_at', 'updated_at'];
 
-    public function getPartnerData($id)
+    public function getPortfolioData($id)
     {
         return $this->where(['id' => $id])->first();
     }
