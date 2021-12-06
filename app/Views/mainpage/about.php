@@ -119,8 +119,12 @@
 							<p class="txt__desc fw-bold"><?= $row['jabatan']; ?></p>
 						</div>
 						<div class="mteam__icon">
-							<a href="<?= $row['ig']; ?>" target="_blank"><i class="fab fa-instagram-square"></i></a>
-							<a href="<?= $row['linkedin'] ?>" target="_blank"><i class="fab fa-linkedin"></i></a>
+							<a href="<?php if ($row['ig'] != null) : echo $row['ig'];
+										else : echo '#';
+										endif; ?>" target="_blank"><i class="fab fa-instagram-square"></i></a>
+							<a href="<?php if ($row['linkedin'] != null) : echo $row['linkedin'];
+										else : echo '#';
+										endif; ?>" target="_blank"><i class="fab fa-linkedin"></i></a>
 						</div>
 					</div>
 				<?php endforeach; ?>
