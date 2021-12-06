@@ -24,7 +24,7 @@
 			<div class="col-lg-6 col-12 ">
 				<div class="v__left">
 					<h2 class="title__info">Vision</h2>
-					<p class="txt__second">One-stop solutions for blockchain projects investments</p>
+					<p class="txt__second">One-stop solutions for blockchain project investments</p>
 				</div>
 			</div>
 
