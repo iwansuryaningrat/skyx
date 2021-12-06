@@ -6,7 +6,9 @@ use App\Models\DatausersModel;
 use App\Models\TeamsModel;
 use App\Models\VisitorsModel;
 use App\Models\ArtikelModel;
+use App\Models\ProjectsModel;
 use App\Models\PartnershipModel;
+use App\Models\PortfolioModel;
 
 use CodeIgniter\I18n\Time;
 
@@ -17,6 +19,7 @@ class Edit extends BaseController
     protected $visitorsModel;
     protected $artikelModel;
     protected $partnershipModel;
+    protected $portfolioModel;
 
     public function __construct()
     {
@@ -24,7 +27,9 @@ class Edit extends BaseController
         $this->teamsModel = new TeamsModel();
         $this->visitorsModel = new VisitorsModel();
         $this->artikelModel = new ArtikelModel();
+        $this->projectsModel = new ProjectsModel();
         $this->partnershipModel = new PartnershipModel();
+        $this->portfolioModel = new PortfolioModel();
     }
 
     public function editTeamForm($id)
