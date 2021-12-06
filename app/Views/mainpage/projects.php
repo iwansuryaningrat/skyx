@@ -8,7 +8,7 @@
         <div class="head__other d-flex justify-content-center align-items-center">
             <div class="header__main">
                 <h1>Projects</h1>
-                <p class="txt__second">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tortor iaculis consectetur imperdiet morbi etiam. Tristique odio magna nulla purus aliquet nec. Ut ornare amet, a aliquet in adipiscing vel, ut vulputate. Massa at tincidunt sagittis proin pulvinar nunc dictum.</p>
+                <p class="txt__second">We have a very extraordinary project for our potential investors, all of which we do by doing research with our professional team.</p>
             </div>
         </div>
     </div>
