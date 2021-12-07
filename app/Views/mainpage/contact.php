@@ -89,27 +89,51 @@
 </div>
 <!-- end form contact -->
 
-<!-- modal -->
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary shadow-none" data-bs-toggle="modal" data-bs-target="#exampleModal">Launch demo modal</button>
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-	<div class="modal-dialog modal-dialog-centered">
-		<div class="modal-content modal__content">
-			<div class="modal__close">
-				<button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
-			</div>
-			<div class="modal-body">
-				<p class="text-center">Thank you for subscribe us. Now you can join our community for more information.</p>
-				<div class="modal__icon">
-					<a href="https://www.instagram.com/skyx.fund/" target="_blank"><i class="fab fa-instagram"></i></a>
-					<a href="https://twitter.com/skyx_fund" target="_blank"><i class="fab fa-twitter"></i></a>
-					<a href="https://t.me/skyx_community" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+<!-- new modal -->
+<?php if (session()->getFlashdata('pesan')) : ?>
+	<?php if (session()->getFlashdata('pesan') == 'Data sudah ada') : ?>
+		<div class="modal__section " id="new_modal">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content modal__content">
+					<div class="modal-body">
+						<p class="text-center">You have subscribed to us. Now you can follow our social media to get the latest information from us.</p>
+						<div class="modal__icon">
+							<a href="https://www.instagram.com/skyx.fund/" target="_blank"><i class="fab fa-instagram"></i></a>
+							<a href="https://twitter.com/skyx_fund" target="_blank"><i class="fab fa-twitter"></i></a>
+							<a href="https://t.me/skyx_community" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+							<a href="https://t.me/skyx_announcement" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+							<a href="https://www.linkedin.com/company/skyxfund" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+						</div>
+					</div>
+					<div class="d-flex justify-content-center align-items-center" onclick="none()">
+						<a href="https://t.me/skyx_community" target="_blank" class="modal__btn">OK</a>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-</div>
+	<?php else : ?>
+		<div class="modal__section " id="new_modal">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content modal__content">
+					<div class="modal-body">
+						<p class="text-center">Thank you for subscribe us. Now you can join our community for more
+							information.</p>
+						<div class="modal__icon">
+							<a href="https://www.instagram.com/skyx.fund/" target="_blank"><i class="fab fa-instagram"></i></a>
+							<a href="https://twitter.com/skyx_fund" target="_blank"><i class="fab fa-twitter"></i></a>
+							<a href="https://t.me/skyx_community" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+							<a href="https://t.me/skyx_announcement" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+							<a href="https://www.linkedin.com/company/skyxfund" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+						</div>
+					</div>
+					<div class="d-flex justify-content-center align-items-center" onclick="none()">
+						<a href="https://t.me/skyx_community" target="_blank" class="modal__btn">OK</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	<?php endif; ?>
+<?php endif; ?>
+
 
 <?= $this->endSection(); ?>

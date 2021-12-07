@@ -183,7 +183,7 @@ class Add extends BaseController
 
         // Validasi
         if ($user != null) {
-            echo "data sudah ada";
+            session()->setFlashdata('pesan', 'Data sudah ada');
         } else {
             $data = [
                 'first_name' => $this->request->getVar('firstName'),
@@ -195,7 +195,9 @@ class Add extends BaseController
 
             $this->dataModel->insert($data);
 
-            return redirect()->to('/home/contact');
+            session()->setFlashdata('pesan', 'Data berhasil ditambahkan.');
         }
+
+        return redirect()->to('/home/contact');
     }
 }
