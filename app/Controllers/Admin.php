@@ -79,11 +79,13 @@ class Admin extends BaseController
     {
         $dataProjects = $this->projectsModel->findAll();
         // dd($dataProjects);
+        $admin = user()->toArray();
 
         $data = [
             'title' => 'Projects | SKYX',
             'tab' => 'projects',
-            'dataprojects' => $dataProjects
+            'dataprojects' => $dataProjects,
+            'admin' => $admin
         ];
 
         return view('admin/projects', $data);
@@ -91,9 +93,11 @@ class Admin extends BaseController
 
     public function faqs()
     {
+        $admin = user()->toArray();
         $data = [
             'title' => 'FAQs | SKYX',
-            'tab' => 'faqs'
+            'tab' => 'faqs',
+            'admin' => $admin
         ];
 
         return view('admin/faqs', $data);
@@ -102,11 +106,13 @@ class Admin extends BaseController
     public function users()
     {
         $datausers = $this->dataModel->findAll();
+        $admin = user()->toArray();
 
         $data = [
             'title' => 'Data Users | SKYX',
             'tab' => 'users',
-            'users' => $datausers
+            'users' => $datausers,
+            'admin' => $admin
         ];
 
         return view('admin/datausers', $data);
@@ -115,10 +121,14 @@ class Admin extends BaseController
     public function teams()
     {
         $teams = $this->teamsModel->findAll();
+
+        $admin = user()->toArray();
+
         $data = [
             'title' => 'Data Teams | SKYX',
             'tab' => 'teams',
-            'data' => $teams
+            'data' => $teams,
+            'admin' => $admin
         ];
 
         return view('admin/teams', $data);
@@ -141,11 +151,13 @@ class Admin extends BaseController
     public function partnership()
     {
         $dataPartner = $this->partnershipModel->findAll();
+        $admin = user()->toArray();
 
         $data = [
             'title' => 'Partnership | Skyx',
             'tab' => 'partnership',
-            'data' => $dataPartner
+            'data' => $dataPartner,
+            'admin' => $admin
         ];
 
         return view('admin/partnership', $data);
