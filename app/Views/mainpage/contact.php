@@ -19,7 +19,7 @@
 <div class="sec__x sec__y">
 	<div class="container">
 		<div class="contact__flex">
-			<div class="contact__card">
+			<div class="contact__card m-sm-4 my-sm-0 my-3">
 				<div class="d-flex align-items-center">
 					<div class="m__icon">
 						<i class="fi fi-br-envelope"></i>
@@ -29,7 +29,8 @@
 				<p class="txt__desc">For general queries, including partnership opportunities, please email.</p>
 				<a href="mailto:info@skyx.fund" target="_blank">info@skyx.fund</a>
 			</div> <!-- contact card -->
-			<div class="contact__card">
+
+			<div class="contact__card m-sm-4 my-sm-0 my-3">
 				<div class="d-flex align-items-center">
 					<div class="m__icon">
 						<i class="fi fi-br-smartphone"></i>
