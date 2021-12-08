@@ -72,12 +72,16 @@
 												<td>
 													<!-- Sosmed Icon -->
 													<div class="form-button-action">
-														<a href="<?= $row['ig']; ?>">
-															<button type="button" data-toggle="tooltip" title="" class="btn btn-link btn-primary btn-lg" data-original-title="Instagram">
+														<a href="<?php if ($row['ig'] != null) : echo $row['ig'];
+																	else : echo '#';
+																	endif; ?>" target="_blank">
+															<button type=" button" data-toggle="tooltip" title="" class="btn btn-link btn-primary btn-lg" data-original-title="Instagram">
 																<i class="fab fa-instagram"></i>
 															</button>
 														</a>
-														<a href="<?= $row['linkedin']; ?>">
+														<a href="<?php if ($row['linkedin'] != null) : echo $row['linkedin'];
+																	else : echo '#';
+																	endif; ?>" target="_blank">
 															<button type="button" data-toggle="tooltip" title="" class="btn btn-link btn-primary btn-lg" data-original-title="Linkedin">
 																<i class="fab fa-linkedin"></i>
 															</button>
