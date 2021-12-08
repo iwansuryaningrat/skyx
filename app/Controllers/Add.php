@@ -81,7 +81,7 @@ class Add extends BaseController
             $namaImage = 'default.jpg';
         } else {
             $namaImage = $image->getRandomName();
-            $image->move('foto/partnership', $namaImage);
+            $image->move('foto/partnership/', $namaImage);
         }
 
         $this->partnershipModel->insert([
@@ -199,5 +199,34 @@ class Add extends BaseController
         }
 
         return redirect()->to('/home/contact');
+    }
+
+    public function addPortfolioForm()
+    {
+        $data = [
+            'title' => 'Form Add Portfolio | SKYX',
+            'tab' => 'portfolio'
+        ];
+
+        return view('admin/formaddportfolio', $data);
+    }
+
+    public function addPortfolio()
+    {
+        $image = $this->request->getFile('foto');
+        if ($image->getError() == 4) {
+            $namaImage = 'default.jpg';
+        } else {
+            $namaImage = $image->getRandomName();
+            $image->move('foto/portfolio/', $namaImage);
+        }
+
+        $this->portfolioModel->insert([
+            'nama' => $this->request->getVar('name'),
+            'link' => $this->request->getVar('link'),
+            'logo' => $namaImage
+        ]);
+
+        return redirect()->to('/admin/portfolio');
     }
 }

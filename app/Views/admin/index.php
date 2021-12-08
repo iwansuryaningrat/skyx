@@ -65,9 +65,28 @@
 					</div>
 				</div>
 			</div>
-
 		</div>
+		<footer class="footer">
+			<div class="container-fluid">
+				<nav class="pull-left">
+					<ul class="nav">
+						<li class="nav-item">
+
+						</li>
+						<li class="nav-item">
+
+						</li>
+						<li class="nav-item">
+
+						</li>
+					</ul>
+				</nav>
+				<div class="copyright ml-auto">
+					Skyx © 2021 Copyright. All right reserved
+				</div>
+			</div>
+		</footer>
 	</div>
+</div>
 
-
-	<?= $this->endSection(); ?>
+<?= $this->endSection(); ?>
