@@ -162,4 +162,19 @@ class Admin extends BaseController
 
         return view('admin/partnership', $data);
     }
+
+    public function portfolio()
+    {
+        $dataPorto = $this->portfolioModel->findAll();
+        $admin = user()->toArray();
+
+        $data = [
+            'title' => 'portfolio | Skyx',
+            'tab' => 'portfolio',
+            'data' => $dataPorto,
+            'admin' => $admin
+        ];
+
+        return view('admin/portfolio', $data);
+    }
 }
