@@ -169,7 +169,7 @@ class Admin extends BaseController
         $admin = user()->toArray();
 
         $data = [
-            'title' => 'portfolio | Skyx',
+            'title' => 'Portfolio | Skyx',
             'tab' => 'portfolio',
             'data' => $dataPorto,
             'admin' => $admin

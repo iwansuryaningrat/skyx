@@ -1,4 +1,4 @@
-<?= $this->extend('admin/template/addlayout'); ?>
+<?= $this->extend('admin/template/editlayout'); ?>
 
 <?= $this->section('edit'); ?>
 

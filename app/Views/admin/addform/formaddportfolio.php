@@ -42,13 +42,13 @@
                                 <div class="form-group form-show-validation row">
                                     <label for="name" class="col-lg-3 col-md-3 col-sm-4 mt-sm-2 text-right">Nama <span class="required-label">*</span></label>
                                     <div class="col-lg-4 col-md-9 col-sm-8">
-                                        <input type="text" class="form-control" id="name" name="name" placeholder="Masukkan Nama Partner" required>
+                                        <input type="text" class="form-control" id="name" name="name" placeholder="Masukkan Nama Portfolio" required>
                                     </div>
                                 </div>
                                 <div class="form-group form-show-validation row">
                                     <label for="link" class="col-lg-3 col-md-3 col-sm-4 mt-sm-2 text-right">Link <span class="required-label">*</span></label>
                                     <div class="col-lg-4 col-md-9 col-sm-8">
-                                        <input type="text" class="form-control" placeholder="Masukkan Link Partner" aria-label="link" aria-describedby="link-addon" id="link" name="link" required>
+                                        <input type="text" class="form-control" placeholder="Masukkan Link Portfolio" aria-label="link" aria-describedby="link-addon" id="link" name="link" required>
                                     </div>
                                 </div>
                                 <div class="separator-solid"></div>
