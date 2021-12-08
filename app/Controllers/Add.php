@@ -18,6 +18,7 @@ class Add extends BaseController
     protected $teamsModel;
     protected $visitorsModel;
     protected $artikelModel;
+    protected $projectsModel;
     protected $partnershipModel;
     protected $portfolioModel;
 

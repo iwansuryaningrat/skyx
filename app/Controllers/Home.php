@@ -18,6 +18,7 @@ class Home extends BaseController
     protected $teamsModel;
     protected $visitorsModel;
     protected $artikelModel;
+    protected $projectsModel;
     protected $partnershipModel;
     protected $portfolioModel;
 
@@ -34,7 +35,6 @@ class Home extends BaseController
 
     public function index()
     {
-
         // Akan dipindah ke Home controller
         $ip    = $this->request->getIPAddress(); // Mendapatkan IP user
         $date  = date("Y-m-d"); // Mendapatkan tanggal sekarang
@@ -112,14 +112,12 @@ class Home extends BaseController
     public function about()
     {
         $teams = $this->teamsModel->findAll();
-        $partner = $this->partnershipModel->findAll();
         // dd($sum);
         // dd($teams);
         $data = [
             'title' => 'About Us - Skyx',
             'tab' => 'about',
-            'teams' => $teams,
-            'partner' => $partner
+            'teams' => $teams
         ];
 
         return view('mainpage/about', $data);
@@ -143,5 +141,19 @@ class Home extends BaseController
         ];
 
         return view('mainpage/projects', $data);
+    }
+
+    public function portfolio()
+    {
+        $porto = $this->portfolioModel->findAll();
+        // dd($porto);
+
+        $data = [
+            'title' => 'Portfolio - Skyx',
+            'tab' => 'projects',
+            'porto' => $porto
+        ];
+
+        return view('mainpage/portfolio', $data);
     }
 }

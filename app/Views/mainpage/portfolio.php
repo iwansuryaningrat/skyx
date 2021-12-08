@@ -20,36 +20,13 @@
 	<div class="container">
 		<div>
 			<div class="portfo">
-				<figure class="portfo__icon">
-					<a href="https://universeisland.games/" target="_blank"><img src="/foto/portfolio/universeisland-logo.png" alt="..." class="pship__tt" data-bs-toggle="tooltip" data-bs-placement="top" title="Universe Island"></a>
-				</figure>
-				<figure class="portfo__icon">
-					<a href="https://www.solchicks.io/" target="_blank"><img src="/foto/portfolio/solchicks-logo.png" alt="..." class="pship__tt" data-bs-toggle="tooltip" data-bs-placement="top" title="SolChicks"></a>
-				</figure>
-				<figure class="portfo__icon">
-					<a href="https://wingswap.io/" target="_blank"><img src="/foto/portfolio/wingswap-logo.png" alt="..." class="pship__tt" data-bs-toggle="tooltip" data-bs-placement="top" title="WingSwap"></a>
-				</figure>
-				<figure class="portfo__icon">
-					<a href="https://universeisland.games/" target="_blank"><img src="/foto/portfolio/universeisland-logo.png" alt="..." class="pship__tt" data-bs-toggle="tooltip" data-bs-placement="top" title="Universe Island"></a>
-				</figure>
-				<figure class="portfo__icon">
-					<a href="https://www.solchicks.io/" target="_blank"><img src="/foto/portfolio/solchicks-logo.png" alt="..." class="pship__tt" data-bs-toggle="tooltip" data-bs-placement="top" title="SolChicks"></a>
-				</figure>
-				<figure class="portfo__icon">
-					<a href="https://wingswap.io/" target="_blank"><img src="/foto/portfolio/wingswap-logo.png" alt="..." class="pship__tt" data-bs-toggle="tooltip" data-bs-placement="top" title="WingSwap"></a>
-				</figure>
-				<figure class="portfo__icon">
-					<a href="https://universeisland.games/" target="_blank"><img src="/foto/portfolio/universeisland-logo.png" alt="..." class="pship__tt" data-bs-toggle="tooltip" data-bs-placement="top" title="Universe Island"></a>
-				</figure>
-				<figure class="portfo__icon">
-					<a href="https://www.solchicks.io/" target="_blank"><img src="/foto/portfolio/solchicks-logo.png" alt="..." class="pship__tt" data-bs-toggle="tooltip" data-bs-placement="top" title="SolChicks"></a>
-				</figure>
-				<figure class="portfo__icon">
-					<a href="https://wingswap.io/" target="_blank"><img src="/foto/portfolio/wingswap-logo.png" alt="..." class="pship__tt" data-bs-toggle="tooltip" data-bs-placement="top" title="WingSwap"></a>
-				</figure>
-				<figure class="portfo__icon">
-					<a href="https://wingswap.io/" target="_blank"><img src="/foto/portfolio/wingswap-logo.png" alt="..." class="pship__tt" data-bs-toggle="tooltip" data-bs-placement="top" title="WingSwap"></a>
-				</figure>
+				<?php foreach ($porto as $row) : ?>
+					<figure class="portfo__icon">
+						<a href="<?php if ($row['link'] == null) : echo '#';
+									else : echo $row['link'];
+									endif; ?>" target="_blank"><img src="/foto/portfolio/<?= $row['logo']; ?>" alt="..." class="pship__tt" data-bs-toggle="tooltip" data-bs-placement="top" title="<?= $row['nama']; ?>"></a>
+					</figure>
+				<?php endforeach; ?>
 			</div> <!-- end pship -->
 		</div>
 	</div> <!-- end container -->

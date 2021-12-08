@@ -1638,6 +1638,11 @@ footer p {
     /********************************************/
     /*               PROJECT PAGE               */
     /********************************************/
+    .prjct__lvl h2,
+    .prjct__step h2 {
+        margin-bottom: 60px;
+    }
+
     .prjct__card {
         height: 300px;
     }
@@ -1962,6 +1967,11 @@ footer p {
     .prjct__lvl {
         width: 80vw;
         margin: auto;
+    }
+
+    .prjct__lvl h2,
+    .prjct__step h2 {
+        margin-bottom: 36px;
     }
     
     /**********************************************/
