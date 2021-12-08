@@ -20,46 +20,14 @@
 	<div class="container">
 		<div>
 			<div class="partnership">
-				<figure class="partner__icon">
-					<a href="https://universeisland.games/" target="_blank"><img src="/foto/partnership/kommunitas-logo.png" alt="..." class="pship__tt" data-bs-toggle="tooltip" data-bs-placement="top" title="Kommunitas"></a>
-					<div class="partner__cover"></div>
-				</figure>
-				<figure class="partner__icon">
-					<a href="https://www.solchicks.io/" target="_blank"><img src="/foto/partnership/snapex-logo.png" alt="..." class="pship__tt" data-bs-toggle="tooltip" data-bs-placement="top" title="SnapEx"></a>
-					<div class="partner__cover"></div>
-				</figure>
-				<figure class="partner__icon">
-					<a href="https://universeisland.games/" target="_blank"><img src="/foto/partnership/kommunitas-logo.png" alt="..." class="pship__tt" data-bs-toggle="tooltip" data-bs-placement="top" title="Kommunitas"></a>
-					<div class="partner__cover"></div>
-				</figure>
-				<figure class="partner__icon">
-					<a href="https://www.solchicks.io/" target="_blank"><img src="/foto/partnership/snapex-logo.png" alt="..." class="pship__tt" data-bs-toggle="tooltip" data-bs-placement="top" title="SnapEx"></a>
-					<div class="partner__cover"></div>
-				</figure>
-				<figure class="partner__icon">
-					<a href="https://universeisland.games/" target="_blank"><img src="/foto/partnership/kommunitas-logo.png" alt="..." class="pship__tt" data-bs-toggle="tooltip" data-bs-placement="top" title="Kommunitas"></a>
-					<div class="partner__cover"></div>
-				</figure>
-				<figure class="partner__icon">
-					<a href="https://www.solchicks.io/" target="_blank"><img src="/foto/partnership/snapex-logo.png" alt="..." class="pship__tt" data-bs-toggle="tooltip" data-bs-placement="top" title="SnapEx"></a>
-					<div class="partner__cover"></div>
-				</figure>
-				<figure class="partner__icon">
-					<a href="https://universeisland.games/" target="_blank"><img src="/foto/partnership/kommunitas-logo.png" alt="..." class="pship__tt" data-bs-toggle="tooltip" data-bs-placement="top" title="Kommunitas"></a>
-					<div class="partner__cover"></div>
-				</figure>
-				<figure class="partner__icon">
-					<a href="https://www.solchicks.io/" target="_blank"><img src="/foto/partnership/snapex-logo.png" alt="..." class="pship__tt" data-bs-toggle="tooltip" data-bs-placement="top" title="SnapEx"></a>
-					<div class="partner__cover"></div>
-				</figure>
-				<figure class="partner__icon">
-					<a href="https://universeisland.games/" target="_blank"><img src="/foto/partnership/kommunitas-logo.png" alt="..." class="pship__tt" data-bs-toggle="tooltip" data-bs-placement="top" title="Kommunitas"></a>
-					<div class="partner__cover"></div>
-				</figure>
-				<figure class="partner__icon">
-					<a href="https://www.solchicks.io/" target="_blank"><img src="/foto/partnership/snapex-logo.png" alt="..." class="pship__tt" data-bs-toggle="tooltip" data-bs-placement="top" title="SnapEx"></a>
-					<div class="partner__cover"></div>
-				</figure>
+				<?php foreach ($partner as $row) : ?>
+					<figure class="partner__icon">
+						<a href="<?php if ($row['link'] == null) : echo '#';
+									else : echo $row['link'];
+									endif; ?>" target="_blank"><img src="/foto/partnership/<?= $row['logo']; ?>" alt="..." class="pship__tt" data-bs-toggle="tooltip" data-bs-placement="top" title="<?= $row['nama']; ?>"></a>
+						<div class="partner__cover"></div>
+					</figure>
+				<?php endforeach; ?>
 			</div> <!-- end pship -->
 		</div>
 	</div>

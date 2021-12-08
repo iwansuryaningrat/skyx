@@ -156,4 +156,18 @@ class Home extends BaseController
 
         return view('mainpage/portfolio', $data);
     }
+
+    public function partnership()
+    {
+        $partner = $this->partnershipModel->findAll();
+        // dd($partner);
+
+        $data = [
+            'title' => 'Partnership - Skyx',
+            'tab' => 'projects',
+            'partner' => $partner
+        ];
+
+        return view('mainpage/partner', $data);
+    }
 }
