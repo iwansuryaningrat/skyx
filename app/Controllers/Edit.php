@@ -44,7 +44,7 @@ class Edit extends BaseController
             'datateam' => $dataTeam
         ];
 
-        return view('admin/formeditteam', $data);
+        return view('admin/editform/formeditteam', $data);
     }
 
     public function editTeam($id)
@@ -102,7 +102,7 @@ class Edit extends BaseController
             'datapartner' => $dataPartner
         ];
 
-        return view('admin/formeditpartner', $data);
+        return view('admin/editform/formeditpartner', $data);
     }
 
     public function editPartner($id)
@@ -138,5 +138,122 @@ class Edit extends BaseController
         // dd($id);
         $this->partnershipModel->delete($id);
         return redirect()->to('/admin/partnership');
+    }
+
+    public function editPortfolioForm($id)
+    {
+        $dataPortfolio = $this->portfolioModel->getPortfolioData($id);
+        // dd($dataPortfolio);
+
+        $data = [
+            'title' => 'Edit Portfolio Data | SKYX',
+            'tab' => 'portfolio',
+            'dataportfolio' => $dataPortfolio
+        ];
+
+        return view('admin/editform/formeditportfolio', $data);
+    }
+
+    public function editPortfolio($id)
+    {
+        $dataPortfolio = $this->portfolioModel->getPortfolioData($id);
+
+        $image = $this->request->getFile('foto');
+        if ($image->getError() == 4) {
+            $namaImage = $dataPortfolio['logo'];
+        } else {
+            $namaImage = $image->getRandomName();
+            $image->move('foto/portfolio/', $namaImage);
+        }
+        // dd($namaImage);
+
+        $data = [
+            'id' => $id,
+            'nama' => $this->request->getVar('name'),
+            'link' => $this->request->getVar('link'),
+            'logo' => $namaImage
+        ];
+
+        $this->portfolioModel->update($id, $data);
+
+        // dd($data);
+
+        return redirect()->to('/admin/portfolio');
+    }
+
+    public function deletePortfolio($id)
+    {
+        // $id = (int)$id;
+        // dd($id);
+        $this->portfolioModel->delete($id);
+        return redirect()->to('/admin/portfolio');
+    }
+
+    public function editProjectForm($id)
+    {
+        $dataProject = $this->projectsModel->getProject($id);
+        // dd($dataProject);
+
+        $data = [
+            'title' => 'Edit Project Data | SKYX',
+            'tab' => 'projects',
+            'dataproject' => $dataProject
+        ];
+
+        return view('admin/editform/formeditprojects', $data);
+    }
+
+    public function editProject($id)
+    {
+        $dataProject = $this->projectsModel->getProject($id);
+
+        $image = $this->request->getFile('foto');
+        if ($image->getError() == 4) {
+            $namaImage = $dataProject['foto'];
+        } else {
+            $namaImage = $image->getRandomName();
+            $image->move('foto/projects', $namaImage);
+        }
+
+        if ($this->request->getVar('startdate') == null) {
+            $startDate = $dataProject['start_date'];
+        } else {
+            $startDate = Time::parse($this->request->getVar('startdate'));
+            $startDate = $startDate->toDateString();
+        }
+
+        if ($this->request->getVar('enddate') == null) {
+            $endDate = $dataProject['end_date'];
+        } else {
+            $endDate = Time::parse($this->request->getVar('enddate'));
+            $endDate = $endDate->toDateString();
+        }
+        // dd($startDate);
+
+        $data = [
+            'id' => $id,
+            'nama' => $this->request->getVar('name'),
+            'deskripsi' => $this->request->getVar('deskripsi'),
+            'start_date' => $startDate,
+            'end_date' => $endDate,
+            'price' => $this->request->getVar('price'),
+            'satuan' => $this->request->getVar('satuan'),
+            'total_bon' => $this->request->getVar('totalbon'),
+            'foto' => $namaImage
+        ];
+
+        $this->projectsModel->update($id, $data);
+
+        // dd($data);
+
+        return redirect()->to('/admin/projects');
+    }
+
+    public function deleteProject($id)
+    {
+        // $id = (int)$id;
+        // dd($id);
+        $this->projectsModel->delete($id);
+        return redirect()->to('/admin/projects');
     }
 }

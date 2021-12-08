@@ -69,12 +69,12 @@
                                                 <td><?= $row['created_at']; ?></td>
                                                 <td>
                                                     <div class="form-button-action">
-                                                        <a href="/edit/editortfolioform/<?= $row['id']; ?>">
+                                                        <a href="/edit/editportfolioform/<?= $row['id']; ?>">
                                                             <button type="button" data-toggle="tooltip" title="" class="btn btn-link btn-primary btn-lg" data-original-title="Edit">
                                                                 <i class="fa fa-edit"></i>
                                                             </button>
                                                         </a>
-                                                        <a href="/edit/deletepartner/<?= $row['id']; ?>">
+                                                        <a href="/edit/deleteportfolio/<?= $row['id']; ?>">
                                                             <button type="button" data-toggle="tooltip" title="" class="btn btn-link btn-danger" data-original-title="Remove">
                                                                 <i class="fa fa-times"></i>
                                                             </button>
