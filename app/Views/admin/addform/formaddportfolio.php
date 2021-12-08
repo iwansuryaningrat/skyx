@@ -1,4 +1,7 @@
-<?= $this->extend('admin/template/layout'); ?>
+<?= $this->extend('admin/template/addlayout'); ?>
 
-<?= $this->section('admin'); ?>
+<?= $this->section('add'); ?>
 
+<h1>Hello world</h1>
+
+<?= $this->endSection(); ?>

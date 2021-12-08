@@ -37,7 +37,7 @@ class Add extends BaseController
     {
         $data = [
             'title' => 'Form Add Team | SKYX',
-            'tab' => 'teams'
+            'tab' => 'add teams'
         ];
 
         return view('admin/formaddteams', $data);
@@ -69,7 +69,7 @@ class Add extends BaseController
     {
         $data = [
             'title' => 'Form Add Partner | SKYX',
-            'tab' => 'partnership'
+            'tab' => 'add partnership'
         ];
 
         return view('admin/formaddpartners', $data);
@@ -98,7 +98,7 @@ class Add extends BaseController
     {
         $data = [
             'title' => 'Form Add Projects | SKYX',
-            'tab' => 'projects'
+            'tab' => 'add projects'
         ];
 
         return view('admin/formaddprojects', $data);
@@ -141,7 +141,7 @@ class Add extends BaseController
     {
         $data = [
             'title' => 'Form Add Artikel | SKYX',
-            'tab' => 'artikel'
+            'tab' => 'add artikel'
         ];
 
         return view('admin/formaddartikel', $data);
@@ -206,10 +206,10 @@ class Add extends BaseController
     {
         $data = [
             'title' => 'Form Add Portfolio | SKYX',
-            'tab' => 'portfolio'
+            'tab' => 'add portfolio'
         ];
 
-        return view('admin/formaddportfolio', $data);
+        return view('admin/addform/formaddportfolio', $data);
     }
 
     public function addPortfolio()
