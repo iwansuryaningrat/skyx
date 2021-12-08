@@ -74,7 +74,7 @@
                                                         endif; ?>" href="/home/projects">Projects</a>
                         <div class="nav__dropdown">
                             <a class="nav-link nav__link" href="/home/portfolio">Portfolio</a>
-                            <a class="nav-link nav__link" href="/home/partner">Partnership</a>
+                            <a class="nav-link nav__link" href="/home/partnership">Partnership</a>
                         </div>
                     </div>
                     <a class="nav-link nav__link <?php if ($tab == 'contact') : echo 'active';
@@ -112,7 +112,7 @@
                     <div class="collapse" id="navminicollapse">
                         <div class="pt-3">
                             <a class="navmini__link p__link" href="/home/portfolio">Portfolio</a>
-                            <a class="navmini__link p__link" href="/home/partner">Partnership</a>
+                            <a class="navmini__link p__link" href="/home/partnership">Partnership</a>
                         </div>
                     </div>
                 </div>
