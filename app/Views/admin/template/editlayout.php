@@ -351,7 +351,7 @@
                     date: true
                 },
                 uploadImg: {
-                    required: true,
+                    required: false,
                 },
             },
             highlight: function(element) {
