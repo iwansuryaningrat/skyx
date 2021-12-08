@@ -40,7 +40,7 @@ class Add extends BaseController
             'tab' => 'add teams'
         ];
 
-        return view('admin/formaddteams', $data);
+        return view('admin/addform/formaddteams', $data);
     }
 
     public function addTeam()
@@ -72,7 +72,7 @@ class Add extends BaseController
             'tab' => 'add partnership'
         ];
 
-        return view('admin/formaddpartners', $data);
+        return view('admin/addform/formaddpartners', $data);
     }
 
     public function addPartner()
@@ -101,7 +101,7 @@ class Add extends BaseController
             'tab' => 'add projects'
         ];
 
-        return view('admin/formaddprojects', $data);
+        return view('admin/addform/formaddprojects', $data);
     }
 
     public function addProjects()

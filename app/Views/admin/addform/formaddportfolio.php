@@ -7,7 +7,7 @@
     <div class="container">
         <div class="page-inner">
             <div class="page-header">
-                <h4 class="page-title">Form Add Partner</h4>
+                <h4 class="page-title">Form Add Portfolio</h4>
                 <ul class="breadcrumbs">
                     <li class="nav-home">
                         <a href="/admin-page">
@@ -18,13 +18,13 @@
                         <i class="flaticon-right-arrow"></i>
                     </li>
                     <li class="nav-item">
-                        <a href="/admin/partnership">Partnership</a>
+                        <a href="/admin/portfolio">Portfolio</a>
                     </li>
                     <li class="separator">
                         <i class="flaticon-right-arrow"></i>
                     </li>
                     <li class="nav-item">
-                        <a href="/add/formaddpartner">Form Add Partner</a>
+                        <a href="/add/addportfolioform">Form Add Portfolio</a>
                     </li>
                 </ul>
             </div>
@@ -33,10 +33,10 @@
                     <div class="card">
                         <div class="card-header">
                             <div class="d-flex align-items-center">
-                                <h4 class="card-title">Add Partner Data</h4>
+                                <h4 class="card-title">Add Portfolio Data</h4>
                             </div>
                         </div>
-                        <form id="exampleValidation" action="/add/addpartner" method="POST" enctype="multipart/form-data">
+                        <form id="exampleValidation" action="/add/addportfolio" method="POST" enctype="multipart/form-data">
                             <?= csrf_field(); ?>
                             <div class="card-body">
                                 <div class="form-group form-show-validation row">
@@ -66,7 +66,7 @@
                             <div class="card-action">
                                 <div class="row">
                                     <div class="col-md-12 d-flex justify-content-end">
-                                        <a href="/admin/partnership" class="btn btn-danger" style="border-radius: 100px;">
+                                        <a href="/admin/portfolio" class="btn btn-danger" style="border-radius: 100px;">
                                             Batal
                                         </a>
                                         <input class="btn btn-primary ml-4" type="submit" value="Submit" style="border-radius: 100px;">

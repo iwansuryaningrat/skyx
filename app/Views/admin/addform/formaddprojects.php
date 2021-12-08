@@ -7,7 +7,7 @@
     <div class="container">
         <div class="page-inner">
             <div class="page-header">
-                <h4 class="page-title">Form Add Team</h4>
+                <h4 class="page-title">Form Add Project</h4>
                 <ul class="breadcrumbs">
                     <li class="nav-home">
                         <a href="/admin-page">
@@ -24,7 +24,7 @@
                         <i class="flaticon-right-arrow"></i>
                     </li>
                     <li class="nav-item">
-                        <a href="/add/addprojectsform">Add Projects Data</a>
+                        <a href="/add/addprojectsform">Add Project Data</a>
                     </li>
                 </ul>
             </div>
@@ -33,7 +33,7 @@
                     <div class="card">
                         <div class="card-header">
                             <div class="d-flex align-items-center">
-                                <h4 class="card-title">Add Projects Data</h4>
+                                <h4 class="card-title">Add Project Data</h4>
                             </div>
                         </div>
                         <form id="exampleValidation" action="/add/addprojects" method="POST" enctype="multipart/form-data">

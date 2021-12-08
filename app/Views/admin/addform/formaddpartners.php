@@ -24,7 +24,7 @@
                         <i class="flaticon-right-arrow"></i>
                     </li>
                     <li class="nav-item">
-                        <a href="/add/formaddpartner">Form Add Partner</a>
+                        <a href="/add/addpartnerform">Form Add Partner</a>
                     </li>
                 </ul>
             </div>
