@@ -22,61 +22,21 @@
             <h2 class="title__info text-center">Tier Level</h2>
 
             <div class="row">
-                <!-- tier1 -->
-                <div class="col-lg-3 col-md-6 col-12 px-4 py-lg-0 py-md-4 py-3">
-                    <a href="#" class="prjct__link">
-                        <p class="text-center fw-bold">TIER 1</p>
-                        <div class="prjct__card">
-                            <div class="prjct__content">
-                                <p class="prjct__point">2500 SKX</p>
-                                <p class="mb-0">1 POOL WEIGHT</p>
+                <?php foreach ($tier as $row) : ?>
+                    <!-- tier -->
+                    <div class="col-lg-3 col-md-6 col-12 px-4 py-lg-0 py-md-4 py-3">
+                        <a href="#" class="prjct__link">
+                            <p class="text-center fw-bold">TIER <?= $row['level']; ?></p>
+                            <div class="prjct__card">
+                                <div class="prjct__content">
+                                    <p class="prjct__point"><?= $row['jumlah']; ?> SKX</p>
+                                    <p class="mb-0"><?= $row['pool']; ?> POOL WEIGHT</p>
+                                </div>
                             </div>
-                        </div>
-                    </a>
-                </div>
-                <!-- end tier1 -->
-
-                <!-- tier2 -->
-                <div class="col-lg-3 col-md-6 col-12 px-4 px-4 py-lg-0 py-md-4 py-3">
-                    <a href="#" class="prjct__link">
-                        <p class="text-center fw-bold">TIER 2</p>
-                        <div class="prjct__card">
-                            <div class="prjct__content">
-                                <p class="prjct__point">5000 SKX</p>
-                                <p class="mb-0">2.5 POOL WEIGHT</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <!-- end tier2 -->
-
-                <!-- tier3 -->
-                <div class="col-lg-3 col-md-6 col-12 px-4 px-4 py-lg-0 py-md-4 py-3">
-                    <a href="#" class="prjct__link">
-                        <p class="text-center fw-bold">TIER 3</p>
-                        <div class="prjct__card">
-                            <div class="prjct__content">
-                                <p class="prjct__point">10000 SKX</p>
-                                <p class="mb-0">6 POOL WEIGHT</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <!-- end tier3 -->
-
-                <!-- tier4 -->
-                <div class="col-lg-3 col-md-6 col-12 px-4 px-4 py-lg-0 py-md-4 py-3">
-                    <a href="#" class="prjct__link">
-                        <p class="text-center fw-bold">TIER 4</p>
-                        <div class="prjct__card">
-                            <div class="prjct__content">
-                                <p class="prjct__point">25000 SKX</p>
-                                <p class="mb-0">18 POOL WEIGHT</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <!-- end tier4 -->
+                        </a>
+                    </div>
+                    <!-- end tier -->
+                <?php endforeach; ?>
             </div> <!-- end row -->
         </div>
     </div> <!-- end container -->

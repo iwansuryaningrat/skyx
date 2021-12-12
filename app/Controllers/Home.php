@@ -10,6 +10,7 @@ use App\Models\ProjectsModel;
 use App\Models\PartnershipModel;
 use App\Models\PortfolioModel;
 use App\Models\FaqsModel;
+use App\Models\TierModel;
 
 use CodeIgniter\I18n\Time;
 
@@ -23,6 +24,7 @@ class Home extends BaseController
     protected $partnershipModel;
     protected $portfolioModel;
     protected $faqsModel;
+    protected $tierModel;
 
     public function __construct()
     {
@@ -34,6 +36,7 @@ class Home extends BaseController
         $this->partnershipModel = new PartnershipModel();
         $this->portfolioModel = new PortfolioModel();
         $this->faqsModel = new FaqsModel();
+        $this->tierModel = new TierModel();
     }
 
     public function index()
@@ -140,9 +143,12 @@ class Home extends BaseController
 
     public function projects()
     {
+        $tier = $this->tierModel->orderBy('level', 'ASC')->findAll();
+
         $data = [
             'title' => 'Projects - Skyx',
-            'tab' => 'projects'
+            'tab' => 'projects',
+            'tier' => $tier
         ];
 
         return view('mainpage/projects', $data);
