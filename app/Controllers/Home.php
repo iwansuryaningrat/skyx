@@ -9,6 +9,7 @@ use App\Models\ArtikelModel;
 use App\Models\ProjectsModel;
 use App\Models\PartnershipModel;
 use App\Models\PortfolioModel;
+use App\Models\FaqsModel;
 
 use CodeIgniter\I18n\Time;
 
@@ -21,6 +22,7 @@ class Home extends BaseController
     protected $projectsModel;
     protected $partnershipModel;
     protected $portfolioModel;
+    protected $faqsModel;
 
     public function __construct()
     {
@@ -31,6 +33,7 @@ class Home extends BaseController
         $this->projectsModel = new ProjectsModel();
         $this->partnershipModel = new PartnershipModel();
         $this->portfolioModel = new PortfolioModel();
+        $this->faqsModel = new FaqsModel();
     }
 
     public function index()
@@ -101,9 +104,11 @@ class Home extends BaseController
 
     public function faq()
     {
+        $faqs = $this->faqsModel->findAll();
         $data = [
             'title' => 'FAQs | Skyx - One Stop Solutions For Blockchain Projects Investments',
-            'tab' => 'faq'
+            'tab' => 'faq',
+            'faqs' => $faqs
         ];
 
         return view('mainpage/faq', $data);
