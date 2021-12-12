@@ -10,6 +10,7 @@ use App\Models\ProjectsModel;
 use App\Models\PartnershipModel;
 use App\Models\PortfolioModel;
 use App\Models\FaqsModel;
+use App\Models\TierModel;
 
 use CodeIgniter\I18n\Time;
 
@@ -23,6 +24,7 @@ class Edit extends BaseController
     protected $partnershipModel;
     protected $portfolioModel;
     protected $faqsModel;
+    protected $tierModel;
 
     public function __construct()
     {
@@ -34,6 +36,7 @@ class Edit extends BaseController
         $this->partnershipModel = new PartnershipModel();
         $this->portfolioModel = new PortfolioModel();
         $this->faqsModel = new FaqsModel();
+        $this->tierModel = new TierModel();
     }
 
     public function editTeamForm($id)
@@ -258,5 +261,38 @@ class Edit extends BaseController
         // dd($id);
         $this->projectsModel->delete($id);
         return redirect()->to('/admin/projects');
+    }
+
+    public function editTierForm($id)
+    {
+        $tier = $this->tierModel->getTier($id);
+
+        $data = [
+            'title' => 'Edit Tier Data | SKYX',
+            'tab' => 'projects',
+            'tier' => $tier
+        ];
+
+        return view('admin/editform/formedittier', $data);
+    }
+
+    public function editTier($id)
+    {
+        $data = [
+            'id' => $id,
+            'level' => $this->request->getVar('level'),
+            'pool' => $this->request->getVar('pool'),
+            'jumlah' => $this->request->getVar('jumlah')
+        ];
+
+        $this->tierModel->update($id, $data);
+
+        return redirect()->to('/admin/tier');
+    }
+
+    public function deleteTier($id)
+    {
+        $this->tierModel->delete($id);
+        return redirect()->to('/admin/tier');
     }
 }

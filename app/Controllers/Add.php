@@ -10,6 +10,7 @@ use App\Models\ProjectsModel;
 use App\Models\PartnershipModel;
 use App\Models\PortfolioModel;
 use App\Models\FaqsModel;
+use App\Models\TierModel;
 
 use CodeIgniter\I18n\Time;
 
@@ -23,6 +24,7 @@ class Add extends BaseController
     protected $partnershipModel;
     protected $portfolioModel;
     protected $faqsModel;
+    protected $tierModel;
 
     public function __construct()
     {
@@ -34,6 +36,7 @@ class Add extends BaseController
         $this->partnershipModel = new PartnershipModel();
         $this->portfolioModel = new PortfolioModel();
         $this->faqsModel = new FaqsModel();
+        $this->tierModel = new TierModel();
     }
 
     public function addTeamForm()
@@ -232,5 +235,28 @@ class Add extends BaseController
         ]);
 
         return redirect()->to('/admin/portfolio');
+    }
+
+    public function addTierForm()
+    {
+        $data = [
+            'title' => 'Form Add Tier | SKYX',
+            'tab' => 'add projects'
+        ];
+
+        return view('admin/addform/formaddtier', $data);
+    }
+
+    public function addTier()
+    {
+        $data = [
+            'level' => $this->request->getVar('level'),
+            'pool' => $this->request->getVar('pool'),
+            'jumlah' => $this->request->getVar('jumlah')
+        ];
+
+        $this->tierModel->insert($data);
+
+        return redirect()->to('/admin/tier');
     }
 }

@@ -10,6 +10,7 @@ use App\Models\ProjectsModel;
 use App\Models\PartnershipModel;
 use App\Models\PortfolioModel;
 use App\Models\FaqsModel;
+use App\Models\TierModel;
 
 use CodeIgniter\I18n\Time;
 
@@ -23,6 +24,7 @@ class Admin extends BaseController
     protected $partnershipModel;
     protected $portfolioModel;
     protected $faqsModel;
+    protected $tierModel;
 
     public function __construct()
     {
@@ -34,6 +36,7 @@ class Admin extends BaseController
         $this->partnershipModel = new PartnershipModel();
         $this->portfolioModel = new PortfolioModel();
         $this->faqsModel = new FaqsModel();
+        $this->tierModel = new TierModel();
     }
 
     public function index()
@@ -181,5 +184,19 @@ class Admin extends BaseController
         ];
 
         return view('admin/portfolio', $data);
+    }
+
+    public function tier()
+    {
+        $admin = user()->toArray();
+        $tier = $this->tierModel->findAll();
+        $data = [
+            'title' => 'Tier | SKYX',
+            'tab' => 'projects',
+            'admin' => $admin,
+            'tier' => $tier
+        ];
+
+        return view('admin/tier', $data);
     }
 }
