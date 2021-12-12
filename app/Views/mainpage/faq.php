@@ -29,7 +29,7 @@
 				<div class="collapse" id="qbox-1">
 					<div class="qbox__collapse">
 						<p class="txt__desc">
-							SKX merupakan token collateral milik SKYX. Dengan memiliki SKX, Anda akan mendapatkan garansi alokasi <b> private sale dari berbagai macam proyek berkualitas.</b>
+							SKX is SKYX's collateral token. By having SKX, you will get a guaranteed private sale allocation of various quality projects.
 						</p>
 					</div>
 				</div>
@@ -39,7 +39,7 @@
 			<!-- qbox2 -->
 			<div class="qbox">
 				<a class="qbox__link d-flex align-items-center justify-content-between" data-bs-toggle="collapse" href="#qbox-2" role="button" aria-expanded="false" aria-controls="collapseExample">
-					<span>BENEFITS FOR SKX HOLDERS</span>
+					<span>Benefits For SKX Holders</span>
 					<i class="bi bi-caret-down-fill ms-3 qbox__transform"></i>
 				</a>
 
@@ -47,9 +47,9 @@
 					<div class="qbox__collapse">
 						<p class="txt__desc">
 						<ol class="txt__desc">
-							<li>Garansi alokasi ICO dengan harga private sale, <b>bottom price</b></li>
-							<li>Screening berlapis untuk mendapatkan <b>project terbaik</b></li>
-							<li>Harga SKX fixed 1$, <b>harga stabil dan redeemable to BUSD</b></li>
+							<li>Guaranteed ICO allocation with private sale price, bottom price</b></li>
+							<li>Layered screening to get the best project</b></li>
+							<li>SKX price fixed 1$, stable price and redeemable to BUSD</li>
 						</ol>
 						</p>
 					</div>
@@ -60,7 +60,7 @@
 			<!-- qbox3 -->
 			<div class="qbox">
 				<a class="qbox__link d-flex align-items-center justify-content-between" data-bs-toggle="collapse" href="#qbox-3" role="button" aria-expanded="false" aria-controls="collapseExample">
-					<span>POOL WEIGHT</span>
+					<span>Pool Weight</span>
 					<i class="bi bi-caret-down-fill ms-3 qbox__transform"></i>
 				</a>
 
@@ -69,12 +69,13 @@
 						<p class="txt__desc">
 							<b>1 SKX = 1 BUSD</b>
 						<ul class="txt__desc">
-							<li>Tier 1 : 2500 SKX min alokasi bobot 1</li>
-							<li>Tier 2 : 5000 SKX min alokasi bobot 2.5</li>
-							<li>Tier 3 : 10.000 SKX min alokasi bobot 6</li>
-							<li>Tier 4 : 25.000 SKX min alokasi bobot 18 - (limited for 4 holders)</li>
+							<li>Tier 1: 2500 SKX min weight allocation 1</li>
+							<li>Tier 2 : 5000 SKX min weight allocation 2.5</li>
+							<li>Tier 3: 10,000 SKX min weight allocation 6</li>
+							<li>Tier 4: 25,000 SKX min weight allocation 18 - (limited for 4 holders)</li>
 						</ul>
-						<p class="txt__desc"><span>*</span>SKX token redeemable after 3 months <br><span>*</span>SKX token tidak untuk diperjualbelikan, dan hanya bisa redeem dari wallet awal investor </p>
+						<p class="txt__desc"><span>*</span>SKX tokens redeemable after 3 months<br><span>*</span>SKX tokens are not for sale, and can only be redeemed from investors' initial wallets
+						</p>
 						</p>
 					</div>
 				</div>
@@ -84,7 +85,7 @@
 			<!-- qbox4 -->
 			<div class="qbox">
 				<a class="qbox__link d-flex align-items-center justify-content-between" data-bs-toggle="collapse" href="#qbox-4" role="button" aria-expanded="false" aria-controls="collapseExample">
-					<span>Tahapan</span>
+					<span>Stage</span>
 					<i class="bi bi-caret-down-fill ms-3 qbox__transform"></i>
 				</a>
 
@@ -92,11 +93,11 @@
 					<div class="qbox__collapse">
 						<p class="txt__desc">
 						<ol class="txt__desc">
-							<li>Tukar BUSD dengan SKX token dengan harga tetap 1 SKX = 1 BUSD</li>
-							<li>SKX holder akan mendapatkan privilege harga awal projek – projek baru, bahkan harga private sale (lebih murah dari public sale)</li>
-							<li>SKX holder dapet membeli maksimum alokasi yang didapat sesuai dengan bobot yang dimiliki</li>
-							<li>Private sale akan dibagikan tepat waktu sesuai dengan timeline projek </li>
-							<li>Token langsung dikirimkan ke wallet SKX holder </li>
+							<li>Exchange BUSD for SKX tokens at a fixed price 1 SKX = 1 BUSD</li>
+							<li>SKX holders will get the privilege of starting prices for new projects, even private sales prices (cheaper than public sales)</li>
+							<li>SKX holders can buy the maximum allocation they get according to their weight</li>
+							<li>The private sale will be distributed on time according to the project timeline</li>
+							<li>Tokens are sent directly to the SKX holder's wallet</li>
 						</ol>
 						</p>
 					</div>

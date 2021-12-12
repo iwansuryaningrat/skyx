@@ -87,7 +87,7 @@
 <div class="sec__x sec__y">
     <div class="container">
         <div class="prjct__step">
-            <h2 class="title__info text-center">Tahapan Project</h2>
+            <h2 class="title__info text-center">Project Stage</h2>
             <div id="step-project" class="owl-carousel owl-theme">
                 <div>
                     <div class="ps__card">
@@ -101,7 +101,7 @@
                         </div>
                         <div class="ps__desc">
                             <p class="fw-bold">Step 1</p>
-                            <p>Tukar BUSD dengan SKX token dengan harga tetap 1 SKX = 1 BUSD.</p>
+                            <p>Exchange BUSD for SKX tokens at a fixed price 1 SKX = 1 BUSD</p>
                         </div>
                     </div>
                 </div>
@@ -118,7 +118,7 @@
                         </div>
                         <div class="ps__desc">
                             <p class="fw-bold">Step 2</p>
-                            <p>SKX holder akan mendapatkan privilege hara awal projek - projek baru, bahkan harga private sale (lebih murah dari public sale).</p>
+                            <p>SKX holders will get the privilege of starting prices for new projects, even private sales prices (cheaper than public sales)</p>
                         </div>
                     </div>
                 </div>
@@ -135,7 +135,7 @@
                         </div>
                         <div class="ps__desc">
                             <p class="fw-bold">Step 3</p>
-                            <p>SKX holder dapat membeli maksimum alokasi yang di dapat sesuai dengan bobot yang dimiliki.</p>
+                            <p>SKX holders can buy the maximum allocation they get according to their weight</p>
                         </div>
                     </div>
                 </div>
@@ -152,7 +152,7 @@
                         </div>
                         <div class="ps__desc">
                             <p class="fw-bold">Step 4</p>
-                            <p>Private sale akan dibagikan tepat waktu sesuai dengan timeline projek.</p>
+                            <p>The private sale will be distributed on time according to the project timeline</p>
                         </div>
                     </div>
                 </div>
@@ -169,7 +169,7 @@
                         </div>
                         <div class="ps__desc">
                             <p class="fw-bold">Step 5</p>
-                            <p>Token langsung dikirimkan ke wallet SKX holder.</p>
+                            <p>Tokens are sent directly to the SKX holder's wallet</p>
                         </div>
                     </div>
                 </div>
