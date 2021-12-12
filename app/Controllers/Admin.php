@@ -97,10 +97,12 @@ class Admin extends BaseController
     public function faqs()
     {
         $admin = user()->toArray();
+        $faqs = $this->faqsModel->findAll();
         $data = [
             'title' => 'FAQs | SKYX',
             'tab' => 'faqs',
-            'admin' => $admin
+            'admin' => $admin,
+            'faqs' => $faqs
         ];
 
         return view('admin/faqs', $data);
