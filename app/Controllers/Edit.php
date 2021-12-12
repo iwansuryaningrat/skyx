@@ -295,4 +295,40 @@ class Edit extends BaseController
         $this->tierModel->delete($id);
         return redirect()->to('/admin/tier');
     }
+
+    public function editFaqForm($id)
+    {
+        $faq = $this->faqsModel->getFaq($id);
+
+        $data = [
+            'title' => 'Edit Faq Data | SKYX',
+            'tab' => 'faqs',
+            'faq' => $faq
+        ];
+
+        return view('admin/editform/formeditfaq', $data);
+    }
+
+    public function editFaq($id)
+    {
+        $input = $this->request->getPost();
+        $jawaban = $input['jawaban'];
+        $pertanyaan = $input['pertanyaan'];
+
+        $data = [
+            'id' => $id,
+            'pertanyaan' => $pertanyaan,
+            'jawaban' => $jawaban
+        ];
+
+        $this->faqsModel->update($id, $data);
+
+        return redirect()->to('/admin/faqs');
+    }
+
+    public function deleteFaq($id)
+    {
+        $this->faqsModel->delete($id);
+        return redirect()->to('/admin/faqs');
+    }
 }

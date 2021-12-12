@@ -259,4 +259,30 @@ class Add extends BaseController
 
         return redirect()->to('/admin/tier');
     }
+
+    public function addFaqsForm()
+    {
+        $data = [
+            'title' => 'Form Add FAQ | SKYX',
+            'tab' => 'faqs'
+        ];
+
+        return view('admin/addform/formaddfaq', $data);
+    }
+
+    public function addFaq()
+    {
+        $input = $this->request->getPost();
+        $jawaban = $input['jawaban'];
+        $pertanyaan = $input['pertanyaan'];
+
+        $data = [
+            'pertanyaan' => $pertanyaan,
+            'jawaban' => $jawaban
+        ];
+
+        $this->faqsModel->insert($data);
+
+        return redirect()->to('/admin/faqs');
+    }
 }

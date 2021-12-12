@@ -363,6 +363,17 @@
         });
     </script>
 
+    <?php if ($tab == 'faqs') : ?>
+        <script>
+            $('#jawaban').summernote({
+                placeholder: 'Masukkan Jawaban',
+                fontNames: ['Arial', 'Arial Black', 'Comic Sans MS', 'Courier New'],
+                tabsize: 2,
+                height: 300
+            });
+        </script>
+    <?php endif; ?>
+
 </body>
 
 </html>

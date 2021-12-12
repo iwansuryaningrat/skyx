@@ -22,4 +22,9 @@ class FaqsModel extends Model
     protected $dateFormat    = 'datetime';
     protected $createdField  = 'created_at';
     protected $updatedField  = 'updated_at';
+
+    public function getFaq($id)
+    {
+        return $this->where(['id' => $id])->first();
+    }
 }
