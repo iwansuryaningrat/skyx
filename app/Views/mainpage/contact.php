@@ -93,14 +93,14 @@
 						<div class="col-6">
 							<label class="skyx__submit" style="text-align: center;">
 								<i class="far fa-file-pdf"></i>
-								<span id="pitchdeckname"> Upload Pitchdeck</span>
+								<span id="pitchdeckname" style="font-size: 18px;"> Upload Pitchdeck</span>
 								<input type="file" accept="pdf/*" style="display: none;" class="skyx__fcontrol" id="pitchdeck" name="pitchdeck" required>
 							</label>
 						</div>
 						<div class="col-6">
 							<label class="skyx__submit" style="text-align: center;">
 								<i class="far fa-file-pdf"></i>
-								<span id="whitepapername"> Upload Whitepaper</span>
+								<span id="whitepapername" style="font-size: 18px;"> Upload Whitepaper</span>
 								<input type="file" accept="pdf/*" style="display: none;" class="skyx__fcontrol" id="whitepaper" name="whitepaper" required>
 							</label>
 						</div>

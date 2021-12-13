@@ -222,26 +222,25 @@
 
     <?php if ($tab == 'contact') : ?>
         <script>
-            inputElement = document.getElementById('pitchdeck')
-            labelElement = document.getElementById('pitchdeckname')
-            inputElement.onchange = function(event) {
-                var path = inputElement.value;
+            inputElement1 = document.getElementById('pitchdeck')
+            labelElement1 = document.getElementById('pitchdeckname')
+            inputElement1.onchange = function(event) {
+                var path = inputElement1.value;
                 if (path) {
-                    labelElement.innerHTML = path.split(/(\\|\/)/g).pop()
+                    labelElement1.innerHTML = path.split(/(\\|\/)/g).pop()
                 } else {
-                    labelElement.innerHTML = ' Upload Pitchdeck'
+                    labelElement1.innerHTML = ' Upload Pitchdeck'
                 }
             }
-        </script>
-        <script>
-            inputElement = document.getElementById('whitepaper')
-            labelElement = document.getElementById('whitepapername')
-            inputElement.onchange = function(event) {
-                var path = inputElement.value;
+
+            inputElement2 = document.getElementById('whitepaper')
+            labelElement2 = document.getElementById('whitepapername')
+            inputElement2.onchange = function(event) {
+                var path = inputElement2.value;
                 if (path) {
-                    labelElement.innerHTML = path.split(/(\\|\/)/g).pop()
+                    labelElement2.innerHTML = path.split(/(\\|\/)/g).pop()
                 } else {
-                    labelElement.innerHTML = ' Upload Whitepaper'
+                    labelElement2.innerHTML = ' Upload Whitepaper'
                 }
             }
         </script>

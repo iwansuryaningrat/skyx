@@ -230,18 +230,39 @@ class Add extends BaseController
         $email = $this->request->getVar('email');
         $phone = $this->request->getVar('phoneNumber');
         $user = $this->dataModel->getUser($email, $phone);
-        // dd($user);
 
         // Validasi
         if ($user != null) {
             session()->setFlashdata('pesan', 'Data sudah ada');
         } else {
+            $pitchdeck = $this->request->getFile('pitchdeck');
+            if ($pitchdeck->getError() == 4) {
+                $namapitchdeck = ' ';
+            } else {
+                $namapitchdeck = $pitchdeck->getName();
+                $pitchdeck->move('berkas/', $namapitchdeck);
+            }
+
+            $whitepaper = $this->request->getFile('whitepaper');
+            if ($whitepaper->getError() == 4) {
+                $namawhitepaper = ' ';
+            } else {
+                $namawhitepaper = $whitepaper->getName();
+                $whitepaper->move('berkas/', $namawhitepaper);
+            }
+
             $data = [
                 'first_name' => $this->request->getVar('firstName'),
                 'last_name' => $this->request->getVar('lastName'),
                 'username' => $this->request->getVar('userName'),
                 'email' => $email,
-                'phone' => $phone
+                'phone' => $phone,
+                'tujuan' => $this->request->getVar('tujuan'),
+                'project' => $this->request->getVar('project'),
+                'chain' => $this->request->getVar('chain'),
+                'pitchdeck' => $namapitchdeck,
+                'whitepaper' => $namawhitepaper,
+                'status' => 'Unread'
             ];
 
             $this->dataModel->insert($data);
