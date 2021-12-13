@@ -397,4 +397,35 @@ class Edit extends BaseController
         $this->faqsModel->delete($id);
         return redirect()->to('/admin/faqs');
     }
+
+    public function updateUser($id)
+    {
+        $user = $this->dataModel->getUserId($id);
+
+        if ($this->request->getVar('reply') == 'yes') {
+            $status = 'Replied';
+        } else {
+            $status = 'Readed';
+        }
+
+        $data = [
+            'id' => $id,
+            'first_name' => $user['first_name'],
+            'last_name' => $user['last_name'],
+            'username' => $user['username'],
+            'email' => $user['email'],
+            'phone' => $user['phone'],
+            'tujuan' => $user['tujuan'],
+            'project' => $user['project'],
+            'chain' => $user['chain'],
+            'pitchdeck' => $user['pitchdeck'],
+            'whitepaper' => $user['whitepaper'],
+            'status' => $status
+
+        ];
+
+        $this->dataModel->update($id, $data);
+
+        return redirect()->to('/admin/users');
+    }
 }

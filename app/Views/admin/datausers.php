@@ -80,7 +80,7 @@
 												</td>
 												<td>
 													<div class="form-button-action">
-														<a href="#">
+														<a href="/admin/viewdatauser/<?= $data['id']; ?>">
 															<button type="button" data-toggle="tooltip" title="Read" class="btn btn-link btn-primary btn-lg" data-original-title="Read">
 																<i class="fa fa-edit"></i>
 															</button>

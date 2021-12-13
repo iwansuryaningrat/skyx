@@ -142,4 +142,9 @@ class DatausersModel extends Model
     {
         return $this->where(['email' => $email, 'phone' => $phone])->first();
     }
+
+    public function getUserId($id)
+    {
+        return $this->where(['id' => $id])->first();
+    }
 }

@@ -287,4 +287,30 @@ class Admin extends BaseController
 
         return view('admin/tier', $data);
     }
+
+    public function viewDataUser($id)
+    {
+        $user = $this->dataModel->getUserId($id);
+
+        // Menampilkan Jumlah User Baru Yang Belum di lihat
+        $users = $this->dataModel->findAll();
+
+        $jumlahusers = 0;
+        foreach ($users as $users) {
+            if ($users['status'] == 'Unread') {
+                $jumlahusers++;
+            }
+        }
+
+        $admin = user()->toArray();
+        $data = [
+            'title' => 'View Data User | Skyx',
+            'tab' => 'users',
+            'admin' => $admin,
+            'jumlahusers' => $jumlahusers,
+            'user' => $user
+        ];
+
+        return view('admin/viewdatauser', $data);
+    }
 }
