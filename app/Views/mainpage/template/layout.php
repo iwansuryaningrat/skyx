@@ -39,6 +39,9 @@
     <link rel="stylesheet" href="/mainpage/vendor/fontawesome-free-5.15.3-web/css/all.min.css"> <!-- fontawesome free v.5.15 -->
     <link rel="stylesheet" href="/mainpage/vendor/akar-icons-fonts-main/src/css/akar-icons.css"> <!-- akar icon styles -->
     <link rel="stylesheet" href="/mainpage/vendor/uicons-bold-rounded/css/uicons-bold-rounded.css"> <!-- flat icon bold rounded icon styles -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
 
     <link rel="stylesheet" href="/mainpage/css/styles.css"> <!-- skyx styles -->
 
@@ -216,6 +219,33 @@
     <script src="/mainpage/js/owl.carousel.min.js"></script> <!-- owl carousel min scripts -->
 
     <script src="/mainpage/js/scripts.js"></script> <!-- skyx scripts -->
+
+    <?php if ($tab == 'contact') : ?>
+        <script>
+            inputElement = document.getElementById('pitchdeck')
+            labelElement = document.getElementById('pitchdeckname')
+            inputElement.onchange = function(event) {
+                var path = inputElement.value;
+                if (path) {
+                    labelElement.innerHTML = path.split(/(\\|\/)/g).pop()
+                } else {
+                    labelElement.innerHTML = ' Upload Pitchdeck'
+                }
+            }
+        </script>
+        <script>
+            inputElement = document.getElementById('whitepaper')
+            labelElement = document.getElementById('whitepapername')
+            inputElement.onchange = function(event) {
+                var path = inputElement.value;
+                if (path) {
+                    labelElement.innerHTML = path.split(/(\\|\/)/g).pop()
+                } else {
+                    labelElement.innerHTML = ' Upload Whitepaper'
+                }
+            }
+        </script>
+    <?php endif; ?>
 
 </body>
 
