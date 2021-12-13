@@ -41,13 +41,24 @@ class Edit extends BaseController
 
     public function editTeamForm($id)
     {
+        // Menampilkan Jumlah User Baru Yang Belum di lihat
+        $users = $this->dataModel->findAll();
+
+        $jumlahusers = 0;
+        foreach ($users as $users) {
+            if ($users['status'] == 'Unread') {
+                $jumlahusers++;
+            }
+        }
+
         $dataTeam = $this->teamsModel->getTeamData($id);
         // dd($dataTeam);
 
         $data = [
             'title' => 'Edit Team Data | SKYX',
             'tab' => 'teams',
-            'datateam' => $dataTeam
+            'datateam' => $dataTeam,
+            'jumlahusers' => $jumlahusers
         ];
 
         return view('admin/editform/formeditteam', $data);
@@ -99,13 +110,24 @@ class Edit extends BaseController
 
     public function editPartnerForm($id)
     {
+        // Menampilkan Jumlah User Baru Yang Belum di lihat
+        $users = $this->dataModel->findAll();
+
+        $jumlahusers = 0;
+        foreach ($users as $users) {
+            if ($users['status'] == 'Unread') {
+                $jumlahusers++;
+            }
+        }
+
         $dataPartner = $this->partnershipModel->getPartnerData($id);
         // dd($dataPartner);
 
         $data = [
             'title' => 'Edit Partner Data | SKYX',
             'tab' => 'partnership',
-            'datapartner' => $dataPartner
+            'datapartner' => $dataPartner,
+            'jumlahusers' => $jumlahusers
         ];
 
         return view('admin/editform/formeditpartner', $data);
@@ -148,13 +170,24 @@ class Edit extends BaseController
 
     public function editPortfolioForm($id)
     {
+        // Menampilkan Jumlah User Baru Yang Belum di lihat
+        $users = $this->dataModel->findAll();
+
+        $jumlahusers = 0;
+        foreach ($users as $users) {
+            if ($users['status'] == 'Unread') {
+                $jumlahusers++;
+            }
+        }
+
         $dataPortfolio = $this->portfolioModel->getPortfolioData($id);
         // dd($dataPortfolio);
 
         $data = [
             'title' => 'Edit Portfolio Data | SKYX',
             'tab' => 'portfolio',
-            'dataportfolio' => $dataPortfolio
+            'dataportfolio' => $dataPortfolio,
+            'jumlahusers' => $jumlahusers
         ];
 
         return view('admin/editform/formeditportfolio', $data);
@@ -197,13 +230,24 @@ class Edit extends BaseController
 
     public function editProjectForm($id)
     {
+        // Menampilkan Jumlah User Baru Yang Belum di lihat
+        $users = $this->dataModel->findAll();
+
+        $jumlahusers = 0;
+        foreach ($users as $users) {
+            if ($users['status'] == 'Unread') {
+                $jumlahusers++;
+            }
+        }
+
         $dataProject = $this->projectsModel->getProject($id);
         // dd($dataProject);
 
         $data = [
             'title' => 'Edit Project Data | SKYX',
             'tab' => 'projects',
-            'dataproject' => $dataProject
+            'dataproject' => $dataProject,
+            'jumlahusers' => $jumlahusers
         ];
 
         return view('admin/editform/formeditprojects', $data);
@@ -265,12 +309,23 @@ class Edit extends BaseController
 
     public function editTierForm($id)
     {
+        // Menampilkan Jumlah User Baru Yang Belum di lihat
+        $users = $this->dataModel->findAll();
+
+        $jumlahusers = 0;
+        foreach ($users as $users) {
+            if ($users['status'] == 'Unread') {
+                $jumlahusers++;
+            }
+        }
+
         $tier = $this->tierModel->getTier($id);
 
         $data = [
             'title' => 'Edit Tier Data | SKYX',
             'tab' => 'projects',
-            'tier' => $tier
+            'tier' => $tier,
+            'jumlahusers' => $jumlahusers
         ];
 
         return view('admin/editform/formedittier', $data);
@@ -298,12 +353,23 @@ class Edit extends BaseController
 
     public function editFaqForm($id)
     {
+        // Menampilkan Jumlah User Baru Yang Belum di lihat
+        $users = $this->dataModel->findAll();
+
+        $jumlahusers = 0;
+        foreach ($users as $users) {
+            if ($users['status'] == 'Unread') {
+                $jumlahusers++;
+            }
+        }
+
         $faq = $this->faqsModel->getFaq($id);
 
         $data = [
             'title' => 'Edit Faq Data | SKYX',
             'tab' => 'faqs',
-            'faq' => $faq
+            'faq' => $faq,
+            'jumlahusers' => $jumlahusers
         ];
 
         return view('admin/editform/formeditfaq', $data);

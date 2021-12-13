@@ -41,9 +41,20 @@ class Add extends BaseController
 
     public function addTeamForm()
     {
+        // Menampilkan Jumlah User Baru Yang Belum di lihat
+        $users = $this->dataModel->findAll();
+
+        $jumlahusers = 0;
+        foreach ($users as $users) {
+            if ($users['status'] == 'Unread') {
+                $jumlahusers++;
+            }
+        }
+
         $data = [
             'title' => 'Form Add Team | SKYX',
-            'tab' => 'add teams'
+            'tab' => 'add teams',
+            'jumlahusers' => $jumlahusers
         ];
 
         return view('admin/addform/formaddteams', $data);
@@ -73,9 +84,20 @@ class Add extends BaseController
 
     public function addPartnerForm()
     {
+        // Menampilkan Jumlah User Baru Yang Belum di lihat
+        $users = $this->dataModel->findAll();
+
+        $jumlahusers = 0;
+        foreach ($users as $users) {
+            if ($users['status'] == 'Unread') {
+                $jumlahusers++;
+            }
+        }
+
         $data = [
             'title' => 'Form Add Partner | SKYX',
-            'tab' => 'add partnership'
+            'tab' => 'add partnership',
+            'jumlahusers' => $jumlahusers
         ];
 
         return view('admin/addform/formaddpartners', $data);
@@ -102,9 +124,20 @@ class Add extends BaseController
 
     public function addProjectsForm()
     {
+        // Menampilkan Jumlah User Baru Yang Belum di lihat
+        $users = $this->dataModel->findAll();
+
+        $jumlahusers = 0;
+        foreach ($users as $users) {
+            if ($users['status'] == 'Unread') {
+                $jumlahusers++;
+            }
+        }
+
         $data = [
             'title' => 'Form Add Projects | SKYX',
-            'tab' => 'add projects'
+            'tab' => 'add projects',
+            'jumlahusers' => $jumlahusers
         ];
 
         return view('admin/addform/formaddprojects', $data);
@@ -145,9 +178,20 @@ class Add extends BaseController
 
     public function addArtikelForm()
     {
+        // Menampilkan Jumlah User Baru Yang Belum di lihat
+        $users = $this->dataModel->findAll();
+
+        $jumlahusers = 0;
+        foreach ($users as $users) {
+            if ($users['status'] == 'Unread') {
+                $jumlahusers++;
+            }
+        }
+
         $data = [
             'title' => 'Form Add Artikel | SKYX',
-            'tab' => 'add artikel'
+            'tab' => 'add artikel',
+            'jumlahusers' => $jumlahusers
         ];
 
         return view('admin/formaddartikel', $data);
@@ -210,9 +254,20 @@ class Add extends BaseController
 
     public function addPortfolioForm()
     {
+        // Menampilkan Jumlah User Baru Yang Belum di lihat
+        $users = $this->dataModel->findAll();
+
+        $jumlahusers = 0;
+        foreach ($users as $users) {
+            if ($users['status'] == 'Unread') {
+                $jumlahusers++;
+            }
+        }
+
         $data = [
             'title' => 'Form Add Portfolio | SKYX',
-            'tab' => 'add portfolio'
+            'tab' => 'add portfolio',
+            'jumlahusers' => $jumlahusers
         ];
 
         return view('admin/addform/formaddportfolio', $data);
@@ -239,9 +294,20 @@ class Add extends BaseController
 
     public function addTierForm()
     {
+        // Menampilkan Jumlah User Baru Yang Belum di lihat
+        $users = $this->dataModel->findAll();
+
+        $jumlahusers = 0;
+        foreach ($users as $users) {
+            if ($users['status'] == 'Unread') {
+                $jumlahusers++;
+            }
+        }
+
         $data = [
             'title' => 'Form Add Tier | SKYX',
-            'tab' => 'add projects'
+            'tab' => 'add projects',
+            'jumlahusers' => $jumlahusers
         ];
 
         return view('admin/addform/formaddtier', $data);
@@ -262,9 +328,20 @@ class Add extends BaseController
 
     public function addFaqsForm()
     {
+        // Menampilkan Jumlah User Baru Yang Belum di lihat
+        $users = $this->dataModel->findAll();
+
+        $jumlahusers = 0;
+        foreach ($users as $users) {
+            if ($users['status'] == 'Unread') {
+                $jumlahusers++;
+            }
+        }
+
         $data = [
             'title' => 'Form Add FAQ | SKYX',
-            'tab' => 'faqs'
+            'tab' => 'faqs',
+            'jumlahusers' => $jumlahusers
         ];
 
         return view('admin/addform/formaddfaq', $data);

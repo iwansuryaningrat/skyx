@@ -178,6 +178,9 @@
                             <a href="/admin/users">
                                 <i class="fas fa-users"></i>
                                 <p>Users</p>
+                                <?php if ($jumlahusers > 0) : ?>
+                                    <span class="badge badge-info"><?= $jumlahusers; ?></span>
+                                <?php endif; ?>
                             </a>
                         </li>
                         <!-- Teams -->

@@ -39,33 +39,54 @@
 								<table id="basic-datatables" class="display table table-striped table-hover">
 									<thead>
 										<tr>
-											<th>First Name</th>
-											<th>Last Name</th>
+											<th>Name</th>
 											<th>Username</th>
 											<th>Email</th>
 											<th>Phone</th>
 											<th>Register at</th>
+											<th style="width: 10%">Status</th>
+											<th style=" width: 10%">Action</th>
 										</tr>
 									</thead>
 									<tfoot>
 										<tr>
-											<th>First Name</th>
-											<th>Last Name</th>
+											<th>Name</th>
 											<th>Username</th>
 											<th>Email</th>
 											<th>Phone</th>
 											<th>Register at</th>
+											<th>Status</th>
+											<th>Action</th>
 										</tr>
 									</tfoot>
 									<tbody>
 										<?php foreach ($users as $data) : ?>
 											<tr>
-												<td><?= $data['first_name'] ?></td>
-												<td><?= $data['last_name'] ?></td>
+												<td><?= $data['first_name'] . ' ' . $data['last_name'] ?></td>
 												<td><?= $data['username'] ?></td>
 												<td><?= $data['email'] ?></td>
 												<td><?= $data['phone'] ?></td>
 												<td><?= $data['created_at'] ?></td>
+												<td>
+													<span class="badge <?php if ($data['status'] == 'Unread') {
+																			echo 'badge-info';
+																		} elseif ($data['status'] == 'Readed') {
+																			echo 'badge-warning';
+																		} else {
+																			echo 'badge-success';
+																		}
+																		?>"><?= $data['status']; ?>
+													</span>
+												</td>
+												<td>
+													<div class="form-button-action">
+														<a href="#">
+															<button type="button" data-toggle="tooltip" title="Read" class="btn btn-link btn-primary btn-lg" data-original-title="Read">
+																<i class="fa fa-edit"></i>
+															</button>
+														</a>
+													</div>
+												</td>
 											</tr>
 										<?php endforeach; ?>
 									</tbody>

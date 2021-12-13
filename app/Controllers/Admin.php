@@ -41,6 +41,16 @@ class Admin extends BaseController
 
     public function index()
     {
+        // Menampilkan Jumlah User Baru Yang Belum di lihat
+        $users = $this->dataModel->findAll();
+
+        $jumlahusers = 0;
+        foreach ($users as $users) {
+            if ($users['status'] == 'Unread') {
+                $jumlahusers++;
+            }
+        }
+
         // Mengambil data bulanan
         $databulan = $this->dataModel->getBulanan();
         // dd($databulan);
@@ -75,7 +85,8 @@ class Admin extends BaseController
             'visitors' => $visitors,
             'visitorsMonthly' => $visitorsMonthly,
             'visitorsKumulatif' => $visitorsKumulatif,
-            'admin' => $admin
+            'admin' => $admin,
+            'jumlahusers' => $jumlahusers
         ];
 
         return view('admin/index', $data);
@@ -83,6 +94,16 @@ class Admin extends BaseController
 
     public function projects()
     {
+        // Menampilkan Jumlah User Baru Yang Belum di lihat
+        $users = $this->dataModel->findAll();
+
+        $jumlahusers = 0;
+        foreach ($users as $users) {
+            if ($users['status'] == 'Unread') {
+                $jumlahusers++;
+            }
+        }
+
         $dataProjects = $this->projectsModel->findAll();
         // dd($dataProjects);
         $admin = user()->toArray();
@@ -91,7 +112,8 @@ class Admin extends BaseController
             'title' => 'Projects | SKYX',
             'tab' => 'projects',
             'dataprojects' => $dataProjects,
-            'admin' => $admin
+            'admin' => $admin,
+            'jumlahusers' => $jumlahusers
         ];
 
         return view('admin/projects', $data);
@@ -99,13 +121,24 @@ class Admin extends BaseController
 
     public function faqs()
     {
+        // Menampilkan Jumlah User Baru Yang Belum di lihat
+        $users = $this->dataModel->findAll();
+
+        $jumlahusers = 0;
+        foreach ($users as $users) {
+            if ($users['status'] == 'Unread') {
+                $jumlahusers++;
+            }
+        }
+
         $admin = user()->toArray();
         $faqs = $this->faqsModel->findAll();
         $data = [
             'title' => 'FAQs | SKYX',
             'tab' => 'faqs',
             'admin' => $admin,
-            'faqs' => $faqs
+            'faqs' => $faqs,
+            'jumlahusers' => $jumlahusers
         ];
 
         return view('admin/faqs', $data);
@@ -113,6 +146,16 @@ class Admin extends BaseController
 
     public function users()
     {
+        // Menampilkan Jumlah User Baru Yang Belum di lihat
+        $users = $this->dataModel->findAll();
+
+        $jumlahusers = 0;
+        foreach ($users as $users) {
+            if ($users['status'] == 'Unread') {
+                $jumlahusers++;
+            }
+        }
+
         $datausers = $this->dataModel->findAll();
         $admin = user()->toArray();
 
@@ -120,7 +163,8 @@ class Admin extends BaseController
             'title' => 'Data Users | SKYX',
             'tab' => 'users',
             'users' => $datausers,
-            'admin' => $admin
+            'admin' => $admin,
+            'jumlahusers' => $jumlahusers
         ];
 
         return view('admin/datausers', $data);
@@ -128,6 +172,16 @@ class Admin extends BaseController
 
     public function teams()
     {
+        // Menampilkan Jumlah User Baru Yang Belum di lihat
+        $users = $this->dataModel->findAll();
+
+        $jumlahusers = 0;
+        foreach ($users as $users) {
+            if ($users['status'] == 'Unread') {
+                $jumlahusers++;
+            }
+        }
+
         $teams = $this->teamsModel->findAll();
 
         $admin = user()->toArray();
@@ -136,7 +190,8 @@ class Admin extends BaseController
             'title' => 'Data Teams | SKYX',
             'tab' => 'teams',
             'data' => $teams,
-            'admin' => $admin
+            'admin' => $admin,
+            'jumlahusers' => $jumlahusers
         ];
 
         return view('admin/teams', $data);
@@ -158,6 +213,16 @@ class Admin extends BaseController
 
     public function partnership()
     {
+        // Menampilkan Jumlah User Baru Yang Belum di lihat
+        $users = $this->dataModel->findAll();
+
+        $jumlahusers = 0;
+        foreach ($users as $users) {
+            if ($users['status'] == 'Unread') {
+                $jumlahusers++;
+            }
+        }
+
         $dataPartner = $this->partnershipModel->findAll();
         $admin = user()->toArray();
 
@@ -165,7 +230,8 @@ class Admin extends BaseController
             'title' => 'Partnership | Skyx',
             'tab' => 'partnership',
             'data' => $dataPartner,
-            'admin' => $admin
+            'admin' => $admin,
+            'jumlahusers' => $jumlahusers
         ];
 
         return view('admin/partnership', $data);
@@ -173,6 +239,16 @@ class Admin extends BaseController
 
     public function portfolio()
     {
+        // Menampilkan Jumlah User Baru Yang Belum di lihat
+        $users = $this->dataModel->findAll();
+
+        $jumlahusers = 0;
+        foreach ($users as $users) {
+            if ($users['status'] == 'Unread') {
+                $jumlahusers++;
+            }
+        }
+
         $dataPorto = $this->portfolioModel->findAll();
         $admin = user()->toArray();
 
@@ -180,7 +256,8 @@ class Admin extends BaseController
             'title' => 'Portfolio | Skyx',
             'tab' => 'portfolio',
             'data' => $dataPorto,
-            'admin' => $admin
+            'admin' => $admin,
+            'jumlahusers' => $jumlahusers
         ];
 
         return view('admin/portfolio', $data);
@@ -188,13 +265,24 @@ class Admin extends BaseController
 
     public function tier()
     {
+        // Menampilkan Jumlah User Baru Yang Belum di lihat
+        $users = $this->dataModel->findAll();
+
+        $jumlahusers = 0;
+        foreach ($users as $users) {
+            if ($users['status'] == 'Unread') {
+                $jumlahusers++;
+            }
+        }
+
         $admin = user()->toArray();
         $tier = $this->tierModel->findAll();
         $data = [
             'title' => 'Tier | SKYX',
             'tab' => 'projects',
             'admin' => $admin,
-            'tier' => $tier
+            'tier' => $tier,
+            'jumlahusers' => $jumlahusers
         ];
 
         return view('admin/tier', $data);

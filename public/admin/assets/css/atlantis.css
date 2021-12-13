@@ -8877,6 +8877,11 @@ label.error {
   vertical-align: middle;
 }
 
+.table > thead > tr > th,
+.table > tfoot > tr > th {
+  text-align: center;
+}
+
 .table > tbody > tr > td,
 .table > tbody > tr > th {
   padding: 8px;
