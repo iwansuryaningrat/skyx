@@ -40,9 +40,9 @@
 									<thead>
 										<tr>
 											<th>Name</th>
-											<th>Username</th>
 											<th>Email</th>
 											<th>Phone</th>
+											<th>Purpose</th>
 											<th>Register at</th>
 											<th style="width: 10%">Status</th>
 											<th style=" width: 10%">Action</th>
@@ -51,9 +51,9 @@
 									<tfoot>
 										<tr>
 											<th>Name</th>
-											<th>Username</th>
 											<th>Email</th>
 											<th>Phone</th>
+											<th>Purpose</th>
 											<th>Register at</th>
 											<th>Status</th>
 											<th>Action</th>
@@ -63,10 +63,10 @@
 										<?php foreach ($users as $data) : ?>
 											<tr>
 												<td><?= $data['first_name'] . ' ' . $data['last_name'] ?></td>
-												<td><?= $data['username'] ?></td>
 												<td><?= $data['email'] ?></td>
 												<td><?= $data['phone'] ?></td>
-												<td><?= $data['created_at'] ?></td>
+												<td><?= $data['tujuan'] ?></td>
+												<td><?= date('j-M-Y', strtotime($data['created_at'])); ?></td>
 												<td>
 													<span class="badge <?php if ($data['status'] == 'Unread') {
 																			echo 'badge-info';
