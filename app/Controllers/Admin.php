@@ -313,4 +313,11 @@ class Admin extends BaseController
 
         return view('admin/viewdatauser', $data);
     }
+
+    public function download($namafile)
+    {
+        $path = 'berkas/' . $namafile;
+        $file = new \CodeIgniter\Files\File($path);
+        return $this->response->download($file, null);
+    }
 }

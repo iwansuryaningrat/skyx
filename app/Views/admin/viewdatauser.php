@@ -68,19 +68,21 @@
                                         </div>
 
                                         <div class="form-group">
-                                            <label class="control-label">Chain</label>
-                                            <p class="form-control-static"><?= $user['chain']; ?></p>
+                                            <label class="control-label">Pitchdeck</label>
+                                            <p class="form-control-static"><?= $user['pitchdeck']; ?></p>
+                                            <a href="/admin/download/<?= $user['pitchdeck']; ?>" class="btn btn-info">Download</a>
                                         </div>
                                     </div>
                                     <div class="col-md-6 col-lg-6">
                                         <div class="form-group">
-                                            <label class="control-label">Pitchdeck</label>
-                                            <p class="form-control-static"><?= $user['pitchdeck']; ?></p>
+                                            <label class="control-label">Chain</label>
+                                            <p class="form-control-static"><?= $user['chain']; ?></p>
                                         </div>
 
                                         <div class="form-group">
                                             <label class="control-label">Whitepaper</label>
                                             <p class="form-control-static"><?= $user['whitepaper']; ?></p>
+                                            <a href="/admin/download/<?= $user['whitepaper']; ?>" class="btn btn-info">Download</a>
                                         </div>
                                     </div>
                                     <div class="col-md-12 col-lg-12">
