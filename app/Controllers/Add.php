@@ -231,43 +231,46 @@ class Add extends BaseController
         $phone = $this->request->getVar('phoneNumber');
         $user = $this->dataModel->getUser($email, $phone);
 
+        $validation = [
+            'pitchdeck' => 'required|ext_in[datauser.pitchdeck,pdf]|mime_in[datauser.pitchdeck,application/pdf]',
+            'whitepaper' => 'required|ext_in[datauser.whitepaper,pdf]|mime_in[datauser.whitepaper,application/pdf]'
+        ];
+
         // Validasi
         if ($user != null) {
-            session()->setFlashdata('pesan', 'Data sudah ada');
+            session()->setFlashdata('pesan', 'You have subscribed to us. Now you can follow our social media to get the latest information from us.');
         } else {
+            $project = $this->request->getVar('project');
+
             $pitchdeck = $this->request->getFile('pitchdeck');
-            if ($pitchdeck->getError() == 4) {
-                $namapitchdeck = ' ';
-            } else {
-                $namapitchdeck = $pitchdeck->getName();
-                $pitchdeck->move('berkas/', $namapitchdeck);
-            }
-
             $whitepaper = $this->request->getFile('whitepaper');
-            if ($whitepaper->getError() == 4) {
-                $namawhitepaper = ' ';
+            if ($pitchdeck->getError() == 4 || $whitepaper->getError() == 4 || !$this->validate($validation)) {
+                session()->setFlashdata('pesan', 'error');
             } else {
-                $namawhitepaper = $whitepaper->getName();
+                $namapitchdeck = 'pitchdeck-' . $project;
+                $namawhitepaper = 'whitepaper-' . $project;
+                $pitchdeck->move('berkas/', $namapitchdeck);
                 $whitepaper->move('berkas/', $namawhitepaper);
+
+                $data = [
+                    'first_name' => $this->request->getVar('firstName'),
+                    'last_name' => $this->request->getVar('lastName'),
+                    'username' => $this->request->getVar('userName'),
+                    'email' => $email,
+                    'phone' => $phone,
+                    'tujuan' => $this->request->getVar('tujuan'),
+                    'project' => $project,
+                    'chain' => $this->request->getVar('chain'),
+                    'pitchdeck' => $namapitchdeck,
+                    'whitepaper' => $namawhitepaper,
+                    'status' => 'Unread'
+                ];
+
+                $this->dataModel->insert($data);
+
+                session()->setFlashdata('pesan', 'Thank you for subscribe us. Now you can join our community for more
+							information.');
             }
-
-            $data = [
-                'first_name' => $this->request->getVar('firstName'),
-                'last_name' => $this->request->getVar('lastName'),
-                'username' => $this->request->getVar('userName'),
-                'email' => $email,
-                'phone' => $phone,
-                'tujuan' => $this->request->getVar('tujuan'),
-                'project' => $this->request->getVar('project'),
-                'chain' => $this->request->getVar('chain'),
-                'pitchdeck' => $namapitchdeck,
-                'whitepaper' => $namawhitepaper,
-                'status' => 'Unread'
-            ];
-
-            $this->dataModel->insert($data);
-
-            session()->setFlashdata('pesan', 'Data berhasil ditambahkan.');
         }
 
         return redirect()->to('/home/contact');

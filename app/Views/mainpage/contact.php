@@ -62,7 +62,7 @@
 		<div class="row">
 			<div class="col-12">
 				<div class="skyx__form">
-					<form class="row g-5" action="/add/users" enctype="multipart/form-data" method="POST">
+					<form class="row g-5" action="/add/users" enctype="multipart/form-data" method="POST" id="form_contact">
 						<div class="col-md-6">
 							<input type="text" class="skyx__fcontrol" id="firstName" name="firstName" placeholder="First Name" required>
 						</div>
@@ -117,12 +117,12 @@
 
 <!-- new modal -->
 <?php if (session()->getFlashdata('pesan')) : ?>
-	<?php if (session()->getFlashdata('pesan') == 'Data sudah ada') : ?>
+	<?php if (session()->getFlashdata('pesan') != 'error') : ?>
 		<div class="modal__section " id="new_modal">
 			<div class="modal-dialog modal-dialog-centered">
 				<div class="modal-content modal__content">
 					<div class="modal-body">
-						<p class="text-center">You have subscribed to us. Now you can follow our social media to get the latest information from us.</p>
+						<p class="text-center"><?= session()->getFlashdata('pesan'); ?></p>
 						<div class="modal__icon">
 							<a href="https://www.instagram.com/skyx.fund/" target="_blank"><i class="fab fa-instagram"></i></a>
 							<a href="https://twitter.com/skyx_fund" target="_blank"><i class="fab fa-twitter"></i></a>
@@ -142,18 +142,10 @@
 			<div class="modal-dialog modal-dialog-centered">
 				<div class="modal-content modal__content">
 					<div class="modal-body">
-						<p class="text-center">Thank you for subscribe us. Now you can join our community for more
-							information.</p>
-						<div class="modal__icon">
-							<a href="https://www.instagram.com/skyx.fund/" target="_blank"><i class="fab fa-instagram"></i></a>
-							<a href="https://twitter.com/skyx_fund" target="_blank"><i class="fab fa-twitter"></i></a>
-							<a href="https://t.me/skyx_community" target="_blank"><i class="fab fa-telegram-plane"></i></a>
-							<a href="https://t.me/skyx_announcement" target="_blank"><i class="fab fa-telegram-plane"></i></a>
-							<a href="https://www.linkedin.com/company/skyxfund" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-						</div>
+						<p class="text-center">Please Upload Pitchdeck & Whitepaper as pdf</p>
 					</div>
 					<div class="d-flex justify-content-center align-items-center" onclick="none()">
-						<a href="https://t.me/skyx_community" target="_blank" class="modal__btn">OK</a>
+						<a href="#form_contact" class="modal__btn">OK</a>
 					</div>
 				</div>
 			</div>
