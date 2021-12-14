@@ -55,7 +55,7 @@
 <div class="sec__x sec__y">
 	<div class="container">
 		<div class="head__section">
-			<h2>Get in touch</h2>
+			<h2>Partnership</h2>
 			<p class="txt__second">Feel free to drop us a line below.</p>
 		</div>
 
