@@ -21,10 +21,11 @@
 		<div>
 			<div class="portfo">
 				<?php foreach ($porto as $row) : ?>
-					<figure class="portfo__icon">
+					<figure class="partner__icon">
 						<a href="<?php if ($row['link'] == null) : echo '#';
 									else : echo $row['link'];
 									endif; ?>" target="_blank"><img src="/foto/portfolio/<?= $row['logo']; ?>" alt="..." class="pship__tt" data-bs-toggle="tooltip" data-bs-placement="top" title="<?= $row['nama']; ?>"></a>
+						<div class="partner__cover"></div>
 					</figure>
 				<?php endforeach; ?>
 			</div> <!-- end pship -->

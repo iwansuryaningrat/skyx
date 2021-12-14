@@ -1285,6 +1285,37 @@ footer p {
     background-position: 100% 0;
 }
 
+.skyx__file {
+    width: 100%;
+    padding: 1rem 0;
+    display: block;
+    border-radius: 15px;
+    border: 1px solid #7EB1E0;
+    color: var(--white);
+    font-size: 24px;
+    transition: all .5s ease-in-out;
+}
+.skyx__file i {
+    margin-right: 4px;
+    color: rgba(255, 255, 255, .4);
+    transition: all .5s ease-in-out;
+    font-size: 20px;
+}
+
+.skyx__file span {
+    color: rgba(255, 255, 255, .4);
+    transition: all .5s ease-in-out;
+}
+
+.skyx__file:hover {
+    border: 1px solid var(--white);
+}
+
+.skyx__file:hover i,
+.skyx__file:hover span {
+    color: var(--whites);
+}
+
 /****************************************/
 /*               FAQ PAGE               */
 /****************************************/
