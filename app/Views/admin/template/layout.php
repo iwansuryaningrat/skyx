@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title><?= $title; ?></title>
     <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
-    <link rel="icon" href="/mainpage/img/icon/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/mainpage/img/icon/admin-favicon.ico" type="image/x-icon" />
 
     <!-- Fonts and icons -->
     <script src="/admin/assets/js/plugin/webfont/webfont.min.js"></script>
@@ -34,6 +34,10 @@
     <link rel="stylesheet" href="/admin/assets/css/demo.css">
 
     <style>
+        .logo-header {
+            padding-right: 60px;
+        }
+
         .logo-header a {
             width: 100%;
             height: 100%;
@@ -46,6 +50,14 @@
             /* width: 100%; */
             height: 48px;
             /* margin: auto; */
+        }
+
+        .sub__item .sub-item {
+            margin-left: 0 !important;
+        }
+
+        .sub__item .sub-item::before {
+            display: none;
         }
     </style>
 </head>
@@ -146,7 +158,7 @@
 
                             <div class="collapse in" id="collapseExample">
                                 <ul class="nav">
-                                    <li>
+                                    <!-- <li>
                                         <a href="#profile">
                                             <span class="link-collapse">My Profile</span>
                                         </a>
@@ -155,7 +167,7 @@
                                         <a href="#edit">
                                             <span class="link-collapse">Edit Profile</span>
                                         </a>
-                                    </li>
+                                    </li> -->
                                     <li>
                                         <a href="/logout">
                                             <span class="link-collapse">Logout</span>
@@ -214,12 +226,14 @@
                             <div class="collapse" id="projects">
                                 <ul class="nav nav-collapse">
                                     <li>
-                                        <a href="/admin/projects">
+                                        <a href="/admin/projects" class="sub__item">
+                                            <i class="fab fa-bitcoin"></i>
                                             <span class="sub-item">Projects</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/admin/tier">
+                                        <a href="/admin/tier" class="sub__item">
+                                            <i class="fas fa-shield-alt"></i>
                                             <span class="sub-item">Tier</span>
                                         </a>
                                     </li>

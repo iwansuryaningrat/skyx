@@ -63,10 +63,10 @@
 			<div class="col-12">
 				<div class="skyx__form">
 					<form class="row g-5" action="/add/users" enctype="multipart/form-data" method="POST" id="form_contact">
-						<div class="col-md-6">
+						<div class="col-sm-6 col-12">
 							<input type="text" class="skyx__fcontrol" id="firstName" name="firstName" placeholder="First Name" required>
 						</div>
-						<div class="col-md-6">
+						<div class="col-sm-6 col-12">
 							<input type="text" class="skyx__fcontrol" id="lastName" name="lastName" placeholder="Last Name" required>
 						</div>
 
@@ -83,22 +83,22 @@
 							<input type="text" class="skyx__fcontrol" id="tujuan" name="tujuan" placeholder="Objectives and Purpose" required>
 						</div>
 
-						<div class="col-6">
+						<div class="col-sm-6 col-12">
 							<input type="text" class="skyx__fcontrol" id="project" name="project" placeholder="Project" required>
 						</div>
-						<div class="col-6">
+						<div class="col-sm-6 col-12">
 							<input type="text" class="skyx__fcontrol" id="chain" name="chain" placeholder="Chain" required>
 						</div>
 
 						<div class="col-6">
-							<label class="skyx__submit" style="text-align: center;">
+							<label class="skyx__file" style="text-align: center;">
 								<i class="far fa-file-pdf"></i>
 								<span id="pitchdeckname" style="font-size: 18px;"> Upload Pitchdeck</span>
 								<input type="file" accept="pdf/*" style="display: none;" class="skyx__fcontrol" id="pitchdeck" name="pitchdeck" required>
 							</label>
 						</div>
 						<div class="col-6">
-							<label class="skyx__submit" style="text-align: center;">
+							<label class="skyx__file" style="text-align: center;">
 								<i class="far fa-file-pdf"></i>
 								<span id="whitepapername" style="font-size: 18px;"> Upload Whitepaper</span>
 								<input type="file" accept="pdf/*" style="display: none;" class="skyx__fcontrol" id="whitepaper" name="whitepaper" required>
