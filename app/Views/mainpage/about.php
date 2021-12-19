@@ -97,6 +97,26 @@
 </div>
 <!-- end visi misi section -->
 
+<!-- Pesan Section -->
+<div class="sec__x sec__y">
+	<div class="container">
+		<div class="mteam__section">
+			<div class="mteam__head">
+				<h2 class="title__info">Surat dari CEO SkyX kepada Crypto Indonesia Club member,</h2>
+				<p class="txt__second">Setiap investasi ada resikonya ya guys. SkyX sudah melakukan riset terhadap project, tapi resiko tidak 0% jadi investor harus DYOR lagi terhadap project yg anda beli. SkyX sendiri juga invest di project itu bukan makelar saja. Jadi kita di kapal Yang sama.
+					<br>
+					Visi SkyX adalah memperbanyak middle class secara financial karena negara maju butuh middle class Yang jauh lebih banyak daripada high class dan low classnya semoga SkyX bisa membantu berpartisipasi dalam penggendutan middle class di Indonesia.
+					<br>
+					Kita sudah banyak tawaran dana dari high net worth people di Indonesia. Tapi kami tolak karena kami tidak mau mengorbankan idealisme kami untuk uang.
+					<br>
+					Yuk bisa yuk masa negara sebesar dan semakmur ini banyak org susah. Malu sama para pahlawan kita Yang memberikan nyawanya buat republik ini. Saya sipit tapi darah saya merah dan putih.
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End Pesan Section -->
+
 <!-- our team section -->
 <div class="sec__x sec__y">
 	<div class="container">
