@@ -47,6 +47,12 @@
 </head>
 
 <body>
+
+    <!-- Music Background -->
+    <audio hidden autoplay loop>
+        <source src="/music/background_music.mp3" type="audio/mpeg">
+    </audio>
+
     <div class="start__section">
         <div class="start__content">
             <img src="/mainpage/img/logo-skyx-word.svg" alt="...">

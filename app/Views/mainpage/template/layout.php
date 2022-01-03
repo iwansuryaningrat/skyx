@@ -135,12 +135,17 @@
     <i class="bi bi-caret-up-fill scroll__up"></i>
     <!-- end scroll up button -->
 
+    <!-- Music Background -->
+    <audio hidden autoplay loop>
+        <source src="/music/background_music.mp3" type="audio/mpeg">
+    </audio>
+
 
     <?= $this->renderSection('mainpage'); ?>
 
 
     <!-- footer section -->
-    <footer class="sec__y">
+    <footer class=" sec__y">
         <div class="sec__x">
             <div class="container">
                 <!-- row -->
